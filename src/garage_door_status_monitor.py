@@ -11,7 +11,6 @@ from src.config.config_main import cfg
 from src.config.config_logging import logger, history_logger
 from src.garage_door import GarageDoor, GarageStatus, close_door, un_close_door, open_door, un_open_door
 
-SENSOR_GPIO_PINS = Box({"2-Car": {"Closed": 4, "Open"}})
 class GarageDoorName(Enum):
     two_car = 1
     one_car = 2
