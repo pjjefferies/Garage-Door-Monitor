@@ -25,28 +25,32 @@ class GarageDoor:
     def __post_init__(self):
         self.status_change_time: dt.datetime = dt.datetime.now(tz=TIME_ZONE)
 
-    def open(self) -> None:
-        self.status = GarageStatus.open
-        self.status_change_time = dt.datetime.now(tz=TIME_ZONE)
-
-    def un_open(self) -> None:
-        self.status = GarageStatus.unknown
-        self.status_change_time = dt.datetime.now(tz=TIME_ZONE)
-
-    def un_close(self) -> None:
-        self.status = GarageStatus.unknown
-        self.status_change_time = dt.datetime.now(tz=TIME_ZONE)
-
-    def close(self) -> None:
-        self.status = GarageStatus.closed
-        self.status_change_time = dt.datetime.now(tz=TIME_ZONE)
-
     def time_as_status(self) -> dt.timedelta:
         now_time = dt.datetime.now(tz=TIME_ZONE)
         return now_time - self.status_change_time
 
     def __str__(self) -> str:
         return f"{self.name} garage has been {self.status.name} for {self.time_as_status().total_seconds():.0f} seconds"
+
+
+def open_door(door: GarageDoor) -> None:
+    door.status = GarageStatus.open
+    door.status_change_time = dt.datetime.now(tz=TIME_ZONE)
+
+
+def close_door(door: GarageDoor) -> None:
+    door.status = GarageStatus.closed
+    door.status_change_time = dt.datetime.now(tz=TIME_ZONE)
+
+
+def un_open_door(door: GarageDoor) -> None:
+    door.status = GarageStatus.unknown
+    door.status_change_time = dt.datetime.now(tz=TIME_ZONE)
+
+
+def un_close_door(door: GarageDoor) -> None:
+    door.status = GarageStatus.unknown
+    door.status_change_time = dt.datetime.now(tz=TIME_ZONE)
 
 
 if __name__ == "__main__":
