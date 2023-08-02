@@ -11,8 +11,10 @@ TIME_ZONE = pytz.timezone(zone="America/Detroit")
 
 class GarageStatus(Enum):
     open = 1
-    unknown = 2
-    closed = 3
+    un_open = 2
+    unknown = 3
+    un_closed = 4
+    closed = 5
 
 
 @dataclass
