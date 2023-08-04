@@ -22,19 +22,20 @@ class GarageDoorName(Enum):
     two_car = 1
     one_car = 2
 
-
 @dataclass
 class GarageStatusHistoryDatum:
     name: str
     position: GarageStatus
     timestamp: dt.datetime
 
+def door_op1() -> None:
+    pass
 
 def door_op(
-    door: GarageDoor, door_op: Callable[[GarageDoor], None], action: GarageStatus
+    door: GarageDoor, operation: Callable[[], None], action: GarageStatus
 ) -> None:
     # Change status of door
-    door_op(door)
+    operation()
 
     # Log status change of door
     history_logger.info(msg=f"{door.name}, {action.name}")
@@ -50,12 +51,12 @@ def main() -> None:
     )
 
     door_sensor_2_car_closed = DigitalInputDevice(
-        cfg.SENSOR_GPIO_PINS.TWO_CAR.CLOSED.NUMBER,
+        pin=int(cfg.SENSOR_GPIO_PINS.TWO_CAR.CLOSED.NUMBER),
         pull_up=cfg.SENSOR_GPIO_PINS.TWO_CAR.CLOSED.PULL_UP,
         bounce_time=cfg.SENSOR_GPIO_PINS.TWO_CAR.CLOSED.BOUNCE_TIME,
     )
     door_sensor_2_car_opened = DigitalInputDevice(
-        cfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.NUMBER,
+        pin=int(cfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.NUMBER),
         pull_up=cfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.PULL_UP,
         bounce_time=cfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.BOUNCE_TIME,
     )
@@ -70,36 +71,46 @@ def main() -> None:
         bounce_time=cfg.SENSOR_GPIO_PINS.ONE_CAR.OPEN.BOUNCE_TIME,
     )
 
-    door_sensor_2_car_closed.when_activated = partial(
-        door_op, door=two_car_garage, door_op=close_door, action=GarageStatus.closed
-    )
+    # door_sensor_2_car_closed.when_activated = partial(
+    #     door_op, door=two_car_garage, operation=close_door, action=GarageStatus.closed
+    # )
+    door_sensor_2_car_closed.when_activated = door_op1
+
+    temp_fn = partial(door_op,
+                      door=two_car_garage,
+                      operation=lambda: un_close_door(two_car_garage),
+                      action=GarageStatus.un_closed
+              )
+
+    temp_fn()
+
     door_sensor_2_car_closed.when_deactivated = partial(
         door_op,
         door=two_car_garage,
-        door_op=un_close_door,
+        operation=lambda: un_close_door(two_car_garage),
         action=GarageStatus.un_closed,
     )
     door_sensor_2_car_opened.when_activated = partial(
-        door_op, door=two_car_garage, door_op=open_door, action=GarageStatus.open
+        door_op, door=two_car_garage, operation=open_door, action=GarageStatus.open
     )
     door_sensor_2_car_opened.when_deactivated = partial(
-        door_op, door=two_car_garage, door_op=un_open_door, action=GarageStatus.un_open
+        door_op, door=two_car_garage, operation=un_open_door, action=GarageStatus.un_open
     )
 
     door_sensor_1_car_closed.when_activated = partial(
-        door_op, door=one_car_garage, door_op=close_door, action=GarageStatus.closed
+        door_op, door=one_car_garage, operation=close_door, action=GarageStatus.closed
     )
     door_sensor_1_car_closed.when_deactivated = partial(
         door_op,
         door=one_car_garage,
-        door_op=un_close_door,
+        operation=un_close_door,
         action=GarageStatus.un_closed,
     )
     door_sensor_1_car_opened.when_activated = partial(
-        door_op, door=one_car_garage, door_op=open_door, action=GarageStatus.open
+        door_op, door=one_car_garage, operation=open_door, action=GarageStatus.open
     )
     door_sensor_1_car_opened.when_deactivated = partial(
-        door_op, door=one_car_garage, door_op=un_open_door, action=GarageStatus.un_open
+        door_op, door=one_car_garage, operation=un_open_door, action=GarageStatus.un_open
     )
 
 

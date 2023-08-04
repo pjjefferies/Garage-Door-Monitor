@@ -1,2 +1,1 @@
-#!/usr/bin/env bash
-python -m src.garage_door_status_monitor
+/home/garage_monitor/python/bin/python -m src.garage_door_status_monitor
