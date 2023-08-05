@@ -1,0 +1,926 @@
+2023-08-04 23:05:19,189:INFO:Garage Door Object with name two_car created
+2023-08-04 23:05:19,190:INFO:Garage Door Object with name one_car created
+2023-08-04 23:06:32,373:INFO:Garage Door Object with name two_car created
+2023-08-04 23:06:32,374:INFO:Garage Door Object with name one_car created
+2023-08-04 23:07:12,651:INFO:Garage Door Object with name two_car created
+2023-08-04 23:07:12,652:INFO:Garage Door Object with name one_car created
+2023-08-04 23:11:02,640:INFO:Garage Door Object with name two_car created
+2023-08-04 23:11:02,641:INFO:Garage Door Object with name one_car created
+2023-08-04 23:20:51,199:INFO:Garage Door Object with name two_car created
+2023-08-04 23:20:51,200:INFO:Garage Door Object with name one_car created
+2023-08-04 23:21:12,240:INFO:Garage Door Object with name two_car created
+2023-08-04 23:21:12,241:INFO:Garage Door Object with name one_car created
+2023-08-04 23:23:00,922:INFO:Garage Door Object with name two_car created
+2023-08-04 23:23:00,923:INFO:Garage Door Object with name one_car created
+2023-08-04 23:24:21,901:INFO:Garage Door Object with name two_car created
+2023-08-04 23:24:21,902:INFO:Garage Door Object with name one_car created
+2023-08-04 23:26:07,144:INFO:Garage Door Object with name two_car created
+2023-08-04 23:26:07,145:INFO:Garage Door Object with name one_car created
+2023-08-04 23:28:50,154:INFO:Garage Door Object with name two_car created
+2023-08-04 23:28:50,155:INFO:Garage Door Object with name one_car created
+2023-08-04 23:29:16,941:INFO:Garage Door Object with name two_car created
+2023-08-04 23:29:16,942:INFO:Garage Door Object with name one_car created
+2023-08-04 23:31:33,083:INFO:Garage Door Object with name two_car created
+2023-08-04 23:31:33,084:INFO:Garage Door Object with name one_car created
+2023-08-05 00:51:59,977:INFO:Garage Door Object with name two_car created
+2023-08-05 00:51:59,978:INFO:Garage Door Object with name one_car created
+2023-08-05 01:38:45,320:INFO:Garage Door Object with name two_car created
+2023-08-05 01:38:45,324:INFO:Garage Door Object with name one_car created
+2023-08-05 02:01:57,918:INFO:Garage Door Object with name two_car created
+2023-08-05 02:01:57,919:INFO:Garage Door Object with name one_car created
+2023-08-05 02:03:38,868:INFO:Garage Door Object with name two_car created
+2023-08-05 02:03:38,869:INFO:Garage Door Object with name one_car created
+2023-08-05 02:08:19,705:INFO:Garage Door Object with name two_car created
+2023-08-05 02:08:19,706:INFO:Garage Door Object with name one_car created
+2023-08-05 02:08:43,505:INFO:one_car, open
+2023-08-05 02:08:52,511:INFO:one_car, un_open
+2023-08-05 02:09:05,233:INFO:two_car, closed
+2023-08-05 02:09:12,996:INFO:two_car, open
+2023-08-05 02:09:13,370:INFO:two_car, un_open
+2023-08-05 02:09:13,472:INFO:two_car, open
+2023-08-05 02:09:13,675:INFO:two_car, un_open
+2023-08-05 02:09:18,465:INFO:one_car, closed
+2023-08-05 02:09:18,565:INFO:one_car, un_closed
+2023-08-05 02:09:20,541:INFO:two_car, un_closed
+2023-08-05 02:09:43,114:INFO:two_car, closed
+2023-08-05 02:09:49,147:INFO:two_car, open
+2023-08-05 02:09:49,308:INFO:two_car, un_open
+2023-08-05 02:09:50,157:INFO:two_car, open
+2023-08-05 02:09:52,953:INFO:two_car, un_open
+2023-08-05 02:09:56,029:INFO:one_car, closed
+2023-08-05 02:09:56,978:INFO:one_car, un_closed
+2023-08-05 02:09:59,234:INFO:one_car, closed
+2023-08-05 02:09:59,823:INFO:one_car, un_closed
+2023-08-05 02:10:02,706:INFO:one_car, closed
+2023-08-05 02:10:06,334:INFO:one_car, open
+2023-08-05 02:10:06,967:INFO:one_car, un_open
+2023-08-05 02:10:07,587:INFO:one_car, open
+2023-08-05 02:10:07,986:INFO:one_car, un_open
+2023-08-05 02:10:08,473:INFO:one_car, open
+2023-08-05 02:10:08,800:INFO:one_car, un_open
+2023-08-05 02:10:09,264:INFO:one_car, open
+2023-08-05 02:10:12,482:INFO:one_car, un_open
+2023-08-05 02:10:14,407:INFO:one_car, open
+2023-08-05 02:10:19,013:INFO:one_car, un_closed
+2023-08-05 02:10:20,395:INFO:one_car, closed
+2023-08-05 02:10:24,654:INFO:one_car, un_closed
+2023-08-05 02:10:27,120:INFO:one_car, closed
+2023-08-05 02:10:27,962:INFO:one_car, un_closed
+2023-08-05 02:10:28,830:INFO:one_car, closed
+2023-08-05 02:10:36,533:INFO:two_car, un_closed
+2023-08-05 02:10:37,307:INFO:two_car, closed
+2023-08-05 02:10:37,573:INFO:two_car, un_closed
+2023-08-05 02:10:38,089:INFO:two_car, closed
+2023-08-05 02:10:38,684:INFO:two_car, un_closed
+2023-08-05 02:10:38,791:INFO:two_car, closed
+2023-08-05 02:10:39,889:INFO:two_car, un_closed
+2023-08-05 02:10:40,001:INFO:two_car, closed
+2023-08-05 02:10:41,397:INFO:two_car, un_closed
+2023-08-05 02:14:00,326:INFO:Garage Door Object with name two_car created
+2023-08-05 02:14:00,326:INFO:Garage Door Object with name one_car created
+2023-08-05 02:14:29,387:INFO:two_car, closed
+2023-08-05 02:14:29,389:INFO:two_car, un_closed
+2023-08-05 02:14:29,391:INFO:two_car, closed
+2023-08-05 02:14:29,395:INFO:two_car, un_closed
+2023-08-05 02:14:29,403:INFO:two_car, closed
+2023-08-05 02:14:29,405:INFO:two_car, un_closed
+2023-08-05 02:14:29,407:INFO:two_car, closed
+2023-08-05 02:14:29,408:INFO:two_car, un_closed
+2023-08-05 02:14:29,412:INFO:two_car, closed
+2023-08-05 02:14:29,413:INFO:two_car, un_closed
+2023-08-05 02:14:29,415:INFO:two_car, closed
+2023-08-05 02:14:29,416:INFO:two_car, un_closed
+2023-08-05 02:14:29,418:INFO:two_car, closed
+2023-08-05 02:14:29,420:INFO:two_car, un_closed
+2023-08-05 02:14:29,429:INFO:two_car, closed
+2023-08-05 02:14:29,431:INFO:two_car, un_closed
+2023-08-05 02:14:29,437:INFO:two_car, closed
+2023-08-05 02:14:29,438:INFO:two_car, un_closed
+2023-08-05 02:14:29,439:INFO:two_car, closed
+2023-08-05 02:14:29,441:INFO:two_car, un_closed
+2023-08-05 02:14:29,442:INFO:two_car, closed
+2023-08-05 02:14:29,443:INFO:two_car, un_closed
+2023-08-05 02:14:29,453:INFO:two_car, closed
+2023-08-05 02:14:29,470:INFO:two_car, un_closed
+2023-08-05 02:14:29,475:INFO:two_car, closed
+2023-08-05 02:14:29,904:INFO:two_car, un_closed
+2023-08-05 02:14:29,905:INFO:two_car, closed
+2023-08-05 02:14:29,907:INFO:two_car, un_closed
+2023-08-05 02:14:29,910:INFO:two_car, closed
+2023-08-05 02:14:29,913:INFO:two_car, un_closed
+2023-08-05 02:14:29,916:INFO:two_car, closed
+2023-08-05 02:14:29,917:INFO:two_car, un_closed
+2023-08-05 02:14:29,919:INFO:two_car, closed
+2023-08-05 02:14:29,921:INFO:two_car, un_closed
+2023-08-05 02:14:29,926:INFO:two_car, closed
+2023-08-05 02:14:29,928:INFO:two_car, un_closed
+2023-08-05 02:14:30,592:INFO:two_car, closed
+2023-08-05 02:14:31,087:INFO:two_car, un_closed
+2023-08-05 02:14:31,590:INFO:two_car, closed
+2023-08-05 02:14:31,882:INFO:two_car, un_closed
+2023-08-05 02:14:32,327:INFO:two_car, closed
+2023-08-05 02:14:32,789:INFO:two_car, un_closed
+2023-08-05 02:14:33,142:INFO:two_car, closed
+2023-08-05 02:14:33,638:INFO:two_car, un_closed
+2023-08-05 02:14:34,010:INFO:two_car, closed
+2023-08-05 02:14:34,338:INFO:two_car, un_closed
+2023-08-05 02:14:34,822:INFO:two_car, closed
+2023-08-05 02:14:34,824:INFO:two_car, un_closed
+2023-08-05 02:14:34,825:INFO:two_car, closed
+2023-08-05 02:14:35,177:INFO:two_car, un_closed
+2023-08-05 02:14:35,673:INFO:two_car, closed
+2023-08-05 02:14:35,696:INFO:two_car, un_closed
+2023-08-05 02:14:35,697:INFO:two_car, closed
+2023-08-05 02:14:35,699:INFO:two_car, un_closed
+2023-08-05 02:14:35,718:INFO:two_car, closed
+2023-08-05 02:14:35,790:INFO:two_car, un_closed
+2023-08-05 02:14:35,791:INFO:two_car, closed
+2023-08-05 02:14:35,793:INFO:two_car, un_closed
+2023-08-05 02:14:36,058:INFO:two_car, closed
+2023-08-05 02:14:36,066:INFO:two_car, un_closed
+2023-08-05 02:14:36,067:INFO:two_car, closed
+2023-08-05 02:14:36,074:INFO:two_car, un_closed
+2023-08-05 02:14:36,075:INFO:two_car, closed
+2023-08-05 02:14:36,079:INFO:two_car, un_closed
+2023-08-05 02:14:36,080:INFO:two_car, closed
+2023-08-05 02:14:36,081:INFO:two_car, un_closed
+2023-08-05 02:14:36,084:INFO:two_car, closed
+2023-08-05 02:14:36,086:INFO:two_car, un_closed
+2023-08-05 02:14:36,087:INFO:two_car, closed
+2023-08-05 02:14:36,090:INFO:two_car, un_closed
+2023-08-05 02:14:36,091:INFO:two_car, closed
+2023-08-05 02:14:36,093:INFO:two_car, un_closed
+2023-08-05 02:14:36,095:INFO:two_car, closed
+2023-08-05 02:14:36,097:INFO:two_car, un_closed
+2023-08-05 02:14:36,464:INFO:two_car, closed
+2023-08-05 02:14:36,466:INFO:two_car, un_closed
+2023-08-05 02:14:36,560:INFO:two_car, closed
+2023-08-05 02:14:36,562:INFO:two_car, un_closed
+2023-08-05 02:14:36,564:INFO:two_car, closed
+2023-08-05 02:14:36,565:INFO:two_car, un_closed
+2023-08-05 02:14:36,569:INFO:two_car, closed
+2023-08-05 02:14:36,578:INFO:two_car, un_closed
+2023-08-05 02:14:36,580:INFO:two_car, closed
+2023-08-05 02:14:36,590:INFO:two_car, un_closed
+2023-08-05 02:14:36,591:INFO:two_car, closed
+2023-08-05 02:14:36,685:INFO:two_car, un_closed
+2023-08-05 02:14:36,687:INFO:two_car, closed
+2023-08-05 02:14:36,688:INFO:two_car, un_closed
+2023-08-05 02:14:36,689:INFO:two_car, closed
+2023-08-05 02:14:36,841:INFO:two_car, un_closed
+2023-08-05 02:14:36,842:INFO:two_car, closed
+2023-08-05 02:14:36,844:INFO:two_car, un_closed
+2023-08-05 02:14:36,883:INFO:two_car, closed
+2023-08-05 02:14:36,981:INFO:two_car, un_closed
+2023-08-05 02:14:36,983:INFO:two_car, closed
+2023-08-05 02:14:36,984:INFO:two_car, un_closed
+2023-08-05 02:14:37,063:INFO:two_car, closed
+2023-08-05 02:14:37,087:INFO:two_car, un_closed
+2023-08-05 02:14:37,088:INFO:two_car, closed
+2023-08-05 02:14:37,097:INFO:two_car, un_closed
+2023-08-05 02:14:37,098:INFO:two_car, closed
+2023-08-05 02:14:37,104:INFO:two_car, un_closed
+2023-08-05 02:14:37,106:INFO:two_car, closed
+2023-08-05 02:14:37,110:INFO:two_car, un_closed
+2023-08-05 02:14:37,112:INFO:two_car, closed
+2023-08-05 02:14:37,114:INFO:two_car, un_closed
+2023-08-05 02:14:37,117:INFO:two_car, closed
+2023-08-05 02:14:37,119:INFO:two_car, un_closed
+2023-08-05 02:14:37,121:INFO:two_car, closed
+2023-08-05 02:14:37,123:INFO:two_car, un_closed
+2023-08-05 02:14:37,241:INFO:two_car, closed
+2023-08-05 02:14:37,246:INFO:two_car, un_closed
+2023-08-05 02:14:37,254:INFO:two_car, closed
+2023-08-05 02:14:37,263:INFO:two_car, un_closed
+2023-08-05 02:14:37,265:INFO:two_car, closed
+2023-08-05 02:14:37,267:INFO:two_car, un_closed
+2023-08-05 02:14:37,268:INFO:two_car, closed
+2023-08-05 02:14:37,271:INFO:two_car, un_closed
+2023-08-05 02:14:37,404:INFO:two_car, closed
+2023-08-05 02:14:37,466:INFO:two_car, un_closed
+2023-08-05 02:14:37,468:INFO:two_car, closed
+2023-08-05 02:14:37,469:INFO:two_car, un_closed
+2023-08-05 02:14:37,583:INFO:two_car, closed
+2023-08-05 02:14:37,658:INFO:two_car, un_closed
+2023-08-05 02:14:37,720:INFO:two_car, closed
+2023-08-05 02:14:37,721:INFO:two_car, un_closed
+2023-08-05 02:14:37,723:INFO:two_car, closed
+2023-08-05 02:14:37,790:INFO:two_car, un_closed
+2023-08-05 02:14:37,862:INFO:two_car, closed
+2023-08-05 02:14:37,864:INFO:two_car, un_closed
+2023-08-05 02:14:37,866:INFO:two_car, closed
+2023-08-05 02:14:37,869:INFO:two_car, un_closed
+2023-08-05 02:14:37,870:INFO:two_car, closed
+2023-08-05 02:14:37,925:INFO:two_car, un_closed
+2023-08-05 02:14:37,927:INFO:two_car, closed
+2023-08-05 02:14:37,928:INFO:two_car, un_closed
+2023-08-05 02:14:37,930:INFO:two_car, closed
+2023-08-05 02:14:37,932:INFO:two_car, un_closed
+2023-08-05 02:14:38,175:INFO:two_car, closed
+2023-08-05 02:14:38,176:INFO:two_car, un_closed
+2023-08-05 02:14:38,218:INFO:two_car, closed
+2023-08-05 02:14:38,314:INFO:two_car, un_closed
+2023-08-05 02:14:40,706:INFO:two_car, open
+2023-08-05 02:14:40,708:INFO:two_car, un_open
+2023-08-05 02:14:40,712:INFO:two_car, open
+2023-08-05 02:14:40,714:INFO:two_car, un_open
+2023-08-05 02:14:40,715:INFO:two_car, open
+2023-08-05 02:14:40,717:INFO:two_car, un_open
+2023-08-05 02:14:40,718:INFO:two_car, open
+2023-08-05 02:14:40,720:INFO:two_car, un_open
+2023-08-05 02:14:40,721:INFO:two_car, open
+2023-08-05 02:14:40,724:INFO:two_car, un_open
+2023-08-05 02:14:40,725:INFO:two_car, open
+2023-08-05 02:14:40,727:INFO:two_car, un_open
+2023-08-05 02:14:40,728:INFO:two_car, open
+2023-08-05 02:14:40,737:INFO:two_car, un_open
+2023-08-05 02:14:40,738:INFO:two_car, open
+2023-08-05 02:14:40,748:INFO:two_car, un_open
+2023-08-05 02:14:40,770:INFO:two_car, open
+2023-08-05 02:14:40,773:INFO:two_car, un_open
+2023-08-05 02:14:40,775:INFO:two_car, open
+2023-08-05 02:14:40,776:INFO:two_car, un_open
+2023-08-05 02:14:40,777:INFO:two_car, open
+2023-08-05 02:14:40,784:INFO:two_car, un_open
+2023-08-05 02:14:40,814:INFO:two_car, open
+2023-08-05 02:14:40,815:INFO:two_car, un_open
+2023-08-05 02:14:40,840:INFO:two_car, open
+2023-08-05 02:14:40,845:INFO:two_car, un_open
+2023-08-05 02:14:40,900:INFO:two_car, open
+2023-08-05 02:14:41,030:INFO:two_car, un_open
+2023-08-05 02:14:41,056:INFO:two_car, open
+2023-08-05 02:14:41,075:INFO:two_car, un_open
+2023-08-05 02:14:41,076:INFO:two_car, open
+2023-08-05 02:14:41,089:INFO:two_car, un_open
+2023-08-05 02:14:41,091:INFO:two_car, open
+2023-08-05 02:14:41,092:INFO:two_car, un_open
+2023-08-05 02:14:41,096:INFO:two_car, open
+2023-08-05 02:14:41,098:INFO:two_car, un_open
+2023-08-05 02:14:41,100:INFO:two_car, open
+2023-08-05 02:14:41,102:INFO:two_car, un_open
+2023-08-05 02:14:41,103:INFO:two_car, open
+2023-08-05 02:14:41,105:INFO:two_car, un_open
+2023-08-05 02:14:41,745:INFO:two_car, open
+2023-08-05 02:14:41,761:INFO:two_car, un_open
+2023-08-05 02:14:41,762:INFO:two_car, open
+2023-08-05 02:14:41,768:INFO:two_car, un_open
+2023-08-05 02:14:41,775:INFO:two_car, open
+2023-08-05 02:14:41,893:INFO:two_car, un_open
+2023-08-05 02:14:41,942:INFO:two_car, open
+2023-08-05 02:14:42,128:INFO:two_car, un_open
+2023-08-05 02:14:42,130:INFO:two_car, open
+2023-08-05 02:14:42,131:INFO:two_car, un_open
+2023-08-05 02:14:42,132:INFO:two_car, open
+2023-08-05 02:14:42,137:INFO:two_car, un_open
+2023-08-05 02:14:42,138:INFO:two_car, open
+2023-08-05 02:14:42,139:INFO:two_car, un_open
+2023-08-05 02:14:42,141:INFO:two_car, open
+2023-08-05 02:14:42,146:INFO:two_car, un_open
+2023-08-05 02:14:42,148:INFO:two_car, open
+2023-08-05 02:14:42,150:INFO:two_car, un_open
+2023-08-05 02:14:42,151:INFO:two_car, open
+2023-08-05 02:14:42,153:INFO:two_car, un_open
+2023-08-05 02:14:42,155:INFO:two_car, open
+2023-08-05 02:14:42,156:INFO:two_car, un_open
+2023-08-05 02:14:42,158:INFO:two_car, open
+2023-08-05 02:14:42,159:INFO:two_car, un_open
+2023-08-05 02:14:42,169:INFO:two_car, open
+2023-08-05 02:14:42,170:INFO:two_car, un_open
+2023-08-05 02:14:42,434:INFO:two_car, open
+2023-08-05 02:14:42,440:INFO:two_car, un_open
+2023-08-05 02:14:42,441:INFO:two_car, open
+2023-08-05 02:14:42,452:INFO:two_car, un_open
+2023-08-05 02:14:42,453:INFO:two_car, open
+2023-08-05 02:14:42,457:INFO:two_car, un_open
+2023-08-05 02:14:42,458:INFO:two_car, open
+2023-08-05 02:14:42,791:INFO:two_car, un_open
+2023-08-05 02:14:42,813:INFO:two_car, open
+2023-08-05 02:14:42,815:INFO:two_car, un_open
+2023-08-05 02:14:42,816:INFO:two_car, open
+2023-08-05 02:14:42,817:INFO:two_car, un_open
+2023-08-05 02:14:42,823:INFO:two_car, open
+2023-08-05 02:14:42,825:INFO:two_car, un_open
+2023-08-05 02:14:42,827:INFO:two_car, open
+2023-08-05 02:14:42,829:INFO:two_car, un_open
+2023-08-05 02:14:42,830:INFO:two_car, open
+2023-08-05 02:14:42,832:INFO:two_car, un_open
+2023-08-05 02:14:42,834:INFO:two_car, open
+2023-08-05 02:14:42,836:INFO:two_car, un_open
+2023-08-05 02:14:42,990:INFO:two_car, open
+2023-08-05 02:14:42,992:INFO:two_car, un_open
+2023-08-05 02:14:42,994:INFO:two_car, open
+2023-08-05 02:14:43,007:INFO:two_car, un_open
+2023-08-05 02:14:43,009:INFO:two_car, open
+2023-08-05 02:14:43,010:INFO:two_car, un_open
+2023-08-05 02:14:43,012:INFO:two_car, open
+2023-08-05 02:14:43,014:INFO:two_car, un_open
+2023-08-05 02:14:43,015:INFO:two_car, open
+2023-08-05 02:14:43,017:INFO:two_car, un_open
+2023-08-05 02:14:43,019:INFO:two_car, open
+2023-08-05 02:14:43,061:INFO:two_car, un_open
+2023-08-05 02:14:43,121:INFO:two_car, open
+2023-08-05 02:14:43,146:INFO:two_car, un_open
+2023-08-05 02:14:43,164:INFO:two_car, open
+2023-08-05 02:14:43,172:INFO:two_car, un_open
+2023-08-05 02:14:43,173:INFO:two_car, open
+2023-08-05 02:14:43,177:INFO:two_car, un_open
+2023-08-05 02:14:43,178:INFO:two_car, open
+2023-08-05 02:14:43,182:INFO:two_car, un_open
+2023-08-05 02:14:43,185:INFO:two_car, open
+2023-08-05 02:14:43,188:INFO:two_car, un_open
+2023-08-05 02:14:43,197:INFO:two_car, open
+2023-08-05 02:14:43,199:INFO:two_car, un_open
+2023-08-05 02:14:43,201:INFO:two_car, open
+2023-08-05 02:14:43,202:INFO:two_car, un_open
+2023-08-05 02:14:43,204:INFO:two_car, open
+2023-08-05 02:14:43,205:INFO:two_car, un_open
+2023-08-05 02:14:43,206:INFO:two_car, open
+2023-08-05 02:14:43,216:INFO:two_car, un_open
+2023-08-05 02:14:43,220:INFO:two_car, open
+2023-08-05 02:14:43,222:INFO:two_car, un_open
+2023-08-05 02:14:43,223:INFO:two_car, open
+2023-08-05 02:14:43,224:INFO:two_car, un_open
+2023-08-05 02:14:43,226:INFO:two_car, open
+2023-08-05 02:14:43,227:INFO:two_car, un_open
+2023-08-05 02:14:43,229:INFO:two_car, open
+2023-08-05 02:14:43,231:INFO:two_car, un_open
+2023-08-05 02:14:43,232:INFO:two_car, open
+2023-08-05 02:14:43,236:INFO:two_car, un_open
+2023-08-05 02:14:43,237:INFO:two_car, open
+2023-08-05 02:14:43,239:INFO:two_car, un_open
+2023-08-05 02:14:43,246:INFO:two_car, open
+2023-08-05 02:14:43,253:INFO:two_car, un_open
+2023-08-05 02:14:43,256:INFO:two_car, open
+2023-08-05 02:14:43,257:INFO:two_car, un_open
+2023-08-05 02:14:43,258:INFO:two_car, open
+2023-08-05 02:14:43,261:INFO:two_car, un_open
+2023-08-05 02:14:43,263:INFO:two_car, open
+2023-08-05 02:14:43,264:INFO:two_car, un_open
+2023-08-05 02:14:43,271:INFO:two_car, open
+2023-08-05 02:14:43,280:INFO:two_car, un_open
+2023-08-05 02:14:43,281:INFO:two_car, open
+2023-08-05 02:14:43,282:INFO:two_car, un_open
+2023-08-05 02:14:43,285:INFO:two_car, open
+2023-08-05 02:14:43,287:INFO:two_car, un_open
+2023-08-05 02:14:43,288:INFO:two_car, open
+2023-08-05 02:14:43,481:INFO:two_car, un_open
+2023-08-05 02:14:43,707:INFO:two_car, open
+2023-08-05 02:14:43,709:INFO:two_car, un_open
+2023-08-05 02:14:43,711:INFO:two_car, open
+2023-08-05 02:14:43,766:INFO:two_car, un_open
+2023-08-05 02:14:43,768:INFO:two_car, open
+2023-08-05 02:14:43,769:INFO:two_car, un_open
+2023-08-05 02:14:43,770:INFO:two_car, open
+2023-08-05 02:14:43,772:INFO:two_car, un_open
+2023-08-05 02:14:43,774:INFO:two_car, open
+2023-08-05 02:14:43,783:INFO:two_car, un_open
+2023-08-05 02:14:43,786:INFO:two_car, open
+2023-08-05 02:14:43,796:INFO:two_car, un_open
+2023-08-05 02:14:43,800:INFO:two_car, open
+2023-08-05 02:14:43,841:INFO:two_car, un_open
+2023-08-05 02:14:43,842:INFO:two_car, open
+2023-08-05 02:14:43,847:INFO:two_car, un_open
+2023-08-05 02:14:43,964:INFO:two_car, open
+2023-08-05 02:14:43,965:INFO:two_car, un_open
+2023-08-05 02:14:43,967:INFO:two_car, open
+2023-08-05 02:14:44,013:INFO:two_car, un_open
+2023-08-05 02:14:44,015:INFO:two_car, open
+2023-08-05 02:14:44,060:INFO:two_car, un_open
+2023-08-05 02:14:44,062:INFO:two_car, open
+2023-08-05 02:14:44,068:INFO:two_car, un_open
+2023-08-05 02:14:44,069:INFO:two_car, open
+2023-08-05 02:14:44,071:INFO:two_car, un_open
+2023-08-05 02:14:44,072:INFO:two_car, open
+2023-08-05 02:14:44,074:INFO:two_car, un_open
+2023-08-05 02:14:45,707:INFO:one_car, closed
+2023-08-05 02:14:45,709:INFO:one_car, un_closed
+2023-08-05 02:14:45,714:INFO:one_car, closed
+2023-08-05 02:14:45,916:INFO:one_car, un_closed
+2023-08-05 02:14:45,918:INFO:one_car, closed
+2023-08-05 02:14:46,082:INFO:one_car, un_closed
+2023-08-05 02:14:46,083:INFO:one_car, closed
+2023-08-05 02:14:46,085:INFO:one_car, un_closed
+2023-08-05 02:14:46,086:INFO:one_car, closed
+2023-08-05 02:14:46,088:INFO:one_car, un_closed
+2023-08-05 02:14:46,089:INFO:one_car, closed
+2023-08-05 02:14:46,091:INFO:one_car, un_closed
+2023-08-05 02:14:46,093:INFO:one_car, closed
+2023-08-05 02:14:46,094:INFO:one_car, un_closed
+2023-08-05 02:14:46,421:INFO:one_car, closed
+2023-08-05 02:14:46,423:INFO:one_car, un_closed
+2023-08-05 02:14:46,433:INFO:one_car, closed
+2023-08-05 02:14:46,434:INFO:one_car, un_closed
+2023-08-05 02:14:46,436:INFO:one_car, closed
+2023-08-05 02:14:46,438:INFO:one_car, un_closed
+2023-08-05 02:14:46,439:INFO:one_car, closed
+2023-08-05 02:14:46,451:INFO:one_car, un_closed
+2023-08-05 02:14:46,452:INFO:one_car, closed
+2023-08-05 02:14:46,479:INFO:one_car, un_closed
+2023-08-05 02:14:46,623:INFO:one_car, closed
+2023-08-05 02:14:46,682:INFO:one_car, un_closed
+2023-08-05 02:14:46,953:INFO:one_car, closed
+2023-08-05 02:14:46,954:INFO:one_car, un_closed
+2023-08-05 02:14:47,223:INFO:one_car, closed
+2023-08-05 02:14:47,225:INFO:one_car, un_closed
+2023-08-05 02:14:47,247:INFO:one_car, closed
+2023-08-05 02:14:47,249:INFO:one_car, un_closed
+2023-08-05 02:14:47,250:INFO:one_car, closed
+2023-08-05 02:14:47,257:INFO:one_car, un_closed
+2023-08-05 02:14:47,259:INFO:one_car, closed
+2023-08-05 02:14:47,270:INFO:one_car, un_closed
+2023-08-05 02:14:47,271:INFO:one_car, closed
+2023-08-05 02:14:47,273:INFO:one_car, un_closed
+2023-08-05 02:14:47,413:INFO:one_car, closed
+2023-08-05 02:14:47,416:INFO:one_car, un_closed
+2023-08-05 02:14:47,905:INFO:one_car, closed
+2023-08-05 02:14:47,941:INFO:one_car, un_closed
+2023-08-05 02:14:47,952:INFO:one_car, closed
+2023-08-05 02:14:47,959:INFO:one_car, un_closed
+2023-08-05 02:14:48,541:INFO:one_car, closed
+2023-08-05 02:14:48,542:INFO:one_car, un_closed
+2023-08-05 02:14:48,550:INFO:one_car, closed
+2023-08-05 02:14:48,552:INFO:one_car, un_closed
+2023-08-05 02:14:48,553:INFO:one_car, closed
+2023-08-05 02:14:48,555:INFO:one_car, un_closed
+2023-08-05 02:14:48,556:INFO:one_car, closed
+2023-08-05 02:14:48,565:INFO:one_car, un_closed
+2023-08-05 02:14:48,567:INFO:one_car, closed
+2023-08-05 02:14:48,568:INFO:one_car, un_closed
+2023-08-05 02:14:48,571:INFO:one_car, closed
+2023-08-05 02:14:48,576:INFO:one_car, un_closed
+2023-08-05 02:14:48,577:INFO:one_car, closed
+2023-08-05 02:14:48,579:INFO:one_car, un_closed
+2023-08-05 02:14:48,590:INFO:one_car, closed
+2023-08-05 02:14:48,592:INFO:one_car, un_closed
+2023-08-05 02:14:48,593:INFO:one_car, closed
+2023-08-05 02:14:48,596:INFO:one_car, un_closed
+2023-08-05 02:14:48,598:INFO:one_car, closed
+2023-08-05 02:14:48,600:INFO:one_car, un_closed
+2023-08-05 02:14:48,601:INFO:one_car, closed
+2023-08-05 02:14:48,604:INFO:one_car, un_closed
+2023-08-05 02:14:48,607:INFO:one_car, closed
+2023-08-05 02:14:48,608:INFO:one_car, un_closed
+2023-08-05 02:14:48,708:INFO:one_car, closed
+2023-08-05 02:14:48,709:INFO:one_car, un_closed
+2023-08-05 02:14:48,713:INFO:one_car, closed
+2023-08-05 02:14:48,714:INFO:one_car, un_closed
+2023-08-05 02:14:49,017:INFO:one_car, closed
+2023-08-05 02:14:49,324:INFO:one_car, un_closed
+2023-08-05 02:14:49,326:INFO:one_car, closed
+2023-08-05 02:14:49,328:INFO:one_car, un_closed
+2023-08-05 02:14:49,338:INFO:one_car, closed
+2023-08-05 02:14:49,577:INFO:one_car, un_closed
+2023-08-05 02:14:49,751:INFO:one_car, closed
+2023-08-05 02:14:50,112:INFO:one_car, un_closed
+2023-08-05 02:14:50,113:INFO:one_car, closed
+2023-08-05 02:14:50,249:INFO:one_car, un_closed
+2023-08-05 02:14:50,259:INFO:one_car, closed
+2023-08-05 02:14:50,261:INFO:one_car, un_closed
+2023-08-05 02:14:50,262:INFO:one_car, closed
+2023-08-05 02:14:50,264:INFO:one_car, un_closed
+2023-08-05 02:14:50,567:INFO:one_car, closed
+2023-08-05 02:14:50,568:INFO:one_car, un_closed
+2023-08-05 02:14:50,570:INFO:one_car, closed
+2023-08-05 02:14:50,571:INFO:one_car, un_closed
+2023-08-05 02:14:50,573:INFO:one_car, closed
+2023-08-05 02:14:50,574:INFO:one_car, un_closed
+2023-08-05 02:14:50,575:INFO:one_car, closed
+2023-08-05 02:14:50,577:INFO:one_car, un_closed
+2023-08-05 02:14:50,580:INFO:one_car, closed
+2023-08-05 02:14:50,582:INFO:one_car, un_closed
+2023-08-05 02:14:50,585:INFO:one_car, closed
+2023-08-05 02:14:50,586:INFO:one_car, un_closed
+2023-08-05 02:14:50,594:INFO:one_car, closed
+2023-08-05 02:14:50,596:INFO:one_car, un_closed
+2023-08-05 02:14:50,598:INFO:one_car, closed
+2023-08-05 02:14:50,600:INFO:one_car, un_closed
+2023-08-05 02:14:50,601:INFO:one_car, closed
+2023-08-05 02:14:50,603:INFO:one_car, un_closed
+2023-08-05 02:14:50,634:INFO:one_car, closed
+2023-08-05 02:14:50,635:INFO:one_car, un_closed
+2023-08-05 02:14:50,654:INFO:one_car, closed
+2023-08-05 02:14:50,656:INFO:one_car, un_closed
+2023-08-05 02:14:50,658:INFO:one_car, closed
+2023-08-05 02:14:50,709:INFO:one_car, un_closed
+2023-08-05 02:14:50,794:INFO:one_car, closed
+2023-08-05 02:14:50,881:INFO:one_car, un_closed
+2023-08-05 02:14:50,931:INFO:one_car, closed
+2023-08-05 02:14:50,933:INFO:one_car, un_closed
+2023-08-05 02:14:50,946:INFO:one_car, closed
+2023-08-05 02:14:50,947:INFO:one_car, un_closed
+2023-08-05 02:14:51,098:INFO:one_car, closed
+2023-08-05 02:14:51,099:INFO:one_car, un_closed
+2023-08-05 02:14:51,101:INFO:one_car, closed
+2023-08-05 02:14:51,103:INFO:one_car, un_closed
+2023-08-05 02:14:51,113:INFO:one_car, closed
+2023-08-05 02:14:51,114:INFO:one_car, un_closed
+2023-08-05 02:14:51,122:INFO:one_car, closed
+2023-08-05 02:14:51,124:INFO:one_car, un_closed
+2023-08-05 02:14:51,181:INFO:one_car, closed
+2023-08-05 02:14:51,185:INFO:one_car, un_closed
+2023-08-05 02:14:51,188:INFO:one_car, closed
+2023-08-05 02:14:51,211:INFO:one_car, un_closed
+2023-08-05 02:14:51,276:INFO:one_car, closed
+2023-08-05 02:14:51,277:INFO:one_car, un_closed
+2023-08-05 02:14:51,414:INFO:one_car, closed
+2023-08-05 02:14:51,415:INFO:one_car, un_closed
+2023-08-05 02:14:51,417:INFO:one_car, closed
+2023-08-05 02:14:51,418:INFO:one_car, un_closed
+2023-08-05 02:14:51,420:INFO:one_car, closed
+2023-08-05 02:14:51,421:INFO:one_car, un_closed
+2023-08-05 02:14:51,423:INFO:one_car, closed
+2023-08-05 02:14:51,426:INFO:one_car, un_closed
+2023-08-05 02:14:51,433:INFO:one_car, closed
+2023-08-05 02:14:51,435:INFO:one_car, un_closed
+2023-08-05 02:14:51,436:INFO:one_car, closed
+2023-08-05 02:14:51,438:INFO:one_car, un_closed
+2023-08-05 02:14:51,440:INFO:one_car, closed
+2023-08-05 02:14:51,441:INFO:one_car, un_closed
+2023-08-05 02:14:52,906:INFO:one_car, open
+2023-08-05 02:14:52,907:INFO:one_car, un_open
+2023-08-05 02:14:52,910:INFO:one_car, open
+2023-08-05 02:14:52,912:INFO:one_car, un_open
+2023-08-05 02:14:52,913:INFO:one_car, open
+2023-08-05 02:14:52,915:INFO:one_car, un_open
+2023-08-05 02:14:52,916:INFO:one_car, open
+2023-08-05 02:14:52,918:INFO:one_car, un_open
+2023-08-05 02:14:52,930:INFO:one_car, open
+2023-08-05 02:14:53,090:INFO:one_car, un_open
+2023-08-05 02:14:53,091:INFO:one_car, open
+2023-08-05 02:14:53,093:INFO:one_car, un_open
+2023-08-05 02:14:53,108:INFO:one_car, open
+2023-08-05 02:14:53,109:INFO:one_car, un_open
+2023-08-05 02:14:53,116:INFO:one_car, open
+2023-08-05 02:14:53,118:INFO:one_car, un_open
+2023-08-05 02:14:53,371:INFO:one_car, open
+2023-08-05 02:14:53,427:INFO:one_car, un_open
+2023-08-05 02:14:53,639:INFO:one_car, open
+2023-08-05 02:14:53,645:INFO:one_car, un_open
+2023-08-05 02:14:53,646:INFO:one_car, open
+2023-08-05 02:14:53,648:INFO:one_car, un_open
+2023-08-05 02:14:53,761:INFO:one_car, open
+2023-08-05 02:14:53,763:INFO:one_car, un_open
+2023-08-05 02:14:53,768:INFO:one_car, open
+2023-08-05 02:14:53,769:INFO:one_car, un_open
+2023-08-05 02:14:53,772:INFO:one_car, open
+2023-08-05 02:14:53,773:INFO:one_car, un_open
+2023-08-05 02:14:53,937:INFO:one_car, open
+2023-08-05 02:14:53,939:INFO:one_car, un_open
+2023-08-05 02:14:53,968:INFO:one_car, open
+2023-08-05 02:14:53,993:INFO:one_car, un_open
+2023-08-05 02:14:53,994:INFO:one_car, open
+2023-08-05 02:14:53,997:INFO:one_car, un_open
+2023-08-05 02:14:53,998:INFO:one_car, open
+2023-08-05 02:14:54,000:INFO:one_car, un_open
+2023-08-05 02:14:54,001:INFO:one_car, open
+2023-08-05 02:14:54,003:INFO:one_car, un_open
+2023-08-05 02:14:54,006:INFO:one_car, open
+2023-08-05 02:14:54,008:INFO:one_car, un_open
+2023-08-05 02:14:54,012:INFO:one_car, open
+2023-08-05 02:14:54,020:INFO:one_car, un_open
+2023-08-05 02:14:54,021:INFO:one_car, open
+2023-08-05 02:14:54,024:INFO:one_car, un_open
+2023-08-05 02:14:54,031:INFO:one_car, open
+2023-08-05 02:14:54,047:INFO:one_car, un_open
+2023-08-05 02:14:54,078:INFO:one_car, open
+2023-08-05 02:14:54,080:INFO:one_car, un_open
+2023-08-05 02:14:54,086:INFO:one_car, open
+2023-08-05 02:14:54,087:INFO:one_car, un_open
+2023-08-05 02:14:54,088:INFO:one_car, open
+2023-08-05 02:14:54,093:INFO:one_car, un_open
+2023-08-05 02:14:54,095:INFO:one_car, open
+2023-08-05 02:14:54,096:INFO:one_car, un_open
+2023-08-05 02:14:54,130:INFO:one_car, open
+2023-08-05 02:14:54,131:INFO:one_car, un_open
+2023-08-05 02:14:54,132:INFO:one_car, open
+2023-08-05 02:14:54,137:INFO:one_car, un_open
+2023-08-05 02:14:54,139:INFO:one_car, open
+2023-08-05 02:14:54,143:INFO:one_car, un_open
+2023-08-05 02:14:54,144:INFO:one_car, open
+2023-08-05 02:14:54,145:INFO:one_car, un_open
+2023-08-05 02:14:54,148:INFO:one_car, open
+2023-08-05 02:14:54,150:INFO:one_car, un_open
+2023-08-05 02:14:54,153:INFO:one_car, open
+2023-08-05 02:14:54,154:INFO:one_car, un_open
+2023-08-05 02:14:54,161:INFO:one_car, open
+2023-08-05 02:14:54,254:INFO:one_car, un_open
+2023-08-05 02:14:54,256:INFO:one_car, open
+2023-08-05 02:14:54,259:INFO:one_car, un_open
+2023-08-05 02:14:54,260:INFO:one_car, open
+2023-08-05 02:14:54,264:INFO:one_car, un_open
+2023-08-05 02:14:54,265:INFO:one_car, open
+2023-08-05 02:14:54,266:INFO:one_car, un_open
+2023-08-05 02:14:54,288:INFO:one_car, open
+2023-08-05 02:14:54,290:INFO:one_car, un_open
+2023-08-05 02:14:54,293:INFO:one_car, open
+2023-08-05 02:14:54,304:INFO:one_car, un_open
+2023-08-05 02:14:54,305:INFO:one_car, open
+2023-08-05 02:14:54,345:INFO:one_car, un_open
+2023-08-05 02:14:54,347:INFO:one_car, open
+2023-08-05 02:14:54,349:INFO:one_car, un_open
+2023-08-05 02:14:54,350:INFO:one_car, open
+2023-08-05 02:14:54,352:INFO:one_car, un_open
+2023-08-05 02:14:54,353:INFO:one_car, open
+2023-08-05 02:14:54,360:INFO:one_car, un_open
+2023-08-05 02:14:54,361:INFO:one_car, open
+2023-08-05 02:14:54,363:INFO:one_car, un_open
+2023-08-05 02:14:54,364:INFO:one_car, open
+2023-08-05 02:14:54,366:INFO:one_car, un_open
+2023-08-05 02:14:54,395:INFO:one_car, open
+2023-08-05 02:14:54,397:INFO:one_car, un_open
+2023-08-05 02:14:54,398:INFO:one_car, open
+2023-08-05 02:14:54,455:INFO:one_car, un_open
+2023-08-05 02:14:54,456:INFO:one_car, open
+2023-08-05 02:14:54,471:INFO:one_car, un_open
+2023-08-05 02:14:54,490:INFO:one_car, open
+2023-08-05 02:14:54,492:INFO:one_car, un_open
+2023-08-05 02:14:54,552:INFO:one_car, open
+2023-08-05 02:14:54,594:INFO:one_car, un_open
+2023-08-05 02:14:54,595:INFO:one_car, open
+2023-08-05 02:14:54,660:INFO:one_car, un_open
+2023-08-05 02:14:54,661:INFO:one_car, open
+2023-08-05 02:14:54,666:INFO:one_car, un_open
+2023-08-05 02:14:54,668:INFO:one_car, open
+2023-08-05 02:14:54,670:INFO:one_car, un_open
+2023-08-05 02:14:54,671:INFO:one_car, open
+2023-08-05 02:14:54,673:INFO:one_car, un_open
+2023-08-05 02:14:54,674:INFO:one_car, open
+2023-08-05 02:14:54,676:INFO:one_car, un_open
+2023-08-05 02:14:54,735:INFO:one_car, open
+2023-08-05 02:14:55,003:INFO:one_car, un_open
+2023-08-05 02:14:55,006:INFO:one_car, open
+2023-08-05 02:14:55,154:INFO:one_car, un_open
+2023-08-05 02:14:55,155:INFO:one_car, open
+2023-08-05 02:14:55,159:INFO:one_car, un_open
+2023-08-05 02:14:55,161:INFO:one_car, open
+2023-08-05 02:14:55,163:INFO:one_car, un_open
+2023-08-05 02:14:55,164:INFO:one_car, open
+2023-08-05 02:14:55,166:INFO:one_car, un_open
+2023-08-05 02:14:55,174:INFO:one_car, open
+2023-08-05 02:14:55,175:INFO:one_car, un_open
+2023-08-05 02:14:55,179:INFO:one_car, open
+2023-08-05 02:14:55,190:INFO:one_car, un_open
+2023-08-05 02:14:55,199:INFO:one_car, open
+2023-08-05 02:14:55,327:INFO:one_car, un_open
+2023-08-05 02:14:55,329:INFO:one_car, open
+2023-08-05 02:14:55,330:INFO:one_car, un_open
+2023-08-05 02:14:55,332:INFO:one_car, open
+2023-08-05 02:14:55,333:INFO:one_car, un_open
+2023-08-05 02:14:55,336:INFO:one_car, open
+2023-08-05 02:14:55,338:INFO:one_car, un_open
+2023-08-05 02:14:55,341:INFO:one_car, open
+2023-08-05 02:14:55,347:INFO:one_car, un_open
+2023-08-05 02:14:55,351:INFO:one_car, open
+2023-08-05 02:14:55,352:INFO:one_car, un_open
+2023-08-05 02:14:55,362:INFO:one_car, open
+2023-08-05 02:14:55,377:INFO:one_car, un_open
+2023-08-05 02:14:55,380:INFO:one_car, open
+2023-08-05 02:14:55,789:INFO:one_car, un_open
+2023-08-05 02:14:55,828:INFO:one_car, open
+2023-08-05 02:14:55,829:INFO:one_car, un_open
+2023-08-05 02:14:55,831:INFO:one_car, open
+2023-08-05 02:14:55,832:INFO:one_car, un_open
+2023-08-05 02:14:55,834:INFO:one_car, open
+2023-08-05 02:14:55,949:INFO:one_car, un_open
+2023-08-05 02:14:55,951:INFO:one_car, open
+2023-08-05 02:14:55,952:INFO:one_car, un_open
+2023-08-05 02:14:55,954:INFO:one_car, open
+2023-08-05 02:14:55,955:INFO:one_car, un_open
+2023-08-05 02:14:55,957:INFO:one_car, open
+2023-08-05 02:14:55,958:INFO:one_car, un_open
+2023-08-05 02:14:55,967:INFO:one_car, open
+2023-08-05 02:14:55,972:INFO:one_car, un_open
+2023-08-05 02:14:55,974:INFO:one_car, open
+2023-08-05 02:14:55,980:INFO:one_car, un_open
+2023-08-05 02:14:55,982:INFO:one_car, open
+2023-08-05 02:14:55,983:INFO:one_car, un_open
+2023-08-05 02:14:55,987:INFO:one_car, open
+2023-08-05 02:14:55,988:INFO:one_car, un_open
+2023-08-05 02:14:55,990:INFO:one_car, open
+2023-08-05 02:14:55,991:INFO:one_car, un_open
+2023-08-05 02:14:55,993:INFO:one_car, open
+2023-08-05 02:14:55,994:INFO:one_car, un_open
+2023-08-05 02:14:55,996:INFO:one_car, open
+2023-08-05 02:14:56,390:INFO:one_car, un_open
+2023-08-05 02:14:56,393:INFO:one_car, open
+2023-08-05 02:14:56,394:INFO:one_car, un_open
+2023-08-05 02:14:56,396:INFO:one_car, open
+2023-08-05 02:14:56,398:INFO:one_car, un_open
+2023-08-05 02:14:56,402:INFO:one_car, open
+2023-08-05 02:14:56,403:INFO:one_car, un_open
+2023-08-05 02:14:56,407:INFO:one_car, open
+2023-08-05 02:14:56,409:INFO:one_car, un_open
+2023-08-05 02:14:56,415:INFO:one_car, open
+2023-08-05 02:14:56,416:INFO:one_car, un_open
+2023-08-05 02:14:56,418:INFO:one_car, open
+2023-08-05 02:14:56,419:INFO:one_car, un_open
+2023-08-05 02:14:56,425:INFO:one_car, open
+2023-08-05 02:14:56,535:INFO:one_car, un_open
+2023-08-05 02:14:56,536:INFO:one_car, open
+2023-08-05 02:14:56,537:INFO:one_car, un_open
+2023-08-05 02:16:38,384:INFO:Garage Door Object with name two_car created
+2023-08-05 02:16:38,385:INFO:Garage Door Object with name one_car created
+2023-08-05 02:16:49,261:INFO:two_car, closed
+2023-08-05 02:16:50,900:INFO:two_car, un_closed
+2023-08-05 02:16:51,204:INFO:two_car, closed
+2023-08-05 02:16:52,925:INFO:two_car, un_closed
+2023-08-05 02:16:53,194:INFO:two_car, closed
+2023-08-05 02:16:53,413:INFO:two_car, un_closed
+2023-08-05 02:16:53,426:INFO:two_car, closed
+2023-08-05 02:16:53,437:INFO:two_car, un_closed
+2023-08-05 02:16:55,823:INFO:two_car, closed
+2023-08-05 02:16:55,862:INFO:two_car, un_closed
+2023-08-05 02:16:55,892:INFO:two_car, closed
+2023-08-05 02:16:55,947:INFO:two_car, un_closed
+2023-08-05 02:16:56,000:INFO:two_car, closed
+2023-08-05 02:16:56,836:INFO:two_car, un_closed
+2023-08-05 02:16:56,851:INFO:two_car, closed
+2023-08-05 02:16:57,471:INFO:two_car, un_closed
+2023-08-05 02:16:57,567:INFO:two_car, closed
+2023-08-05 02:17:00,953:INFO:two_car, un_closed
+2023-08-05 02:17:02,094:INFO:two_car, closed
+2023-08-05 02:17:02,301:INFO:two_car, un_closed
+2023-08-05 02:17:03,001:INFO:two_car, closed
+2023-08-05 02:17:03,022:INFO:two_car, un_closed
+2023-08-05 02:17:03,959:INFO:two_car, closed
+2023-08-05 02:17:04,507:INFO:two_car, un_closed
+2023-08-05 02:17:05,182:INFO:two_car, closed
+2023-08-05 02:17:05,192:INFO:two_car, un_closed
+2023-08-05 02:17:05,250:INFO:two_car, closed
+2023-08-05 02:17:05,784:INFO:two_car, un_closed
+2023-08-05 02:17:09,532:INFO:two_car, closed
+2023-08-05 02:17:09,544:INFO:two_car, un_closed
+2023-08-05 02:17:09,554:INFO:two_car, closed
+2023-08-05 02:17:13,141:INFO:two_car, un_closed
+2023-08-05 02:17:14,617:INFO:two_car, closed
+2023-08-05 02:17:14,639:INFO:two_car, un_closed
+2023-08-05 02:17:14,651:INFO:two_car, closed
+2023-08-05 02:17:16,550:INFO:two_car, un_closed
+2023-08-05 02:17:17,614:INFO:two_car, closed
+2023-08-05 02:17:17,834:INFO:two_car, un_closed
+2023-08-05 02:17:17,844:INFO:two_car, closed
+2023-08-05 02:17:18,135:INFO:two_car, un_closed
+2023-08-05 02:17:18,683:INFO:two_car, closed
+2023-08-05 02:17:18,710:INFO:two_car, un_closed
+2023-08-05 02:17:18,724:INFO:two_car, closed
+2023-08-05 02:17:19,033:INFO:two_car, un_closed
+2023-08-05 02:17:19,619:INFO:two_car, closed
+2023-08-05 02:17:20,060:INFO:two_car, un_closed
+2023-08-05 02:17:20,573:INFO:two_car, closed
+2023-08-05 02:17:23,874:INFO:two_car, un_closed
+2023-08-05 02:17:32,363:INFO:two_car, closed
+2023-08-05 02:17:32,375:INFO:two_car, un_closed
+2023-08-05 02:17:32,421:INFO:two_car, closed
+2023-08-05 02:17:32,434:INFO:two_car, un_closed
+2023-08-05 02:17:33,224:INFO:two_car, closed
+2023-08-05 02:17:33,238:INFO:two_car, un_closed
+2023-08-05 02:17:33,250:INFO:two_car, closed
+2023-08-05 02:17:33,486:INFO:two_car, un_closed
+2023-08-05 02:17:36,392:INFO:two_car, closed
+2023-08-05 02:17:36,502:INFO:two_car, un_closed
+2023-08-05 02:17:36,576:INFO:two_car, closed
+2023-08-05 02:17:36,602:INFO:two_car, un_closed
+2023-08-05 02:17:37,017:INFO:two_car, closed
+2023-08-05 02:17:37,073:INFO:two_car, un_closed
+2023-08-05 02:17:37,084:INFO:two_car, closed
+2023-08-05 02:17:37,173:INFO:two_car, un_closed
+2023-08-05 02:17:37,618:INFO:two_car, closed
+2023-08-05 02:17:37,635:INFO:two_car, un_closed
+2023-08-05 02:17:38,907:INFO:two_car, closed
+2023-08-05 02:17:39,974:INFO:two_car, un_closed
+2023-08-05 02:17:41,238:INFO:two_car, closed
+2023-08-05 02:17:42,122:INFO:two_car, un_closed
+2023-08-05 02:17:43,664:INFO:two_car, open
+2023-08-05 02:17:44,293:INFO:two_car, un_open
+2023-08-05 02:17:44,749:INFO:two_car, open
+2023-08-05 02:17:44,772:INFO:two_car, un_open
+2023-08-05 02:17:44,816:INFO:two_car, open
+2023-08-05 02:17:46,871:INFO:two_car, un_open
+2023-08-05 02:17:46,986:INFO:two_car, open
+2023-08-05 02:17:47,331:INFO:two_car, un_open
+2023-08-05 02:17:47,363:INFO:two_car, open
+2023-08-05 02:17:47,804:INFO:two_car, un_open
+2023-08-05 02:17:47,846:INFO:two_car, open
+2023-08-05 02:17:47,857:INFO:two_car, un_open
+2023-08-05 02:17:47,880:INFO:two_car, open
+2023-08-05 02:17:47,929:INFO:two_car, un_open
+2023-08-05 02:17:48,735:INFO:two_car, open
+2023-08-05 02:17:48,745:INFO:two_car, un_open
+2023-08-05 02:17:48,769:INFO:two_car, open
+2023-08-05 02:17:49,029:INFO:two_car, un_open
+2023-08-05 02:17:49,041:INFO:two_car, open
+2023-08-05 02:17:49,151:INFO:two_car, un_open
+2023-08-05 02:17:49,162:INFO:two_car, open
+2023-08-05 02:17:50,297:INFO:two_car, un_open
+2023-08-05 02:17:50,307:INFO:two_car, open
+2023-08-05 02:17:50,317:INFO:two_car, un_open
+2023-08-05 02:17:50,328:INFO:two_car, open
+2023-08-05 02:17:50,525:INFO:two_car, un_open
+2023-08-05 02:17:50,538:INFO:two_car, open
+2023-08-05 02:17:50,561:INFO:two_car, un_open
+2023-08-05 02:17:50,571:INFO:two_car, open
+2023-08-05 02:17:50,582:INFO:two_car, un_open
+2023-08-05 02:17:51,101:INFO:two_car, open
+2023-08-05 02:17:51,666:INFO:two_car, un_open
+2023-08-05 02:17:51,676:INFO:two_car, open
+2023-08-05 02:17:51,692:INFO:two_car, un_open
+2023-08-05 02:17:51,707:INFO:two_car, open
+2023-08-05 02:17:51,717:INFO:two_car, un_open
+2023-08-05 02:17:52,595:INFO:two_car, open
+2023-08-05 02:17:53,555:INFO:two_car, un_open
+2023-08-05 02:17:53,588:INFO:two_car, open
+2023-08-05 02:17:54,898:INFO:one_car, open
+2023-08-05 02:17:55,728:INFO:one_car, un_open
+2023-08-05 02:17:56,181:INFO:one_car, open
+2023-08-05 02:17:56,210:INFO:one_car, un_open
+2023-08-05 02:17:56,222:INFO:one_car, open
+2023-08-05 02:17:56,232:INFO:one_car, un_open
+2023-08-05 02:17:56,571:INFO:one_car, open
+2023-08-05 02:17:56,593:INFO:one_car, un_open
+2023-08-05 02:17:56,604:INFO:one_car, open
+2023-08-05 02:17:57,073:INFO:one_car, un_open
+2023-08-05 02:17:58,511:INFO:one_car, open
+2023-08-05 02:17:58,521:INFO:one_car, un_open
+2023-08-05 02:17:58,560:INFO:one_car, open
+2023-08-05 02:17:59,460:INFO:one_car, un_open
+2023-08-05 02:17:59,495:INFO:one_car, open
+2023-08-05 02:17:59,568:INFO:one_car, un_open
+2023-08-05 02:17:59,972:INFO:one_car, open
+2023-08-05 02:18:00,360:INFO:one_car, un_open
+2023-08-05 02:18:01,415:INFO:one_car, open
+2023-08-05 02:18:01,634:INFO:one_car, un_open
+2023-08-05 02:24:33,005:INFO:DOOR:two_car:created
+2023-08-05 02:24:33,006:INFO:DOOR:one_car:created
+2023-08-05 02:25:10,899:INFO:DOOR:two_car:closed
+2023-08-05 02:25:10,992:INFO:DOOR:two_car:un_closed
+2023-08-05 02:25:11,024:INFO:DOOR:two_car:closed
+2023-08-05 02:25:11,092:INFO:DOOR:two_car:un_closed
+2023-08-05 02:25:11,112:INFO:DOOR:two_car:closed
+2023-08-05 02:25:11,123:INFO:DOOR:two_car:un_closed
+2023-08-05 02:25:13,268:INFO:DOOR:two_car:closed
+2023-08-05 02:25:13,428:INFO:DOOR:two_car:un_closed
+2023-08-05 02:25:13,438:INFO:DOOR:two_car:closed
+2023-08-05 02:25:13,940:INFO:DOOR:two_car:un_closed
+2023-08-05 02:25:14,018:INFO:DOOR:two_car:closed
+2023-08-05 02:25:14,039:INFO:DOOR:two_car:un_closed
+2023-08-05 02:25:14,508:INFO:DOOR:two_car:closed
+2023-08-05 02:25:15,059:INFO:DOOR:two_car:un_closed
+2023-08-05 02:25:15,076:INFO:DOOR:two_car:closed
+2023-08-05 02:25:15,092:INFO:DOOR:two_car:un_closed
+2023-08-05 02:25:15,125:INFO:DOOR:two_car:closed
+2023-08-05 02:25:16,394:INFO:DOOR:two_car:open
+2023-08-05 02:25:16,525:INFO:DOOR:two_car:un_open
+2023-08-05 02:25:16,882:INFO:DOOR:two_car:open
+2023-08-05 02:25:16,894:INFO:DOOR:two_car:un_open
+2023-08-05 02:25:17,370:INFO:DOOR:two_car:open
+2023-08-05 02:25:17,383:INFO:DOOR:two_car:un_open
+2023-08-05 02:25:17,396:INFO:DOOR:two_car:open
+2023-08-05 02:25:17,450:INFO:DOOR:two_car:un_open
+2023-08-05 02:25:17,847:INFO:DOOR:two_car:open
+2023-08-05 02:25:17,858:INFO:DOOR:two_car:un_open
+2023-08-05 02:25:17,870:INFO:DOOR:two_car:open
+2023-08-05 02:25:18,212:INFO:DOOR:two_car:un_open
+2023-08-05 02:25:18,222:INFO:DOOR:two_car:open
+2023-08-05 02:25:19,627:INFO:DOOR:two_car:un_open
+2023-08-05 02:25:19,637:INFO:DOOR:two_car:open
+2023-08-05 02:25:20,222:INFO:DOOR:two_car:un_open
+2023-08-05 02:25:20,238:INFO:DOOR:two_car:open
+2023-08-05 02:25:20,297:INFO:DOOR:two_car:un_open
+2023-08-05 02:25:21,167:INFO:DOOR:one_car:closed
+2023-08-05 02:25:21,639:INFO:DOOR:one_car:un_closed
+2023-08-05 02:25:21,652:INFO:DOOR:one_car:closed
+2023-08-05 02:25:21,703:INFO:DOOR:one_car:un_closed
+2023-08-05 02:25:21,725:INFO:DOOR:one_car:closed
+2023-08-05 02:25:22,695:INFO:DOOR:one_car:un_closed
+2023-08-05 02:25:22,745:INFO:DOOR:one_car:closed
+2023-08-05 02:25:22,914:INFO:DOOR:one_car:un_closed
+2023-08-05 02:25:22,925:INFO:DOOR:one_car:closed
+2023-08-05 02:25:22,977:INFO:DOOR:one_car:un_closed
+2023-08-05 02:25:23,194:INFO:DOOR:one_car:closed
+2023-08-05 02:25:24,475:INFO:DOOR:one_car:open
+2023-08-05 02:25:24,654:INFO:DOOR:one_car:un_open
+2023-08-05 02:25:24,677:INFO:DOOR:one_car:open
+2023-08-05 02:25:24,694:INFO:DOOR:one_car:un_open
+2023-08-05 02:25:24,704:INFO:DOOR:one_car:open
+2023-08-05 02:25:24,716:INFO:DOOR:one_car:un_open
+2023-08-05 02:25:24,742:INFO:DOOR:one_car:open
+2023-08-05 02:25:24,953:INFO:DOOR:one_car:un_open
+2023-08-05 02:25:24,969:INFO:DOOR:one_car:open
+2023-08-05 02:25:25,076:INFO:DOOR:one_car:un_open
+2023-08-05 02:25:25,269:INFO:DOOR:one_car:open
+2023-08-05 02:25:25,561:INFO:DOOR:one_car:un_open
+2023-08-05 02:25:25,579:INFO:DOOR:one_car:open
+2023-08-05 02:25:25,643:INFO:DOOR:one_car:un_open
+2023-08-05 02:25:25,879:INFO:DOOR:one_car:open
+2023-08-05 02:25:25,889:INFO:DOOR:one_car:un_open
+2023-08-05 02:25:25,903:INFO:DOOR:one_car:open
+2023-08-05 02:25:26,173:INFO:DOOR:one_car:un_open
+2023-08-05 02:25:26,488:INFO:DOOR:one_car:open
+2023-08-05 02:25:26,542:INFO:DOOR:one_car:un_open
+2023-08-05 02:25:26,779:INFO:DOOR:one_car:open
+2023-08-05 02:25:26,813:INFO:DOOR:one_car:un_open
+2023-08-05 02:25:27,014:INFO:DOOR:one_car:open
+2023-08-05 02:25:27,067:INFO:DOOR:one_car:un_open
+2023-08-05 02:25:27,340:INFO:DOOR:one_car:open
+2023-08-05 02:34:28,658:INFO:DOOR:two_car:created
+2023-08-05 02:34:28,659:INFO:DOOR:one_car:created

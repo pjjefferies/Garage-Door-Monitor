@@ -69,11 +69,11 @@ history_logger.propagate = False
 
 if log_cfg.handler.history.enabled:
     # Set-up history logging
-    fh = logging.FileHandler(
+    h_fh = logging.FileHandler(
         filename=path.join(
             log_cfg.handler.history.folder, log_cfg.handler.history.filename
         )
     )
-    fh.setLevel(level=log_cfg.handler.history.level)
-    fh.setFormatter(fmt=log_fmt)
-    logger.addHandler(hdlr=fh)
+    h_fh.setLevel(level=log_cfg.handler.history.level)
+    h_fh.setFormatter(fmt=log_fmt)
+    history_logger.addHandler(hdlr=h_fh)
