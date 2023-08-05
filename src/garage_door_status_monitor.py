@@ -28,7 +28,8 @@ class GarageStatusHistoryDatum:
     position: GarageStatus
     timestamp: dt.datetime
 
-def door_op1() -> None:
+def door_op1(temp, temp1="food") -> None:
+    print(f"{temp=}, {temp1=}")
     pass
 
 def door_op(
@@ -61,35 +62,30 @@ def main() -> None:
         bounce_time=cfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.BOUNCE_TIME,
     )
     door_sensor_1_car_closed = DigitalInputDevice(
-        cfg.SENSOR_GPIO_PINS.ONE_CAR.CLOSED.NUMBER,
+        pin=cfg.SENSOR_GPIO_PINS.ONE_CAR.CLOSED.NUMBER,
         pull_up=cfg.SENSOR_GPIO_PINS.ONE_CAR.CLOSED.PULL_UP,
         bounce_time=cfg.SENSOR_GPIO_PINS.ONE_CAR.CLOSED.BOUNCE_TIME,
     )
     door_sensor_1_car_opened = DigitalInputDevice(
-        cfg.SENSOR_GPIO_PINS.ONE_CAR.OPEN.NUMBER,
+        pin=cfg.SENSOR_GPIO_PINS.ONE_CAR.OPEN.NUMBER,
         pull_up=cfg.SENSOR_GPIO_PINS.ONE_CAR.OPEN.PULL_UP,
         bounce_time=cfg.SENSOR_GPIO_PINS.ONE_CAR.OPEN.BOUNCE_TIME,
     )
 
-    # door_sensor_2_car_closed.when_activated = partial(
-    #     door_op, door=two_car_garage, operation=close_door, action=GarageStatus.closed
-    # )
-    door_sensor_2_car_closed.when_activated = door_op1
-
-    temp_fn = partial(door_op,
-                      door=two_car_garage,
-                      operation=lambda: un_close_door(two_car_garage),
-                      action=GarageStatus.un_closed
-              )
-
-    temp_fn()
+    door_sensor_2_car_closed.when_activated = partial(
+        door_op,
+        two_car_garage,
+        close_door(two_car_garage),
+        GarageStatus.closed
+    )
 
     door_sensor_2_car_closed.when_deactivated = partial(
         door_op,
-        door=two_car_garage,
-        operation=lambda: un_close_door(two_car_garage),
-        action=GarageStatus.un_closed,
+        two_car_garage,
+        lambda: un_close_door(two_car_garage),
+        GarageStatus.un_closed,
     )
+    """
     door_sensor_2_car_opened.when_activated = partial(
         door_op, door=two_car_garage, operation=open_door, action=GarageStatus.open
     )
@@ -112,7 +108,7 @@ def main() -> None:
     door_sensor_1_car_opened.when_deactivated = partial(
         door_op, door=one_car_garage, operation=un_open_door, action=GarageStatus.un_open
     )
-
+    """
 
 if __name__ == "__main__":
     main()
