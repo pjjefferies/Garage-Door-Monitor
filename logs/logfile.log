@@ -1,0 +1,163 @@
+2023-08-04 23:05:19,189:INFO:Garage Door Object with name two_car created
+2023-08-04 23:05:19,190:INFO:Garage Door Object with name one_car created
+2023-08-04 23:06:32,373:INFO:Garage Door Object with name two_car created
+2023-08-04 23:06:32,374:INFO:Garage Door Object with name one_car created
+2023-08-04 23:06:32,549:DEBUG:Close Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:07:12,651:INFO:Garage Door Object with name two_car created
+2023-08-04 23:07:12,652:INFO:Garage Door Object with name one_car created
+2023-08-04 23:11:02,640:INFO:Garage Door Object with name two_car created
+2023-08-04 23:11:02,641:INFO:Garage Door Object with name one_car created
+2023-08-04 23:20:51,199:INFO:Garage Door Object with name two_car created
+2023-08-04 23:20:51,200:INFO:Garage Door Object with name one_car created
+2023-08-04 23:21:12,240:INFO:Garage Door Object with name two_car created
+2023-08-04 23:21:12,241:INFO:Garage Door Object with name one_car created
+2023-08-04 23:23:00,922:INFO:Garage Door Object with name two_car created
+2023-08-04 23:23:00,923:INFO:Garage Door Object with name one_car created
+2023-08-04 23:24:21,901:INFO:Garage Door Object with name two_car created
+2023-08-04 23:24:21,902:INFO:Garage Door Object with name one_car created
+2023-08-04 23:26:07,144:INFO:Garage Door Object with name two_car created
+2023-08-04 23:26:07,145:INFO:Garage Door Object with name one_car created
+2023-08-04 23:26:08,851:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:26:15,027:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:26:16,261:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:26:17,431:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:26:23,373:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:26:24,551:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:26:25,750:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:26:32,427:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:26:34,247:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:26:36,661:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:26:40,833:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:27:02,059:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:27:06,466:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:27:19,703:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:27:25,810:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:27:28,064:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:27:38,213:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:27:52,162:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:27:53,886:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:27:55,093:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:27:56,348:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:28:03,957:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:28:50,154:INFO:Garage Door Object with name two_car created
+2023-08-04 23:28:50,155:INFO:Garage Door Object with name one_car created
+2023-08-04 23:29:16,941:INFO:Garage Door Object with name two_car created
+2023-08-04 23:29:16,942:INFO:Garage Door Object with name one_car created
+2023-08-04 23:29:36,721:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:29:37,182:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:29:38,000:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:29:38,537:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:29:39,272:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:29:39,703:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:29:40,542:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:29:40,984:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:29:41,712:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:29:43,805:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:29:44,722:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:29:45,263:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:29:46,028:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:29:46,545:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:29:47,098:DEBUG:Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:29:47,647:DEBUG:Un-Open Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:30:07,148:DEBUG:Close Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:30:08,426:DEBUG:Un-Close Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:30:09,634:DEBUG:Close Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:30:10,241:DEBUG:Un-Close Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:30:11,053:DEBUG:Close Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:30:11,644:DEBUG:Un-Close Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:30:12,295:DEBUG:Close Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:30:12,928:DEBUG:Un-Close Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:30:13,567:DEBUG:Close Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:30:14,164:DEBUG:Un-Close Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:30:14,776:DEBUG:Close Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:30:15,368:DEBUG:Un-Close Door: <class 'src.garage_door.GarageDoor'>
+2023-08-04 23:31:33,083:INFO:Garage Door Object with name two_car created
+2023-08-04 23:31:33,084:INFO:Garage Door Object with name one_car created
+2023-08-04 23:31:36,711:DEBUG:Close Door: one_car garage has been closed for 0 seconds
+2023-08-04 23:31:38,987:DEBUG:Un-Close Door: one_car garage has been unknown for 0 seconds
+2023-08-04 23:31:42,985:DEBUG:Close Door: one_car garage has been closed for 0 seconds
+2023-08-04 23:31:43,716:DEBUG:Un-Close Door: one_car garage has been unknown for 0 seconds
+2023-08-04 23:31:52,940:DEBUG:Open Door: two_car garage has been open for 0 seconds
+2023-08-04 23:31:53,786:DEBUG:Un-Open Door: two_car garage has been unknown for 0 seconds
+2023-08-04 23:31:54,555:DEBUG:Open Door: two_car garage has been open for 0 seconds
+2023-08-04 23:31:55,138:DEBUG:Un-Open Door: two_car garage has been unknown for 0 seconds
+2023-08-04 23:31:55,691:DEBUG:Open Door: two_car garage has been open for 0 seconds
+2023-08-04 23:31:56,355:DEBUG:Un-Open Door: two_car garage has been unknown for 0 seconds
+2023-08-04 23:32:04,413:DEBUG:Open Door: one_car garage has been open for 0 seconds
+2023-08-04 23:32:05,246:DEBUG:Un-Open Door: one_car garage has been unknown for 0 seconds
+2023-08-04 23:32:08,221:DEBUG:Open Door: one_car garage has been open for 0 seconds
+2023-08-04 23:32:08,728:DEBUG:Un-Open Door: one_car garage has been unknown for 0 seconds
+2023-08-04 23:32:09,374:DEBUG:Open Door: one_car garage has been open for 0 seconds
+2023-08-04 23:32:10,087:DEBUG:Un-Open Door: one_car garage has been unknown for 0 seconds
+2023-08-04 23:32:55,569:DEBUG:Close Door: two_car garage has been closed for 0 seconds
+2023-08-04 23:32:57,774:DEBUG:Un-Close Door: two_car garage has been unknown for 0 seconds
+2023-08-04 23:32:59,172:DEBUG:Close Door: two_car garage has been closed for 0 seconds
+2023-08-04 23:33:00,531:DEBUG:Un-Close Door: two_car garage has been unknown for 0 seconds
+2023-08-04 23:33:01,687:DEBUG:Close Door: two_car garage has been closed for 0 seconds
+2023-08-04 23:33:02,885:DEBUG:Un-Close Door: two_car garage has been unknown for 0 seconds
+2023-08-05 00:51:59,977:INFO:Garage Door Object with name two_car created
+2023-08-05 00:51:59,978:INFO:Garage Door Object with name one_car created
+2023-08-05 00:52:50,844:DEBUG:Close Door: two_car garage has been closed for 0 seconds
+2023-08-05 00:52:52,013:DEBUG:Un-Close Door: two_car garage has been unknown for 0 seconds
+2023-08-05 00:52:52,860:DEBUG:Close Door: two_car garage has been closed for 0 seconds
+2023-08-05 00:52:53,537:DEBUG:Un-Close Door: two_car garage has been unknown for 0 seconds
+2023-08-05 00:52:54,104:DEBUG:Close Door: two_car garage has been closed for 0 seconds
+2023-08-05 00:52:54,708:DEBUG:Un-Close Door: two_car garage has been unknown for 0 seconds
+2023-08-05 00:53:01,874:DEBUG:Open Door: two_car garage has been open for 0 seconds
+2023-08-05 00:53:03,563:DEBUG:Un-Open Door: two_car garage has been unknown for 0 seconds
+2023-08-05 00:53:04,796:DEBUG:Open Door: two_car garage has been open for 0 seconds
+2023-08-05 00:53:05,859:DEBUG:Un-Open Door: two_car garage has been unknown for 0 seconds
+2023-08-05 00:53:15,827:DEBUG:Close Door: one_car garage has been closed for 0 seconds
+2023-08-05 00:53:16,684:DEBUG:Un-Close Door: one_car garage has been unknown for 0 seconds
+2023-08-05 00:53:17,588:DEBUG:Close Door: one_car garage has been closed for 0 seconds
+2023-08-05 00:53:18,575:DEBUG:Un-Close Door: one_car garage has been unknown for 0 seconds
+2023-08-05 00:53:19,418:DEBUG:Close Door: one_car garage has been closed for 0 seconds
+2023-08-05 00:53:20,155:DEBUG:Un-Close Door: one_car garage has been unknown for 0 seconds
+2023-08-05 00:53:27,411:DEBUG:Open Door: one_car garage has been open for 0 seconds
+2023-08-05 00:53:28,069:DEBUG:Un-Open Door: one_car garage has been unknown for 0 seconds
+2023-08-05 00:53:29,360:DEBUG:Open Door: one_car garage has been open for 0 seconds
+2023-08-05 00:53:30,303:DEBUG:Un-Open Door: one_car garage has been unknown for 0 seconds
+2023-08-05 00:53:32,310:DEBUG:Open Door: one_car garage has been open for 0 seconds
+2023-08-05 00:53:33,005:DEBUG:Un-Open Door: one_car garage has been unknown for 0 seconds
+2023-08-05 00:53:34,452:DEBUG:Open Door: one_car garage has been open for 0 seconds
+2023-08-05 00:53:35,146:DEBUG:Un-Open Door: one_car garage has been unknown for 0 seconds
+2023-08-05 00:53:36,230:DEBUG:Open Door: one_car garage has been open for 0 seconds
+2023-08-05 00:53:37,854:DEBUG:Un-Open Door: one_car garage has been unknown for 0 seconds
+2023-08-05 00:53:38,733:DEBUG:Open Door: one_car garage has been open for 0 seconds
+2023-08-05 00:53:39,579:DEBUG:Un-Open Door: one_car garage has been unknown for 0 seconds
+2023-08-05 00:53:42,829:DEBUG:Open Door: one_car garage has been open for 0 seconds
+2023-08-05 00:53:43,580:DEBUG:Un-Open Door: one_car garage has been unknown for 0 seconds
+2023-08-05 01:38:45,320:INFO:Garage Door Object with name two_car created
+2023-08-05 01:38:45,324:INFO:Garage Door Object with name one_car created
+2023-08-05 01:43:08,687:DEBUG:Close Door: one_car garage has been closed for 0 seconds
+2023-08-05 01:43:10,325:DEBUG:Un-Close Door: one_car garage has been unknown for 0 seconds
+2023-08-05 01:43:11,296:DEBUG:Close Door: one_car garage has been closed for 0 seconds
+2023-08-05 01:43:12,465:DEBUG:Un-Close Door: one_car garage has been unknown for 0 seconds
+2023-08-05 01:43:13,266:DEBUG:Close Door: one_car garage has been closed for 0 seconds
+2023-08-05 01:43:13,938:DEBUG:Un-Close Door: one_car garage has been unknown for 0 seconds
+2023-08-05 01:43:24,971:DEBUG:Open Door: one_car garage has been open for 0 seconds
+2023-08-05 01:43:27,925:DEBUG:Un-Open Door: one_car garage has been unknown for 0 seconds
+2023-08-05 01:43:38,478:DEBUG:Open Door: one_car garage has been open for 0 seconds
+2023-08-05 01:43:38,945:DEBUG:Un-Open Door: one_car garage has been unknown for 0 seconds
+2023-08-05 01:43:43,291:DEBUG:Open Door: one_car garage has been open for 0 seconds
+2023-08-05 01:43:44,890:DEBUG:Un-Open Door: one_car garage has been unknown for 0 seconds
+2023-08-05 01:43:44,993:DEBUG:Open Door: one_car garage has been open for 0 seconds
+2023-08-05 01:43:48,111:DEBUG:Un-Open Door: one_car garage has been unknown for 0 seconds
+2023-08-05 01:43:49,090:DEBUG:Open Door: one_car garage has been open for 0 seconds
+2023-08-05 01:43:49,773:DEBUG:Un-Open Door: one_car garage has been unknown for 0 seconds
+2023-08-05 01:43:54,007:DEBUG:Open Door: two_car garage has been open for 0 seconds
+2023-08-05 01:43:55,141:DEBUG:Un-Open Door: two_car garage has been unknown for 0 seconds
+2023-08-05 01:43:56,096:DEBUG:Open Door: two_car garage has been open for 0 seconds
+2023-08-05 01:43:56,868:DEBUG:Un-Open Door: two_car garage has been unknown for 0 seconds
+2023-08-05 01:43:57,638:DEBUG:Open Door: two_car garage has been open for 0 seconds
+2023-08-05 01:43:58,308:DEBUG:Un-Open Door: two_car garage has been unknown for 0 seconds
+2023-08-05 01:44:01,430:DEBUG:Close Door: two_car garage has been closed for 0 seconds
+2023-08-05 01:44:02,297:DEBUG:Un-Close Door: two_car garage has been unknown for 0 seconds
+2023-08-05 01:44:02,998:DEBUG:Close Door: two_car garage has been closed for 0 seconds
+2023-08-05 01:44:03,698:DEBUG:Un-Close Door: two_car garage has been unknown for 0 seconds
+2023-08-05 01:44:04,370:DEBUG:Close Door: two_car garage has been closed for 0 seconds
+2023-08-05 01:44:05,114:DEBUG:Un-Close Door: two_car garage has been unknown for 0 seconds
+2023-08-05 01:44:05,923:DEBUG:Close Door: two_car garage has been closed for 0 seconds
+2023-08-05 01:44:06,585:DEBUG:Un-Close Door: two_car garage has been unknown for 0 seconds
+2023-08-05 01:44:11,251:DEBUG:Close Door: two_car garage has been closed for 0 seconds
+2023-08-05 01:44:11,904:DEBUG:Un-Close Door: two_car garage has been unknown for 0 seconds

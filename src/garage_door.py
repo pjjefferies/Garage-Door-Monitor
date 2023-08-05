@@ -2,12 +2,20 @@ from dataclasses import dataclass
 import datetime as dt
 from enum import Enum
 
-# from typing import Optional
+from typing import Protocol  # Optional
 
 import pytz
 
+from src.config.config_logging import logger
+
 TIME_ZONE = pytz.timezone(zone="America/Detroit")
 
+
+class LoggerProto(Protocol):
+    def debug(self, msg: str) -> None:
+        ...
+    def info(self, msg: str) -> None:
+        ...
 
 class GarageStatus(Enum):
     open = 1
@@ -20,10 +28,12 @@ class GarageStatus(Enum):
 @dataclass
 class GarageDoor:
     name: str
+    logger: LoggerProto
     status: GarageStatus = GarageStatus.unknown
 
     def __post_init__(self):
         self.status_change_time: dt.datetime = dt.datetime.now(tz=TIME_ZONE)
+        self.logger.info(msg=f"DOOR:{self.name}:created")
 
     def time_as_status(self) -> dt.timedelta:
         now_time = dt.datetime.now(tz=TIME_ZONE)
@@ -36,21 +46,25 @@ class GarageDoor:
 def open_door(door: GarageDoor) -> None:
     door.status = GarageStatus.open
     door.status_change_time = dt.datetime.now(tz=TIME_ZONE)
+    door.logger.debug(msg=f"Open Door: {door}")
 
 
 def close_door(door: GarageDoor) -> None:
     door.status = GarageStatus.closed
     door.status_change_time = dt.datetime.now(tz=TIME_ZONE)
+    door.logger.debug(msg=f"Close Door: {door}")
 
 
 def un_open_door(door: GarageDoor) -> None:
     door.status = GarageStatus.unknown
     door.status_change_time = dt.datetime.now(tz=TIME_ZONE)
+    door.logger.debug(msg=f"Un-Open Door: {door}")
 
 
 def un_close_door(door: GarageDoor) -> None:
     door.status = GarageStatus.unknown
     door.status_change_time = dt.datetime.now(tz=TIME_ZONE)
+    door.logger.debug(msg=f"Un-Close Door: {door}")
 
 
 if __name__ == "__main__":
