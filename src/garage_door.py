@@ -35,6 +35,24 @@ class GarageDoor:
         self.status_change_time: dt.datetime = dt.datetime.now(tz=TIME_ZONE)
         self.logger.info(msg=f"DOOR:{self.name}:created")
 
+    def update_status(self, open_sensor, closed_sensor):
+        if open_sensor and not closed_sensor:
+            open_door(self)
+            return
+        if not open_sensor and closed_sensor:
+            close_door(self)
+            return
+        if not open_sensor and not closed_sensor:
+            self.status = GarageStatus.unknown
+            self.logger.debug(msg=f"{self} is neither Open nor Closed")
+            return
+        if open_sensor and closed_sensor:
+            msg=f"For door {self}, both Open and Closed Sensors are Active"
+            self.logger.debug(msg=msg)
+            raise ValueError(msg)
+        raise SyntaxError(f"Should never get here")
+
+
     def time_as_status(self) -> dt.timedelta:
         now_time = dt.datetime.now(tz=TIME_ZONE)
         return now_time - self.status_change_time

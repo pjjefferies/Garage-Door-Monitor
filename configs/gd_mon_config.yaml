@@ -9,20 +9,20 @@ base:
     SENSOR_GPIO_PINS:
         TWO_CAR:
             CLOSED:
-                NUMBER: 0
+                NUMBER: 13
                 PULL_UP: True
                 BOUNCE_TIME: 0.01
             OPEN:
-                NUMBER: 5
+                NUMBER: 0
                 PULL_UP: True
                 BOUNCE_TIME: 0.01
         ONE_CAR:
             CLOSED:
-                NUMBER: 6
+                NUMBER: 5
                 PULL_UP: True
                 BOUNCE_TIME: 0.01
             OPEN:
-                NUMBER: 13
+                NUMBER: 6
                 PULL_UP: True
                 BOUNCE_TIME: 0.01
 
