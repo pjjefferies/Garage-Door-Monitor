@@ -1,0 +1,2 @@
+cd /home/garage_monitor/Garage_Door_Monitork
+source .env/bin/activate
