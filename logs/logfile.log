@@ -161,3 +161,63 @@
 2023-08-05 01:44:06,585:DEBUG:Un-Close Door: two_car garage has been unknown for 0 seconds
 2023-08-05 01:44:11,251:DEBUG:Close Door: two_car garage has been closed for 0 seconds
 2023-08-05 01:44:11,904:DEBUG:Un-Close Door: two_car garage has been unknown for 0 seconds
+2023-08-08 16:22:13,932:DEBUG:int(cfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.NUMBER)=5cfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.PULL_UP=Truecfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.BOUNCE_TIME=0.01
+2023-08-08 16:23:24,538:DEBUG:int(cfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.NUMBER)=5cfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.PULL_UP=Truecfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.BOUNCE_TIME=0.01
+2023-08-08 16:27:20,111:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>)
+2023-08-08 16:28:00,281:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>)
+2023-08-08 16:28:05,282:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>)
+2023-08-08 16:28:10,284:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>)
+2023-08-08 16:28:11,630:DEBUG:Exiting Gracefully
+2023-08-08 16:28:11,631:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>)
+2023-08-08 16:28:16,633:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>)
+2023-08-08 16:28:21,155:DEBUG:Exiting Gracefully
+2023-08-08 16:28:21,156:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>)
+2023-08-08 16:28:21,901:DEBUG:Exiting Gracefully
+2023-08-08 16:28:21,902:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>)
+2023-08-08 16:28:22,262:DEBUG:Exiting Gracefully
+2023-08-08 16:28:22,264:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>)
+2023-08-08 16:28:22,723:DEBUG:Exiting Gracefully
+2023-08-08 16:28:22,724:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>)
+2023-08-08 16:28:22,884:DEBUG:Exiting Gracefully
+2023-08-08 16:28:22,885:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>)
+2023-08-08 16:28:23,302:DEBUG:Exiting Gracefully
+2023-08-08 16:28:23,303:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>)
+2023-08-08 16:28:23,465:DEBUG:Exiting Gracefully
+2023-08-08 16:28:23,467:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.unknown: 3>)
+2023-08-08 16:45:38,505:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-08 16:45:38,539:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-08 16:45:38,583:DEBUG:door_sensor_1_car_closed.value=0
+2023-08-08 16:45:38,626:DEBUG:door_sensor_1_car_opened.value=1
+2023-08-08 16:46:15,354:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-08 16:46:15,389:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-08 16:46:15,433:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-08 16:46:15,476:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-08 16:48:21,825:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-08 16:48:21,859:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-08 16:48:21,903:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-08 16:48:21,946:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-08 16:48:21,952:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>)
+2023-08-08 16:48:26,953:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>)
+2023-08-08 16:48:31,955:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>)
+2023-08-08 16:48:36,956:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>)
+2023-08-08 16:48:41,958:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>)
+2023-08-08 16:48:46,959:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>)
+2023-08-08 16:48:51,961:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>)
+2023-08-08 16:48:56,962:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>)
+2023-08-08 16:49:01,963:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>)
+2023-08-08 16:49:06,965:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>)
+2023-08-08 16:49:11,966:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>)
+2023-08-08 16:49:16,968:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>)
+2023-08-08 16:49:21,969:DEBUG:one_car_garage=GarageDoor(name='one_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>), two_car_garage=GarageDoor(name='two_car', logger=<Logger Garage Door Monitor History Logger (DEBUG)>, status=<GarageStatus.closed: 5>)
+2023-08-08 16:49:24,732:DEBUG:Exiting Gracefully
+2023-08-08 16:50:22,916:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-08 16:50:22,960:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-08 16:50:23,003:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-08 16:50:23,046:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-08 16:50:23,053:DEBUG:one_car garage has been closed for 0 seconds, two_car garage has been closed for 0 seconds
+2023-08-08 16:50:28,055:DEBUG:one_car garage has been closed for 5 seconds, two_car garage has been closed for 5 seconds
+2023-08-08 16:50:33,056:DEBUG:one_car garage has been closed for 10 seconds, two_car garage has been closed for 10 seconds
+2023-08-08 16:50:38,058:DEBUG:one_car garage has been closed for 15 seconds, two_car garage has been closed for 15 seconds
+2023-08-08 16:50:43,060:DEBUG:one_car garage has been closed for 20 seconds, two_car garage has been closed for 20 seconds
+2023-08-08 16:50:48,062:DEBUG:one_car garage has been closed for 25 seconds, two_car garage has been closed for 25 seconds
+2023-08-08 16:50:52,700:DEBUG:Exiting Gracefully

@@ -2,6 +2,7 @@ from dataclasses import dataclass
 import datetime as dt
 from enum import Enum
 from functools import partial
+from time import sleep
 from typing import Callable
 
 from gpiozero import DigitalInputDevice
@@ -59,21 +60,31 @@ def main() -> None:
         pull_up=cfg.SENSOR_GPIO_PINS.TWO_CAR.CLOSED.PULL_UP,
         bounce_time=cfg.SENSOR_GPIO_PINS.TWO_CAR.CLOSED.BOUNCE_TIME,
     )
+    logger.debug(f"{door_sensor_2_car_closed.value=}")
+
     door_sensor_2_car_opened = DigitalInputDevice(
         pin=int(cfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.NUMBER),
         pull_up=cfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.PULL_UP,
         bounce_time=cfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.BOUNCE_TIME,
     )
+    logger.debug(f"{door_sensor_2_car_opened.value=}")
+
     door_sensor_1_car_closed = DigitalInputDevice(
         pin=cfg.SENSOR_GPIO_PINS.ONE_CAR.CLOSED.NUMBER,
         pull_up=cfg.SENSOR_GPIO_PINS.ONE_CAR.CLOSED.PULL_UP,
         bounce_time=cfg.SENSOR_GPIO_PINS.ONE_CAR.CLOSED.BOUNCE_TIME,
     )
+    logger.debug(f"{door_sensor_1_car_closed.value=}")
+
     door_sensor_1_car_opened = DigitalInputDevice(
         pin=cfg.SENSOR_GPIO_PINS.ONE_CAR.OPEN.NUMBER,
         pull_up=cfg.SENSOR_GPIO_PINS.ONE_CAR.OPEN.PULL_UP,
         bounce_time=cfg.SENSOR_GPIO_PINS.ONE_CAR.OPEN.BOUNCE_TIME,
     )
+    logger.debug(f"{door_sensor_1_car_opened.value=}")
+
+    one_car_garage.update_status(door_sensor_1_car_opened.value, door_sensor_1_car_closed.value)
+    two_car_garage.update_status(door_sensor_2_car_opened.value, door_sensor_2_car_closed.value)
 
     door_sensor_2_car_closed.when_activated = partial(
         door_op,
@@ -88,7 +99,6 @@ def main() -> None:
         lambda: un_close_door(two_car_garage),
         GarageStatus.un_closed,
     )
-
     door_sensor_2_car_opened.when_activated = partial(
         door_op,
         two_car_garage,
@@ -101,7 +111,6 @@ def main() -> None:
         lambda: un_open_door(two_car_garage),
         GarageStatus.un_open
     )
-
     door_sensor_1_car_closed.when_activated = partial(
         door_op,
         one_car_garage,
@@ -130,7 +139,13 @@ def main() -> None:
         GarageStatus.un_open
     )
 
-    pause()
+    while True:
+        try:
+            logger.debug(msg=f"{str(one_car_garage)}, {str(two_car_garage)}")
+            sleep(5)
+        except KeyboardInterrupt:
+            logger.debug(msg="Exiting Gracefully")
+            break
 
 
 if __name__ == "__main__":
