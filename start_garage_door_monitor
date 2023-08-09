@@ -1,0 +1,4 @@
+#! /bin/bash
+cd /home/garage_monitor/Garage-Door-Monitor
+source /home/garage_monitor/Garage-Door-Monitor/.env/bin/activate
+/home/garage_monitor/python/bin/python -m src.garage_door_status_monitor &
