@@ -43,6 +43,7 @@ def door_op(
 
 
 def main() -> None:
+    history_logger.info(msg=f"Starting Garage Door Monitor")
 
     two_car_garage = GarageDoor(
         name=GarageDoorName.two_car.name,
@@ -145,6 +146,7 @@ def main() -> None:
             sleep(5)
         except KeyboardInterrupt:
             logger.debug(msg="Exiting Gracefully")
+            history_logger.info(msg="Exiting Gracefully")
             break
 
 
