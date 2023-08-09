@@ -33,7 +33,7 @@ class GarageStatusHistoryDatum:
 
 
 def exit_handler(signum: signal.Signals, frame: signal.Handlers) -> Any:
-    msg = "Exiting Gracefully"
+    msg = "Stopping Garage Door Monitor"
     logger.info(msg=msg)
     history_logger.info(msg=msg)
     exit(0)
