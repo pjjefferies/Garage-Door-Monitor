@@ -952,3 +952,41 @@
 2023-08-08 16:48:21,768:INFO:DOOR:one_car:created
 2023-08-08 16:50:22,859:INFO:DOOR:two_car:created
 2023-08-08 16:50:22,859:INFO:DOOR:one_car:created
+2023-08-08 18:48:54,710:INFO:DOOR:two_car:created
+2023-08-08 18:48:54,710:INFO:DOOR:one_car:created
+2023-08-08 18:50:57,159:INFO:DOOR:one_car:un_closed
+2023-08-08 18:50:57,208:INFO:DOOR:one_car:closed
+2023-08-08 18:50:57,440:INFO:DOOR:one_car:un_closed
+2023-08-08 18:51:10,346:INFO:DOOR:one_car:open
+2023-08-08 18:51:10,410:INFO:DOOR:one_car:un_open
+2023-08-08 18:51:10,491:INFO:DOOR:one_car:open
+2023-08-08 18:51:51,809:INFO:DOOR:one_car:un_open
+2023-08-08 18:52:04,488:INFO:DOOR:one_car:closed
+2023-08-08 18:52:04,700:INFO:DOOR:one_car:un_closed
+2023-08-08 18:52:04,760:INFO:DOOR:one_car:closed
+2023-08-08 21:06:29,366:INFO:DOOR:two_car:created
+2023-08-08 21:06:29,366:INFO:DOOR:one_car:created
+2023-08-08 21:47:11,136:INFO:Starting Garage Door Monitor
+2023-08-08 21:47:11,149:INFO:DOOR:two_car:created
+2023-08-08 21:47:11,150:INFO:DOOR:one_car:created
+2023-08-08 22:33:42,507:INFO:Starting Garage Door Monitor
+2023-08-08 22:33:42,507:INFO:DOOR:two_car:created
+2023-08-08 22:33:42,508:INFO:DOOR:one_car:created
+2023-08-08 22:40:18,116:INFO:Starting Garage Door Monitor
+2023-08-08 22:40:18,117:INFO:DOOR:two_car:created
+2023-08-08 22:40:18,117:INFO:DOOR:one_car:created
+2023-08-08 22:42:11,275:INFO:Starting Garage Door Monitor
+2023-08-08 22:42:11,275:INFO:DOOR:two_car:created
+2023-08-08 22:42:11,276:INFO:DOOR:one_car:created
+2023-08-08 22:44:32,918:INFO:Starting Garage Door Monitor
+2023-08-08 22:44:32,918:INFO:DOOR:two_car:created
+2023-08-08 22:44:32,919:INFO:DOOR:one_car:created
+2023-08-08 22:44:42,364:INFO:Starting Garage Door Monitor
+2023-08-08 22:44:42,364:INFO:DOOR:two_car:created
+2023-08-08 22:44:42,365:INFO:DOOR:one_car:created
+2023-08-08 22:51:44,274:INFO:Starting Garage Door Monitor
+2023-08-08 22:51:44,275:INFO:DOOR:two_car:created
+2023-08-08 22:51:44,275:INFO:DOOR:one_car:created
+2023-08-08 23:00:37,779:INFO:Starting Garage Door Monitor
+2023-08-08 23:00:37,791:INFO:DOOR:two_car:created
+2023-08-08 23:00:37,791:INFO:DOOR:one_car:created
