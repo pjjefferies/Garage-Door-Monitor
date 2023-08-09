@@ -2,8 +2,9 @@ from dataclasses import dataclass
 import datetime as dt
 from enum import Enum
 from functools import partial
+import signal
 from time import sleep
-from typing import Callable
+from typing import Any, Callable
 
 from gpiozero import DigitalInputDevice
 
@@ -29,6 +30,13 @@ class GarageStatusHistoryDatum:
     name: str
     position: GarageStatus
     timestamp: dt.datetime
+
+
+def exit_handler(signum: signal.Signals, frame: signal.Handlers) -> Any:
+    msg = "Exiting Gracefully"
+    logger.info(msg=msg)
+    history_logger.info(msg=msg)
+    exit(0)
 
 
 def door_op(
@@ -134,14 +142,15 @@ def main() -> None:
         GarageStatus.un_open,
     )
 
+    # Register the exit handler with `SIGINT`(CTRL + C)
+    signal.signal(signalnum=signal.SIGINT, handler=exit_handler)
+
+    # Register the exit handler with `SIGTSTP` (Ctrl + Z)
+    signal.signal(signalnum=signal.SIGTSTP, handler=exit_handler)
+
     while True:
-        try:
-            logger.debug(msg=f"{str(one_car_garage)}, {str(two_car_garage)}")
-            sleep(5)
-        except KeyboardInterrupt:
-            logger.debug(msg="Exiting Gracefully")
-            history_logger.info(msg="Exiting Gracefully")
-            break
+        logger.debug(msg=f"{str(one_car_garage)}, {str(two_car_garage)}")
+        sleep(5)
 
 
 if __name__ == "__main__":
