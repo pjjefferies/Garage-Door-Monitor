@@ -11,20 +11,20 @@ base:
             CLOSED:
                 NUMBER: 13
                 PULL_UP: True
-                BOUNCE_TIME: 0.01
+                BOUNCE_TIME: 1.0
             OPEN:
                 NUMBER: 0
                 PULL_UP: True
-                BOUNCE_TIME: 0.01
+                BOUNCE_TIME: 1.0
         ONE_CAR:
             CLOSED:
                 NUMBER: 5
                 PULL_UP: True
-                BOUNCE_TIME: 0.01
+                BOUNCE_TIME: 1.0
             OPEN:
                 NUMBER: 6
                 PULL_UP: True
-                BOUNCE_TIME: 0.01
+                BOUNCE_TIME: 1.0
 
 dev:
     BLANK: 0
