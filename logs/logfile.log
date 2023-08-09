@@ -1089,3 +1089,458 @@
 2023-08-08 23:01:32,358:DEBUG:one_car garage has been closed for 54 seconds, two_car garage has been closed for 54 seconds
 2023-08-08 23:01:37,368:DEBUG:one_car garage has been closed for 59 seconds, two_car garage has been closed for 59 seconds
 2023-08-08 23:01:42,380:DEBUG:one_car garage has been closed for 64 seconds, two_car garage has been closed for 64 seconds
+2023-08-09 00:21:09,558:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-09 00:21:09,560:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 00:21:09,563:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 00:21:09,565:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 00:21:09,572:DEBUG:one_car garage has been closed for 0 seconds, two_car garage has been closed for 0 seconds
+2023-08-09 00:21:14,573:DEBUG:one_car garage has been closed for 5 seconds, two_car garage has been closed for 5 seconds
+2023-08-09 00:21:19,575:DEBUG:one_car garage has been closed for 10 seconds, two_car garage has been closed for 10 seconds
+2023-08-09 00:21:24,580:DEBUG:one_car garage has been closed for 15 seconds, two_car garage has been closed for 15 seconds
+2023-08-09 00:21:29,584:DEBUG:one_car garage has been closed for 20 seconds, two_car garage has been closed for 20 seconds
+2023-08-09 00:21:34,586:DEBUG:one_car garage has been closed for 25 seconds, two_car garage has been closed for 25 seconds
+2023-08-09 00:21:39,587:DEBUG:one_car garage has been closed for 30 seconds, two_car garage has been closed for 30 seconds
+2023-08-09 00:21:44,589:DEBUG:one_car garage has been closed for 35 seconds, two_car garage has been closed for 35 seconds
+2023-08-09 00:21:49,591:DEBUG:one_car garage has been closed for 40 seconds, two_car garage has been closed for 40 seconds
+2023-08-09 00:21:54,593:DEBUG:one_car garage has been closed for 45 seconds, two_car garage has been closed for 45 seconds
+2023-08-09 00:21:59,594:DEBUG:one_car garage has been closed for 50 seconds, two_car garage has been closed for 50 seconds
+2023-08-09 00:22:04,596:DEBUG:one_car garage has been closed for 55 seconds, two_car garage has been closed for 55 seconds
+2023-08-09 00:22:09,598:DEBUG:one_car garage has been closed for 60 seconds, two_car garage has been closed for 60 seconds
+2023-08-09 00:22:14,600:DEBUG:one_car garage has been closed for 65 seconds, two_car garage has been closed for 65 seconds
+2023-08-09 00:22:19,601:DEBUG:one_car garage has been closed for 70 seconds, two_car garage has been closed for 70 seconds
+2023-08-09 00:22:24,603:DEBUG:one_car garage has been closed for 75 seconds, two_car garage has been closed for 75 seconds
+2023-08-09 00:22:25,382:INFO:Exiting Gracefully
+2023-08-09 00:24:00,034:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-09 00:24:00,069:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 00:24:00,113:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 00:24:00,156:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 00:24:00,162:DEBUG:one_car garage has been closed for 0 seconds, two_car garage has been closed for 0 seconds
+2023-08-09 00:24:05,164:DEBUG:one_car garage has been closed for 5 seconds, two_car garage has been closed for 5 seconds
+2023-08-09 00:24:10,165:DEBUG:one_car garage has been closed for 10 seconds, two_car garage has been closed for 10 seconds
+2023-08-09 00:24:15,167:DEBUG:one_car garage has been closed for 15 seconds, two_car garage has been closed for 15 seconds
+2023-08-09 00:24:16,677:INFO:Stopping Garage Door Monitor
+2023-08-09 00:25:25,171:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-09 00:25:25,215:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 00:25:25,259:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 00:25:25,302:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 00:25:25,309:DEBUG:one_car garage has been closed for 0 seconds, two_car garage has been closed for 0 seconds
+2023-08-09 00:25:30,310:DEBUG:one_car garage has been closed for 5 seconds, two_car garage has been closed for 5 seconds
+2023-08-09 00:25:35,315:DEBUG:one_car garage has been closed for 10 seconds, two_car garage has been closed for 10 seconds
+2023-08-09 00:25:36,453:INFO:Stopping Garage Door Monitor
+2023-08-09 00:29:05,787:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-09 00:29:05,839:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 00:29:05,882:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 00:29:05,926:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 00:29:05,932:DEBUG:one_car garage has been closed for 0 seconds, two_car garage has been closed for 0 seconds
+2023-08-09 00:29:10,933:DEBUG:one_car garage has been closed for 5 seconds, two_car garage has been closed for 5 seconds
+2023-08-09 00:29:15,934:DEBUG:one_car garage has been closed for 10 seconds, two_car garage has been closed for 10 seconds
+2023-08-09 00:29:20,936:DEBUG:one_car garage has been closed for 15 seconds, two_car garage has been closed for 15 seconds
+2023-08-09 00:29:25,938:DEBUG:one_car garage has been closed for 20 seconds, two_car garage has been closed for 20 seconds
+2023-08-09 00:29:30,946:DEBUG:one_car garage has been closed for 25 seconds, two_car garage has been closed for 25 seconds
+2023-08-09 00:29:45,916:DEBUG:one_car garage has been closed for 40 seconds, two_car garage has been closed for 40 seconds
+2023-08-09 00:29:50,921:DEBUG:one_car garage has been closed for 45 seconds, two_car garage has been closed for 45 seconds
+2023-08-09 00:29:55,929:DEBUG:one_car garage has been closed for 50 seconds, two_car garage has been closed for 50 seconds
+2023-08-09 00:30:00,940:DEBUG:one_car garage has been closed for 55 seconds, two_car garage has been closed for 55 seconds
+2023-08-09 00:30:05,946:DEBUG:one_car garage has been closed for 60 seconds, two_car garage has been closed for 60 seconds
+2023-08-09 00:30:10,950:DEBUG:one_car garage has been closed for 65 seconds, two_car garage has been closed for 65 seconds
+2023-08-09 00:30:15,956:DEBUG:one_car garage has been closed for 70 seconds, two_car garage has been closed for 70 seconds
+2023-08-09 00:30:20,963:DEBUG:one_car garage has been closed for 75 seconds, two_car garage has been closed for 75 seconds
+2023-08-09 00:30:25,970:DEBUG:one_car garage has been closed for 80 seconds, two_car garage has been closed for 80 seconds
+2023-08-09 00:30:30,975:DEBUG:one_car garage has been closed for 85 seconds, two_car garage has been closed for 85 seconds
+2023-08-09 00:30:35,979:DEBUG:one_car garage has been closed for 90 seconds, two_car garage has been closed for 90 seconds
+2023-08-09 00:30:40,984:DEBUG:one_car garage has been closed for 95 seconds, two_car garage has been closed for 95 seconds
+2023-08-09 00:30:45,987:DEBUG:one_car garage has been closed for 100 seconds, two_car garage has been closed for 100 seconds
+2023-08-09 00:30:50,991:DEBUG:one_car garage has been closed for 105 seconds, two_car garage has been closed for 105 seconds
+2023-08-09 00:30:55,995:DEBUG:one_car garage has been closed for 110 seconds, two_car garage has been closed for 110 seconds
+2023-08-09 00:31:00,999:DEBUG:one_car garage has been closed for 115 seconds, two_car garage has been closed for 115 seconds
+2023-08-09 00:31:06,004:DEBUG:one_car garage has been closed for 120 seconds, two_car garage has been closed for 120 seconds
+2023-08-09 00:31:11,005:DEBUG:one_car garage has been closed for 125 seconds, two_car garage has been closed for 125 seconds
+2023-08-09 00:31:16,007:DEBUG:one_car garage has been closed for 130 seconds, two_car garage has been closed for 130 seconds
+2023-08-09 00:31:21,012:DEBUG:one_car garage has been closed for 135 seconds, two_car garage has been closed for 135 seconds
+2023-08-09 00:31:26,017:DEBUG:one_car garage has been closed for 140 seconds, two_car garage has been closed for 140 seconds
+2023-08-09 00:31:31,023:DEBUG:one_car garage has been closed for 145 seconds, two_car garage has been closed for 145 seconds
+2023-08-09 00:31:36,027:DEBUG:one_car garage has been closed for 150 seconds, two_car garage has been closed for 150 seconds
+2023-08-09 00:31:41,033:DEBUG:one_car garage has been closed for 155 seconds, two_car garage has been closed for 155 seconds
+2023-08-09 00:31:46,037:DEBUG:one_car garage has been closed for 160 seconds, two_car garage has been closed for 160 seconds
+2023-08-09 00:31:51,043:DEBUG:one_car garage has been closed for 165 seconds, two_car garage has been closed for 165 seconds
+2023-08-09 00:31:56,047:DEBUG:one_car garage has been closed for 170 seconds, two_car garage has been closed for 170 seconds
+2023-08-09 00:32:01,052:DEBUG:one_car garage has been closed for 175 seconds, two_car garage has been closed for 175 seconds
+2023-08-09 00:32:06,056:DEBUG:one_car garage has been closed for 180 seconds, two_car garage has been closed for 180 seconds
+2023-08-09 00:32:11,062:DEBUG:one_car garage has been closed for 185 seconds, two_car garage has been closed for 185 seconds
+2023-08-09 00:32:16,066:DEBUG:one_car garage has been closed for 190 seconds, two_car garage has been closed for 190 seconds
+2023-08-09 00:32:21,072:DEBUG:one_car garage has been closed for 195 seconds, two_car garage has been closed for 195 seconds
+2023-08-09 00:32:26,075:DEBUG:one_car garage has been closed for 200 seconds, two_car garage has been closed for 200 seconds
+2023-08-09 00:32:31,080:DEBUG:one_car garage has been closed for 205 seconds, two_car garage has been closed for 205 seconds
+2023-08-09 00:32:36,086:DEBUG:one_car garage has been closed for 210 seconds, two_car garage has been closed for 210 seconds
+2023-08-09 00:32:41,089:DEBUG:one_car garage has been closed for 215 seconds, two_car garage has been closed for 215 seconds
+2023-08-09 00:32:46,098:DEBUG:one_car garage has been closed for 220 seconds, two_car garage has been closed for 220 seconds
+2023-08-09 00:32:51,102:DEBUG:one_car garage has been closed for 225 seconds, two_car garage has been closed for 225 seconds
+2023-08-09 00:32:56,108:DEBUG:one_car garage has been closed for 230 seconds, two_car garage has been closed for 230 seconds
+2023-08-09 00:33:01,112:DEBUG:one_car garage has been closed for 235 seconds, two_car garage has been closed for 235 seconds
+2023-08-09 00:33:06,116:DEBUG:one_car garage has been closed for 240 seconds, two_car garage has been closed for 240 seconds
+2023-08-09 00:33:11,120:DEBUG:one_car garage has been closed for 245 seconds, two_car garage has been closed for 245 seconds
+2023-08-09 00:33:16,124:DEBUG:one_car garage has been closed for 250 seconds, two_car garage has been closed for 250 seconds
+2023-08-09 00:33:21,128:DEBUG:one_car garage has been closed for 255 seconds, two_car garage has been closed for 255 seconds
+2023-08-09 00:33:26,132:DEBUG:one_car garage has been closed for 260 seconds, two_car garage has been closed for 260 seconds
+2023-08-09 00:33:31,138:DEBUG:one_car garage has been closed for 265 seconds, two_car garage has been closed for 265 seconds
+2023-08-09 00:33:36,142:DEBUG:one_car garage has been closed for 270 seconds, two_car garage has been closed for 270 seconds
+2023-08-09 00:33:41,148:DEBUG:one_car garage has been closed for 275 seconds, two_car garage has been closed for 275 seconds
+2023-08-09 00:33:46,152:DEBUG:one_car garage has been closed for 280 seconds, two_car garage has been closed for 280 seconds
+2023-08-09 00:33:51,158:DEBUG:one_car garage has been closed for 285 seconds, two_car garage has been closed for 285 seconds
+2023-08-09 00:33:56,162:DEBUG:one_car garage has been closed for 290 seconds, two_car garage has been closed for 290 seconds
+2023-08-09 00:34:01,168:DEBUG:one_car garage has been closed for 295 seconds, two_car garage has been closed for 295 seconds
+2023-08-09 00:34:06,172:DEBUG:one_car garage has been closed for 300 seconds, two_car garage has been closed for 300 seconds
+2023-08-09 00:34:11,178:DEBUG:one_car garage has been closed for 305 seconds, two_car garage has been closed for 305 seconds
+2023-08-09 00:34:16,181:DEBUG:one_car garage has been closed for 310 seconds, two_car garage has been closed for 310 seconds
+2023-08-09 00:34:21,187:DEBUG:one_car garage has been closed for 315 seconds, two_car garage has been closed for 315 seconds
+2023-08-09 00:34:26,191:DEBUG:one_car garage has been closed for 320 seconds, two_car garage has been closed for 320 seconds
+2023-08-09 00:34:31,197:DEBUG:one_car garage has been closed for 325 seconds, two_car garage has been closed for 325 seconds
+2023-08-09 00:34:36,201:DEBUG:one_car garage has been closed for 330 seconds, two_car garage has been closed for 330 seconds
+2023-08-09 00:34:41,206:DEBUG:one_car garage has been closed for 335 seconds, two_car garage has been closed for 335 seconds
+2023-08-09 00:34:46,212:DEBUG:one_car garage has been closed for 340 seconds, two_car garage has been closed for 340 seconds
+2023-08-09 00:34:51,216:DEBUG:one_car garage has been closed for 345 seconds, two_car garage has been closed for 345 seconds
+2023-08-09 00:34:56,222:DEBUG:one_car garage has been closed for 350 seconds, two_car garage has been closed for 350 seconds
+2023-08-09 00:35:01,227:DEBUG:one_car garage has been closed for 355 seconds, two_car garage has been closed for 355 seconds
+2023-08-09 00:35:06,236:DEBUG:one_car garage has been closed for 360 seconds, two_car garage has been closed for 360 seconds
+2023-08-09 00:35:11,240:DEBUG:one_car garage has been closed for 365 seconds, two_car garage has been closed for 365 seconds
+2023-08-09 00:35:16,246:DEBUG:one_car garage has been closed for 370 seconds, two_car garage has been closed for 370 seconds
+2023-08-09 00:35:21,250:DEBUG:one_car garage has been closed for 375 seconds, two_car garage has been closed for 375 seconds
+2023-08-09 00:35:26,256:DEBUG:one_car garage has been closed for 380 seconds, two_car garage has been closed for 380 seconds
+2023-08-09 00:35:31,260:DEBUG:one_car garage has been closed for 385 seconds, two_car garage has been closed for 385 seconds
+2023-08-09 00:35:36,266:DEBUG:one_car garage has been closed for 390 seconds, two_car garage has been closed for 390 seconds
+2023-08-09 00:35:41,270:DEBUG:one_car garage has been closed for 395 seconds, two_car garage has been closed for 395 seconds
+2023-08-09 00:35:46,275:DEBUG:one_car garage has been closed for 400 seconds, two_car garage has been closed for 400 seconds
+2023-08-09 00:35:51,277:DEBUG:one_car garage has been closed for 405 seconds, two_car garage has been closed for 405 seconds
+2023-08-09 00:35:56,283:DEBUG:one_car garage has been closed for 410 seconds, two_car garage has been closed for 410 seconds
+2023-08-09 00:36:01,287:DEBUG:one_car garage has been closed for 415 seconds, two_car garage has been closed for 415 seconds
+2023-08-09 00:36:06,291:DEBUG:one_car garage has been closed for 420 seconds, two_car garage has been closed for 420 seconds
+2023-08-09 00:36:11,294:DEBUG:one_car garage has been closed for 425 seconds, two_car garage has been closed for 425 seconds
+2023-08-09 00:36:16,298:DEBUG:one_car garage has been closed for 430 seconds, two_car garage has been closed for 430 seconds
+2023-08-09 00:36:21,302:DEBUG:one_car garage has been closed for 435 seconds, two_car garage has been closed for 435 seconds
+2023-08-09 00:36:26,306:DEBUG:one_car garage has been closed for 440 seconds, two_car garage has been closed for 440 seconds
+2023-08-09 00:36:31,313:DEBUG:one_car garage has been closed for 445 seconds, two_car garage has been closed for 445 seconds
+2023-08-09 00:36:36,317:DEBUG:one_car garage has been closed for 450 seconds, two_car garage has been closed for 450 seconds
+2023-08-09 00:36:41,323:DEBUG:one_car garage has been closed for 455 seconds, two_car garage has been closed for 455 seconds
+2023-08-09 00:36:46,327:DEBUG:one_car garage has been closed for 460 seconds, two_car garage has been closed for 460 seconds
+2023-08-09 00:36:51,333:DEBUG:one_car garage has been closed for 465 seconds, two_car garage has been closed for 465 seconds
+2023-08-09 00:36:56,337:DEBUG:one_car garage has been closed for 470 seconds, two_car garage has been closed for 470 seconds
+2023-08-09 00:37:01,343:DEBUG:one_car garage has been closed for 475 seconds, two_car garage has been closed for 475 seconds
+2023-08-09 00:37:06,347:DEBUG:one_car garage has been closed for 480 seconds, two_car garage has been closed for 480 seconds
+2023-08-09 00:37:11,353:DEBUG:one_car garage has been closed for 485 seconds, two_car garage has been closed for 485 seconds
+2023-08-09 00:37:16,357:DEBUG:one_car garage has been closed for 490 seconds, two_car garage has been closed for 490 seconds
+2023-08-09 00:37:21,363:DEBUG:one_car garage has been closed for 495 seconds, two_car garage has been closed for 495 seconds
+2023-08-09 00:37:26,367:DEBUG:one_car garage has been closed for 500 seconds, two_car garage has been closed for 500 seconds
+2023-08-09 00:37:31,373:DEBUG:one_car garage has been closed for 505 seconds, two_car garage has been closed for 505 seconds
+2023-08-09 00:37:36,377:DEBUG:one_car garage has been closed for 510 seconds, two_car garage has been closed for 510 seconds
+2023-08-09 00:37:41,381:DEBUG:one_car garage has been closed for 515 seconds, two_car garage has been closed for 515 seconds
+2023-08-09 00:37:46,385:DEBUG:one_car garage has been closed for 520 seconds, two_car garage has been closed for 520 seconds
+2023-08-09 00:37:51,389:DEBUG:one_car garage has been closed for 525 seconds, two_car garage has been closed for 525 seconds
+2023-08-09 00:37:56,394:DEBUG:one_car garage has been closed for 530 seconds, two_car garage has been closed for 530 seconds
+2023-08-09 00:38:01,401:DEBUG:one_car garage has been closed for 535 seconds, two_car garage has been closed for 535 seconds
+2023-08-09 00:38:06,408:DEBUG:one_car garage has been closed for 540 seconds, two_car garage has been closed for 540 seconds
+2023-08-09 00:38:11,412:DEBUG:one_car garage has been closed for 545 seconds, two_car garage has been closed for 545 seconds
+2023-08-09 00:38:16,416:DEBUG:one_car garage has been closed for 550 seconds, two_car garage has been closed for 550 seconds
+2023-08-09 00:38:21,420:DEBUG:one_car garage has been closed for 555 seconds, two_car garage has been closed for 555 seconds
+2023-08-09 00:38:26,424:DEBUG:one_car garage has been closed for 560 seconds, two_car garage has been closed for 560 seconds
+2023-08-09 00:38:31,430:DEBUG:one_car garage has been closed for 566 seconds, two_car garage has been closed for 566 seconds
+2023-08-09 00:38:36,437:DEBUG:one_car garage has been closed for 571 seconds, two_car garage has been closed for 571 seconds
+2023-08-09 00:38:41,443:DEBUG:one_car garage has been closed for 576 seconds, two_car garage has been closed for 576 seconds
+2023-08-09 00:38:46,447:DEBUG:one_car garage has been closed for 581 seconds, two_car garage has been closed for 581 seconds
+2023-08-09 00:38:51,453:DEBUG:one_car garage has been closed for 586 seconds, two_car garage has been closed for 586 seconds
+2023-08-09 00:38:56,457:DEBUG:one_car garage has been closed for 591 seconds, two_car garage has been closed for 591 seconds
+2023-08-09 00:39:01,463:DEBUG:one_car garage has been closed for 596 seconds, two_car garage has been closed for 596 seconds
+2023-08-09 00:39:06,467:DEBUG:one_car garage has been closed for 601 seconds, two_car garage has been closed for 601 seconds
+2023-08-09 00:39:11,473:DEBUG:one_car garage has been closed for 606 seconds, two_car garage has been closed for 606 seconds
+2023-08-09 00:39:16,477:DEBUG:one_car garage has been closed for 611 seconds, two_car garage has been closed for 611 seconds
+2023-08-09 00:39:21,483:DEBUG:one_car garage has been closed for 616 seconds, two_car garage has been closed for 616 seconds
+2023-08-09 00:39:26,486:DEBUG:one_car garage has been closed for 621 seconds, two_car garage has been closed for 621 seconds
+2023-08-09 00:39:31,492:DEBUG:one_car garage has been closed for 626 seconds, two_car garage has been closed for 626 seconds
+2023-08-09 00:39:36,496:DEBUG:one_car garage has been closed for 631 seconds, two_car garage has been closed for 631 seconds
+2023-08-09 00:39:41,502:DEBUG:one_car garage has been closed for 636 seconds, two_car garage has been closed for 636 seconds
+2023-08-09 00:39:46,506:DEBUG:one_car garage has been closed for 641 seconds, two_car garage has been closed for 641 seconds
+2023-08-09 00:39:51,512:DEBUG:one_car garage has been closed for 646 seconds, two_car garage has been closed for 646 seconds
+2023-08-09 00:39:56,515:DEBUG:one_car garage has been closed for 651 seconds, two_car garage has been closed for 651 seconds
+2023-08-09 00:40:01,521:DEBUG:one_car garage has been closed for 656 seconds, two_car garage has been closed for 656 seconds
+2023-08-09 00:40:06,525:DEBUG:one_car garage has been closed for 661 seconds, two_car garage has been closed for 661 seconds
+2023-08-09 00:40:11,531:DEBUG:one_car garage has been closed for 666 seconds, two_car garage has been closed for 666 seconds
+2023-08-09 00:40:16,535:DEBUG:one_car garage has been closed for 671 seconds, two_car garage has been closed for 671 seconds
+2023-08-09 00:40:21,540:DEBUG:one_car garage has been closed for 676 seconds, two_car garage has been closed for 676 seconds
+2023-08-09 00:40:26,544:DEBUG:one_car garage has been closed for 681 seconds, two_car garage has been closed for 681 seconds
+2023-08-09 00:40:31,550:DEBUG:one_car garage has been closed for 686 seconds, two_car garage has been closed for 686 seconds
+2023-08-09 00:40:36,555:DEBUG:one_car garage has been closed for 691 seconds, two_car garage has been closed for 691 seconds
+2023-08-09 00:40:41,559:DEBUG:one_car garage has been closed for 696 seconds, two_car garage has been closed for 696 seconds
+2023-08-09 00:40:46,564:DEBUG:one_car garage has been closed for 701 seconds, two_car garage has been closed for 701 seconds
+2023-08-09 00:40:51,567:DEBUG:one_car garage has been closed for 706 seconds, two_car garage has been closed for 706 seconds
+2023-08-09 00:40:56,576:DEBUG:one_car garage has been closed for 711 seconds, two_car garage has been closed for 711 seconds
+2023-08-09 00:41:01,580:DEBUG:one_car garage has been closed for 716 seconds, two_car garage has been closed for 716 seconds
+2023-08-09 00:41:06,585:DEBUG:one_car garage has been closed for 721 seconds, two_car garage has been closed for 721 seconds
+2023-08-09 00:41:11,591:DEBUG:one_car garage has been closed for 726 seconds, two_car garage has been closed for 726 seconds
+2023-08-09 00:41:16,595:DEBUG:one_car garage has been closed for 731 seconds, two_car garage has been closed for 731 seconds
+2023-08-09 00:41:21,600:DEBUG:one_car garage has been closed for 736 seconds, two_car garage has been closed for 736 seconds
+2023-08-09 00:41:26,604:DEBUG:one_car garage has been closed for 741 seconds, two_car garage has been closed for 741 seconds
+2023-08-09 00:41:31,610:DEBUG:one_car garage has been closed for 746 seconds, two_car garage has been closed for 746 seconds
+2023-08-09 00:41:36,613:DEBUG:one_car garage has been closed for 751 seconds, two_car garage has been closed for 751 seconds
+2023-08-09 00:41:41,619:DEBUG:one_car garage has been closed for 756 seconds, two_car garage has been closed for 756 seconds
+2023-08-09 00:41:46,622:DEBUG:one_car garage has been closed for 761 seconds, two_car garage has been closed for 761 seconds
+2023-08-09 00:41:51,627:DEBUG:one_car garage has been closed for 766 seconds, two_car garage has been closed for 766 seconds
+2023-08-09 00:41:56,631:DEBUG:one_car garage has been closed for 771 seconds, two_car garage has been closed for 771 seconds
+2023-08-09 00:42:01,636:DEBUG:one_car garage has been closed for 776 seconds, two_car garage has been closed for 776 seconds
+2023-08-09 00:42:06,640:DEBUG:one_car garage has been closed for 781 seconds, two_car garage has been closed for 781 seconds
+2023-08-09 00:42:11,645:DEBUG:one_car garage has been closed for 786 seconds, two_car garage has been closed for 786 seconds
+2023-08-09 00:42:16,648:DEBUG:one_car garage has been closed for 791 seconds, two_car garage has been closed for 791 seconds
+2023-08-09 00:42:21,653:DEBUG:one_car garage has been closed for 796 seconds, two_car garage has been closed for 796 seconds
+2023-08-09 00:42:26,657:DEBUG:one_car garage has been closed for 801 seconds, two_car garage has been closed for 801 seconds
+2023-08-09 00:42:31,662:DEBUG:one_car garage has been closed for 806 seconds, two_car garage has been closed for 806 seconds
+2023-08-09 00:42:36,666:DEBUG:one_car garage has been closed for 811 seconds, two_car garage has been closed for 811 seconds
+2023-08-09 00:42:41,670:DEBUG:one_car garage has been closed for 816 seconds, two_car garage has been closed for 816 seconds
+2023-08-09 00:42:46,673:DEBUG:one_car garage has been closed for 821 seconds, two_car garage has been closed for 821 seconds
+2023-08-09 00:42:51,677:DEBUG:one_car garage has been closed for 826 seconds, two_car garage has been closed for 826 seconds
+2023-08-09 00:42:56,681:DEBUG:one_car garage has been closed for 831 seconds, two_car garage has been closed for 831 seconds
+2023-08-09 00:43:01,685:DEBUG:one_car garage has been closed for 836 seconds, two_car garage has been closed for 836 seconds
+2023-08-09 00:43:06,689:DEBUG:one_car garage has been closed for 841 seconds, two_car garage has been closed for 841 seconds
+2023-08-09 00:43:11,693:DEBUG:one_car garage has been closed for 846 seconds, two_car garage has been closed for 846 seconds
+2023-08-09 00:43:16,697:DEBUG:one_car garage has been closed for 851 seconds, two_car garage has been closed for 851 seconds
+2023-08-09 00:43:21,701:DEBUG:one_car garage has been closed for 856 seconds, two_car garage has been closed for 856 seconds
+2023-08-09 00:43:26,736:DEBUG:one_car garage has been closed for 861 seconds, two_car garage has been closed for 861 seconds
+2023-08-09 00:43:31,746:DEBUG:one_car garage has been closed for 866 seconds, two_car garage has been closed for 866 seconds
+2023-08-09 00:43:36,751:DEBUG:one_car garage has been closed for 871 seconds, two_car garage has been closed for 871 seconds
+2023-08-09 00:43:41,756:DEBUG:one_car garage has been closed for 876 seconds, two_car garage has been closed for 876 seconds
+2023-08-09 00:43:46,760:DEBUG:one_car garage has been closed for 881 seconds, two_car garage has been closed for 881 seconds
+2023-08-09 00:43:51,767:DEBUG:one_car garage has been closed for 886 seconds, two_car garage has been closed for 886 seconds
+2023-08-09 00:43:56,773:DEBUG:one_car garage has been closed for 891 seconds, two_car garage has been closed for 891 seconds
+2023-08-09 00:44:01,781:DEBUG:one_car garage has been closed for 896 seconds, two_car garage has been closed for 896 seconds
+2023-08-09 00:44:06,789:DEBUG:one_car garage has been closed for 901 seconds, two_car garage has been closed for 901 seconds
+2023-08-09 00:44:11,795:DEBUG:one_car garage has been closed for 906 seconds, two_car garage has been closed for 906 seconds
+2023-08-09 00:44:16,802:DEBUG:one_car garage has been closed for 911 seconds, two_car garage has been closed for 911 seconds
+2023-08-09 00:44:21,810:DEBUG:one_car garage has been closed for 916 seconds, two_car garage has been closed for 916 seconds
+2023-08-09 00:44:26,824:DEBUG:one_car garage has been closed for 921 seconds, two_car garage has been closed for 921 seconds
+2023-08-09 00:44:31,830:DEBUG:one_car garage has been closed for 926 seconds, two_car garage has been closed for 926 seconds
+2023-08-09 00:44:36,838:DEBUG:one_car garage has been closed for 931 seconds, two_car garage has been closed for 931 seconds
+2023-08-09 00:44:41,846:DEBUG:one_car garage has been closed for 936 seconds, two_car garage has been closed for 936 seconds
+2023-08-09 00:44:46,854:DEBUG:one_car garage has been closed for 941 seconds, two_car garage has been closed for 941 seconds
+2023-08-09 00:44:51,862:DEBUG:one_car garage has been closed for 946 seconds, two_car garage has been closed for 946 seconds
+2023-08-09 00:44:56,870:DEBUG:one_car garage has been closed for 951 seconds, two_car garage has been closed for 951 seconds
+2023-08-09 00:45:01,875:DEBUG:one_car garage has been closed for 956 seconds, two_car garage has been closed for 956 seconds
+2023-08-09 00:45:06,885:DEBUG:one_car garage has been closed for 961 seconds, two_car garage has been closed for 961 seconds
+2023-08-09 00:45:11,891:DEBUG:one_car garage has been closed for 966 seconds, two_car garage has been closed for 966 seconds
+2023-08-09 00:45:16,901:DEBUG:one_car garage has been closed for 971 seconds, two_car garage has been closed for 971 seconds
+2023-08-09 00:45:21,906:DEBUG:one_car garage has been closed for 976 seconds, two_car garage has been closed for 976 seconds
+2023-08-09 00:45:26,916:DEBUG:one_car garage has been closed for 981 seconds, two_car garage has been closed for 981 seconds
+2023-08-09 00:45:31,192:INFO:Stopping Garage Door Monitor
+2023-08-09 00:47:02,160:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-09 00:47:02,203:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 00:47:02,246:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 00:47:02,290:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 10:54:17,844:INFO:Stopping Garage Door Monitor
+2023-08-09 10:54:25,361:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-09 10:54:25,396:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 10:54:25,441:DEBUG:door_sensor_1_car_closed.value=0
+2023-08-09 10:54:25,484:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 10:54:54,136:INFO:Stopping Garage Door Monitor
+2023-08-09 10:55:51,808:DEBUG:door_sensor_2_car_closed.value=0
+2023-08-09 10:55:51,843:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 10:55:51,887:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 10:55:51,930:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 10:56:16,725:INFO:Stopping Garage Door Monitor
+2023-08-09 11:12:58,992:DEBUG:Starting Garage Door Monitor
+2023-08-09 11:12:58,993:DEBUG:DOOR:two_car:created
+2023-08-09 11:12:58,994:DEBUG:DOOR:one_car:created
+2023-08-09 11:12:59,050:DEBUG:door_sensor_2_car_closed.value=0
+2023-08-09 11:12:59,084:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 11:12:59,128:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 11:12:59,171:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 11:12:59,172:DEBUG:Close Door: one_car
+2023-08-09 11:13:42,086:DEBUG:Starting Garage Door Monitor
+2023-08-09 11:13:42,086:DEBUG:DOOR:two_car:created
+2023-08-09 11:13:42,087:DEBUG:DOOR:one_car:created
+2023-08-09 11:13:42,144:DEBUG:door_sensor_2_car_closed.value=0
+2023-08-09 11:15:08,314:DEBUG:Starting Garage Door Monitor
+2023-08-09 11:15:08,330:DEBUG:DOOR:two_car:created
+2023-08-09 11:15:08,331:DEBUG:DOOR:one_car:created
+2023-08-09 11:15:08,432:DEBUG:door_sensor_2_car_closed.value=0
+2023-08-09 11:15:08,475:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 11:15:08,519:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 11:15:08,562:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 11:15:08,563:DEBUG:Close Door: one_car
+2023-08-09 11:15:08,563:DEBUG:two_car garage has been unknown for 0 seconds is neither Open nor Closed
+2023-08-09 11:17:27,180:DEBUG:Close Door: two_car
+2023-08-09 11:17:27,182:DEBUG:DOOR:two_car:closed
+2023-08-09 11:20:02,769:INFO:Stopping Garage Door Monitor
+2023-08-09 11:20:10,199:DEBUG:Starting Garage Door Monitor
+2023-08-09 11:20:10,200:DEBUG:DOOR:two_car:created
+2023-08-09 11:20:10,201:DEBUG:DOOR:one_car:created
+2023-08-09 11:20:10,257:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-09 11:20:10,301:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 11:20:10,344:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 11:20:10,388:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 11:20:10,388:DEBUG:Close Door: one_car
+2023-08-09 11:20:10,389:DEBUG:Close Door: two_car
+2023-08-09 11:33:21,775:DEBUG:Starting Garage Door Monitor
+2023-08-09 11:33:21,776:DEBUG:DOOR:two_car:created
+2023-08-09 11:33:21,777:DEBUG:DOOR:one_car:created
+2023-08-09 11:33:21,792:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-09 11:33:21,794:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 11:33:21,797:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 11:33:21,799:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 11:33:50,069:DEBUG:Starting Garage Door Monitor
+2023-08-09 11:33:50,070:DEBUG:DOOR:two_car:created
+2023-08-09 11:33:50,071:DEBUG:DOOR:one_car:created
+2023-08-09 11:33:50,127:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-09 11:33:50,171:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 11:33:50,214:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 11:33:50,258:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 11:33:50,258:DEBUG:Close Door: one_car
+2023-08-09 11:33:50,259:DEBUG:Close Door: two_car
+2023-08-09 11:34:19,768:DEBUG:Un-Close Door: two_car
+2023-08-09 11:38:09,170:DEBUG:Open Door: one_car
+2023-08-09 11:38:23,290:INFO:Stopping Garage Door Monitor
+2023-08-09 11:38:23,292:INFO:Stopping Garage Door Monitor
+2023-08-09 11:38:55,152:DEBUG:Starting Garage Door Monitor
+2023-08-09 11:38:55,153:DEBUG:DOOR:two_car:created
+2023-08-09 11:38:55,154:DEBUG:DOOR:one_car:created
+2023-08-09 11:38:55,211:DEBUG:door_sensor_2_car_closed.value=0
+2023-08-09 11:38:55,245:DEBUG:door_sensor_2_car_opened.value=1
+2023-08-09 11:38:55,290:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 11:38:55,333:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 11:38:55,333:DEBUG:Close Door: one_car
+2023-08-09 11:38:55,334:DEBUG:Open Door: two_car
+2023-08-09 11:39:57,255:DEBUG:Close Door: two_car
+2023-08-09 11:39:57,658:DEBUG:Un-Open Door: two_car
+2023-08-09 11:41:09,623:INFO:Stopping Garage Door Monitor
+2023-08-09 11:42:42,604:DEBUG:Starting Garage Door Monitor
+2023-08-09 11:42:42,605:DEBUG:DOOR:two_car:created
+2023-08-09 11:42:42,606:DEBUG:DOOR:one_car:created
+2023-08-09 11:42:42,662:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-09 11:42:42,697:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 11:42:42,741:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 11:42:42,784:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 11:42:42,785:DEBUG:Close Door: one_car
+2023-08-09 11:42:42,786:DEBUG:Close Door: two_car
+2023-08-09 11:42:42,792:DEBUG:one_car garage has been closed for 0 seconds
+2023-08-09 11:42:42,792:DEBUG:two_car garage has been closed for 0 seconds
+2023-08-09 11:42:47,793:DEBUG:one_car garage has been closed for 5 seconds
+2023-08-09 11:42:47,795:DEBUG:two_car garage has been closed for 5 seconds
+2023-08-09 11:42:52,802:DEBUG:one_car garage has been closed for 10 seconds
+2023-08-09 11:42:52,804:DEBUG:two_car garage has been closed for 10 seconds
+2023-08-09 11:42:57,813:DEBUG:one_car garage has been closed for 15 seconds
+2023-08-09 11:42:57,814:DEBUG:two_car garage has been closed for 15 seconds
+2023-08-09 11:43:02,817:DEBUG:one_car garage has been closed for 20 seconds
+2023-08-09 11:43:02,818:DEBUG:two_car garage has been closed for 20 seconds
+2023-08-09 11:43:07,826:DEBUG:one_car garage has been closed for 25 seconds
+2023-08-09 11:43:07,828:DEBUG:two_car garage has been closed for 25 seconds
+2023-08-09 11:43:12,831:DEBUG:one_car garage has been closed for 30 seconds
+2023-08-09 11:43:12,832:DEBUG:two_car garage has been closed for 30 seconds
+2023-08-09 11:43:16,333:DEBUG:Open Door: two_car
+2023-08-09 11:43:16,423:DEBUG:Un-Close Door: two_car
+2023-08-09 11:43:17,833:DEBUG:one_car garage has been closed for 35 seconds
+2023-08-09 11:43:17,835:DEBUG:two_car garage has been unknown for 1 seconds
+2023-08-09 11:43:22,839:DEBUG:one_car garage has been closed for 40 seconds
+2023-08-09 11:43:22,840:DEBUG:two_car garage has been unknown for 6 seconds
+2023-08-09 11:43:27,847:DEBUG:one_car garage has been closed for 45 seconds
+2023-08-09 11:43:27,848:DEBUG:two_car garage has been unknown for 11 seconds
+2023-08-09 11:43:32,855:DEBUG:one_car garage has been closed for 50 seconds
+2023-08-09 11:43:32,857:DEBUG:two_car garage has been unknown for 16 seconds
+2023-08-09 11:43:37,863:DEBUG:one_car garage has been closed for 55 seconds
+2023-08-09 11:43:37,865:DEBUG:two_car garage has been unknown for 21 seconds
+2023-08-09 11:43:42,870:DEBUG:one_car garage has been closed for 60 seconds
+2023-08-09 11:43:42,871:DEBUG:two_car garage has been unknown for 26 seconds
+2023-08-09 11:43:47,877:DEBUG:one_car garage has been closed for 65 seconds
+2023-08-09 11:43:47,879:DEBUG:two_car garage has been unknown for 31 seconds
+2023-08-09 11:43:52,881:DEBUG:one_car garage has been closed for 70 seconds
+2023-08-09 11:43:52,882:DEBUG:two_car garage has been unknown for 36 seconds
+2023-08-09 11:43:57,885:DEBUG:one_car garage has been closed for 75 seconds
+2023-08-09 11:43:57,886:DEBUG:two_car garage has been unknown for 41 seconds
+2023-08-09 11:44:02,889:DEBUG:one_car garage has been closed for 80 seconds
+2023-08-09 11:44:02,891:DEBUG:two_car garage has been unknown for 46 seconds
+2023-08-09 11:44:07,901:DEBUG:one_car garage has been closed for 85 seconds
+2023-08-09 11:44:07,902:DEBUG:two_car garage has been unknown for 51 seconds
+2023-08-09 11:44:12,903:DEBUG:one_car garage has been closed for 90 seconds
+2023-08-09 11:44:12,905:DEBUG:two_car garage has been unknown for 56 seconds
+2023-08-09 11:44:17,908:DEBUG:one_car garage has been closed for 95 seconds
+2023-08-09 11:44:17,909:DEBUG:two_car garage has been unknown for 61 seconds
+2023-08-09 11:44:22,914:DEBUG:one_car garage has been closed for 100 seconds
+2023-08-09 11:44:22,915:DEBUG:two_car garage has been unknown for 66 seconds
+2023-08-09 11:44:27,639:INFO:Stopping Garage Door Monitor
+2023-08-09 11:48:16,730:DEBUG:Starting Garage Door Monitor
+2023-08-09 11:48:16,731:DEBUG:DOOR:two_car:created
+2023-08-09 11:48:16,732:DEBUG:DOOR:one_car:created
+2023-08-09 11:48:16,789:DEBUG:door_sensor_2_car_closed.value=0
+2023-08-09 11:48:16,824:DEBUG:door_sensor_2_car_opened.value=1
+2023-08-09 11:48:16,868:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 11:48:16,911:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 11:48:16,912:DEBUG:Close Door: one_car
+2023-08-09 11:48:16,913:DEBUG:Open Door: two_car
+2023-08-09 11:48:16,918:DEBUG:Close Door: one_car
+2023-08-09 11:48:16,919:DEBUG:Open Door: two_car
+2023-08-09 11:48:21,920:DEBUG:Close Door: one_car
+2023-08-09 11:48:21,930:DEBUG:Open Door: two_car
+2023-08-09 11:48:26,932:DEBUG:Close Door: one_car
+2023-08-09 11:48:26,936:DEBUG:Open Door: two_car
+2023-08-09 11:48:31,937:DEBUG:Close Door: one_car
+2023-08-09 11:48:31,946:DEBUG:Open Door: two_car
+2023-08-09 11:48:36,948:DEBUG:Close Door: one_car
+2023-08-09 11:48:36,956:DEBUG:two_car garage has been unknown for 5 seconds is neither Open nor Closed
+2023-08-09 11:48:41,958:DEBUG:Close Door: one_car
+2023-08-09 11:48:41,966:DEBUG:two_car garage has been unknown for 10 seconds is neither Open nor Closed
+2023-08-09 11:48:46,967:DEBUG:Close Door: one_car
+2023-08-09 11:48:46,974:DEBUG:two_car garage has been unknown for 15 seconds is neither Open nor Closed
+2023-08-09 11:48:48,386:DEBUG:Close Door: two_car
+2023-08-09 11:48:48,794:DEBUG:Un-Open Door: two_car
+2023-08-09 11:48:51,976:DEBUG:Close Door: one_car
+2023-08-09 11:48:51,982:DEBUG:Close Door: two_car
+2023-08-09 11:48:56,983:DEBUG:Close Door: one_car
+2023-08-09 11:48:56,992:DEBUG:Close Door: two_car
+2023-08-09 11:49:01,994:DEBUG:Close Door: one_car
+2023-08-09 11:49:02,000:DEBUG:Close Door: two_car
+2023-08-09 11:49:07,001:DEBUG:Close Door: one_car
+2023-08-09 11:49:07,015:DEBUG:Close Door: two_car
+2023-08-09 11:49:12,017:DEBUG:Close Door: one_car
+2023-08-09 11:49:12,021:DEBUG:Close Door: two_car
+2023-08-09 11:49:14,381:INFO:Stopping Garage Door Monitor
+2023-08-09 15:00:56,756:DEBUG:Starting Garage Door Monitor
+2023-08-09 15:00:56,757:DEBUG:DOOR:two_car:created
+2023-08-09 15:00:56,758:DEBUG:DOOR:one_car:created
+2023-08-09 15:00:56,814:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-09 15:03:02,935:DEBUG:Starting Garage Door Monitor
+2023-08-09 15:03:02,935:DEBUG:DOOR:two_car:created
+2023-08-09 15:03:02,936:DEBUG:DOOR:one_car:created
+2023-08-09 15:03:02,993:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-09 15:03:03,027:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 15:03:03,071:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 15:03:03,114:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 15:03:03,115:DEBUG:Close Door: one_car
+2023-08-09 15:03:03,116:DEBUG:Close Door: two_car
+2023-08-09 15:06:10,601:INFO:Stopping Garage Door Monitor
+2023-08-09 15:13:16,357:DEBUG:Starting Garage Door Monitor
+2023-08-09 15:13:16,357:DEBUG:DOOR:two_car:created
+2023-08-09 15:13:16,358:DEBUG:DOOR:one_car:created
+2023-08-09 15:13:16,414:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-09 15:13:16,449:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 15:13:16,493:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 15:13:16,536:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 15:13:16,537:DEBUG:Close Door: one_car
+2023-08-09 15:13:16,538:DEBUG:Close Door: two_car
+2023-08-09 15:13:16,538:DEBUG:Close Door: one_car
+2023-08-09 15:13:16,539:DEBUG:Close Door: two_car
+2023-08-09 15:13:40,677:INFO:Stopping Garage Door Monitor
+2023-08-09 15:14:33,644:DEBUG:Starting Garage Door Monitor
+2023-08-09 15:14:33,644:DEBUG:DOOR:two_car:created
+2023-08-09 15:14:33,645:DEBUG:DOOR:one_car:created
+2023-08-09 15:14:33,703:DEBUG:door_sensor_2_car_closed.value=1
+2023-08-09 15:14:33,738:DEBUG:door_sensor_2_car_opened.value=0
+2023-08-09 15:14:33,782:DEBUG:door_sensor_1_car_closed.value=1
+2023-08-09 15:14:33,825:DEBUG:door_sensor_1_car_opened.value=0
+2023-08-09 15:14:33,826:DEBUG:Close Door: one_car
+2023-08-09 15:14:33,826:DEBUG:DOOR:one_car:closed
+2023-08-09 15:14:33,827:DEBUG:Close Door: two_car
+2023-08-09 15:14:33,827:DEBUG:DOOR:two_car:closed
+2023-08-09 15:14:33,828:DEBUG:Close Door: one_car
+2023-08-09 15:14:33,828:DEBUG:Close Door: two_car
+2023-08-09 15:15:33,829:DEBUG:Close Door: one_car
+2023-08-09 15:16:33,831:DEBUG:Close Door: one_car
+2023-08-09 15:16:33,832:DEBUG:Open Door: two_car
+2023-08-09 15:17:33,833:DEBUG:Close Door: one_car
+2023-08-09 15:17:33,834:DEBUG:Open Door: two_car
+2023-08-09 15:18:33,836:DEBUG:Close Door: one_car
+2023-08-09 15:18:33,837:DEBUG:Open Door: two_car
+2023-08-09 15:19:29,661:INFO:Stopping Garage Door Monitor

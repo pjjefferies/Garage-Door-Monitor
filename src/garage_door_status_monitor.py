@@ -48,20 +48,24 @@ def door_op(
     # Log status change of door
     print(f"DOOR:{door.name}:{action.name}")
     history_logger.info(msg=f"DOOR:{door.name}:{action.name}")
+    # logger.debug(msg=f"DOOR:{door.name}:{action.name}")
 
 
 def main() -> None:
     history_logger.info(msg=f"Starting Garage Door Monitor")
+    logger.debug(msg=f"Starting Garage Door Monitor")
 
     two_car_garage = GarageDoor(
         name=GarageDoorName.two_car.name,
         status=GarageStatus.unknown,
-        logger=history_logger,
+        debug_logger=logger,
+        data_logger=history_logger,
     )
     one_car_garage = GarageDoor(
         name=GarageDoorName.one_car.name,
         status=GarageStatus.unknown,
-        logger=history_logger,
+        debug_logger=logger,
+        data_logger=history_logger,
     )
 
     door_sensor_2_car_closed = DigitalInputDevice(
@@ -96,11 +100,15 @@ def main() -> None:
         open_sensor_state=door_sensor_1_car_opened.value,
         closed_sensor_state=door_sensor_1_car_closed.value,
     )
+    one_car_garage.report_status()
+
     two_car_garage.update_status(
         open_sensor_state=door_sensor_2_car_opened.value,
         closed_sensor_state=door_sensor_2_car_closed.value,
     )
+    two_car_garage.report_status()
 
+    """
     door_sensor_2_car_closed.when_activated = partial(
         door_op, two_car_garage, lambda: close_door(two_car_garage), GarageStatus.closed
     )
@@ -141,16 +149,33 @@ def main() -> None:
         lambda: un_open_door(one_car_garage),
         GarageStatus.un_open,
     )
+    """
 
     # Register the exit handler with `SIGINT`(CTRL + C)
     signal.signal(signalnum=signal.SIGINT, handler=exit_handler)
-
     # Register the exit handler with `SIGTSTP` (Ctrl + Z)
     signal.signal(signalnum=signal.SIGTSTP, handler=exit_handler)
 
+    one_car_garage_last_status: GarageStatus = one_car_garage.status
+    two_car_garage_last_status: GarageStatus = two_car_garage.status
+
     while True:
-        logger.debug(msg=f"{str(one_car_garage)}, {str(two_car_garage)}")
-        sleep(5)
+        one_car_garage.update_status(
+            open_sensor_state=door_sensor_1_car_opened.value,
+            closed_sensor_state=door_sensor_1_car_closed.value,
+        )
+        if one_car_garage.status != one_car_garage_last_status:
+            one_car_garage.report_status()
+            one_car_garage_last_status = one_car_garage.status
+
+        two_car_garage.update_status(
+            open_sensor_state=door_sensor_2_car_opened.value,
+            closed_sensor_state=door_sensor_2_car_closed.value,
+        )
+        if one_car_garage.status != one_car_garage_last_status:
+            two_car_garage.report_status()
+            two_car_garage_last_status = two_car_garage.status
+        sleep(cfg.APP.LOOP_DELAY)
 
 
 if __name__ == "__main__":

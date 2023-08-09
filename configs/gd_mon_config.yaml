@@ -2,6 +2,7 @@
 
 base:
     APP:  # Window Start-up
+        LOOP_DELAY: 60
 
     LOGGING:
         CONFIG_PATH: "configs/logging_config.yaml"
@@ -9,20 +10,20 @@ base:
     SENSOR_GPIO_PINS:
         TWO_CAR:
             CLOSED:
-                NUMBER: 13
-                PULL_UP: True
-                BOUNCE_TIME: 1.0
-            OPEN:
-                NUMBER: 0
-                PULL_UP: True
-                BOUNCE_TIME: 1.0
-        ONE_CAR:
-            CLOSED:
                 NUMBER: 5
                 PULL_UP: True
                 BOUNCE_TIME: 1.0
             OPEN:
                 NUMBER: 6
+                PULL_UP: True
+                BOUNCE_TIME: 1.0
+        ONE_CAR:
+            CLOSED:
+                NUMBER: 13
+                PULL_UP: True
+                BOUNCE_TIME: 1.0
+            OPEN:
+                NUMBER: 0
                 PULL_UP: True
                 BOUNCE_TIME: 1.0
 

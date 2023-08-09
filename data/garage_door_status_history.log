@@ -990,3 +990,127 @@
 2023-08-08 23:00:37,779:INFO:Starting Garage Door Monitor
 2023-08-08 23:00:37,791:INFO:DOOR:two_car:created
 2023-08-08 23:00:37,791:INFO:DOOR:one_car:created
+2023-08-09 00:21:09,541:INFO:Starting Garage Door Monitor
+2023-08-09 00:21:09,542:INFO:DOOR:two_car:created
+2023-08-09 00:21:09,542:INFO:DOOR:one_car:created
+2023-08-09 00:22:25,383:INFO:Exiting Gracefully
+2023-08-09 00:23:59,978:INFO:Starting Garage Door Monitor
+2023-08-09 00:23:59,978:INFO:DOOR:two_car:created
+2023-08-09 00:23:59,979:INFO:DOOR:one_car:created
+2023-08-09 00:24:16,678:INFO:Stopping Garage Door Monitor
+2023-08-09 00:25:25,112:INFO:Starting Garage Door Monitor
+2023-08-09 00:25:25,113:INFO:DOOR:two_car:created
+2023-08-09 00:25:25,113:INFO:DOOR:one_car:created
+2023-08-09 00:25:36,455:INFO:Stopping Garage Door Monitor
+2023-08-09 00:29:05,642:INFO:Starting Garage Door Monitor
+2023-08-09 00:29:05,655:INFO:DOOR:two_car:created
+2023-08-09 00:29:05,655:INFO:DOOR:one_car:created
+2023-08-09 00:45:31,193:INFO:Stopping Garage Door Monitor
+2023-08-09 00:47:02,095:INFO:Starting Garage Door Monitor
+2023-08-09 00:47:02,096:INFO:DOOR:two_car:created
+2023-08-09 00:47:02,104:INFO:DOOR:one_car:created
+2023-08-09 10:54:17,845:INFO:Stopping Garage Door Monitor
+2023-08-09 10:54:25,302:INFO:Starting Garage Door Monitor
+2023-08-09 10:54:25,303:INFO:DOOR:two_car:created
+2023-08-09 10:54:25,303:INFO:DOOR:one_car:created
+2023-08-09 10:54:54,137:INFO:Stopping Garage Door Monitor
+2023-08-09 10:55:51,751:INFO:Starting Garage Door Monitor
+2023-08-09 10:55:51,752:INFO:DOOR:two_car:created
+2023-08-09 10:55:51,752:INFO:DOOR:one_car:created
+2023-08-09 10:56:16,726:INFO:Stopping Garage Door Monitor
+2023-08-09 11:12:58,991:INFO:Starting Garage Door Monitor
+2023-08-09 11:12:58,993:INFO:DOOR:two_car:created
+2023-08-09 11:12:58,994:INFO:DOOR:one_car:created
+2023-08-09 11:12:59,173:INFO:Close Door: one_car
+2023-08-09 11:13:42,085:INFO:Starting Garage Door Monitor
+2023-08-09 11:13:42,087:INFO:DOOR:two_car:created
+2023-08-09 11:13:42,087:INFO:DOOR:one_car:created
+2023-08-09 11:15:08,302:INFO:Starting Garage Door Monitor
+2023-08-09 11:15:08,331:INFO:DOOR:two_car:created
+2023-08-09 11:15:08,332:INFO:DOOR:one_car:created
+2023-08-09 11:15:08,563:INFO:Close Door: one_car
+2023-08-09 11:17:27,182:INFO:Close Door: two_car
+2023-08-09 11:17:27,182:INFO:DOOR:two_car:closed
+2023-08-09 11:20:02,770:INFO:Stopping Garage Door Monitor
+2023-08-09 11:20:10,199:INFO:Starting Garage Door Monitor
+2023-08-09 11:20:10,200:INFO:DOOR:two_car:created
+2023-08-09 11:20:10,201:INFO:DOOR:one_car:created
+2023-08-09 11:33:21,775:INFO:Starting Garage Door Monitor
+2023-08-09 11:33:21,776:INFO:DOOR:two_car:created
+2023-08-09 11:33:21,777:INFO:DOOR:one_car:created
+2023-08-09 11:33:50,068:INFO:Starting Garage Door Monitor
+2023-08-09 11:33:50,070:INFO:DOOR:two_car:created
+2023-08-09 11:33:50,071:INFO:DOOR:one_car:created
+2023-08-09 11:33:50,259:INFO:DOOR:one_car:closed
+2023-08-09 11:33:50,259:INFO:DOOR:two_car:closed
+2023-08-09 11:34:19,770:INFO:DOOR:two_car:un_closed
+2023-08-09 11:38:09,171:INFO:DOOR:one_car:open
+2023-08-09 11:38:23,291:INFO:Stopping Garage Door Monitor
+2023-08-09 11:38:23,292:INFO:Stopping Garage Door Monitor
+2023-08-09 11:38:55,152:INFO:Starting Garage Door Monitor
+2023-08-09 11:38:55,153:INFO:DOOR:two_car:created
+2023-08-09 11:38:55,154:INFO:DOOR:one_car:created
+2023-08-09 11:38:55,334:INFO:DOOR:one_car:closed
+2023-08-09 11:38:55,334:INFO:DOOR:two_car:opened
+2023-08-09 11:39:57,257:INFO:DOOR:two_car:closed
+2023-08-09 11:39:57,659:INFO:DOOR:two_car:un_open
+2023-08-09 11:41:09,624:INFO:Stopping Garage Door Monitor
+2023-08-09 11:42:42,604:INFO:Starting Garage Door Monitor
+2023-08-09 11:42:42,606:INFO:DOOR:two_car:created
+2023-08-09 11:42:42,606:INFO:DOOR:one_car:created
+2023-08-09 11:42:42,785:INFO:DOOR:one_car:closed
+2023-08-09 11:42:42,786:INFO:DOOR:two_car:closed
+2023-08-09 11:43:16,334:INFO:DOOR:two_car:open
+2023-08-09 11:43:16,424:INFO:DOOR:two_car:un_closed
+2023-08-09 11:44:27,640:INFO:Stopping Garage Door Monitor
+2023-08-09 11:48:16,730:INFO:Starting Garage Door Monitor
+2023-08-09 11:48:16,731:INFO:DOOR:two_car:created
+2023-08-09 11:48:16,732:INFO:DOOR:one_car:created
+2023-08-09 11:48:16,912:INFO:DOOR:one_car:closed
+2023-08-09 11:48:16,913:INFO:DOOR:two_car:opened
+2023-08-09 11:48:16,919:INFO:DOOR:one_car:closed
+2023-08-09 11:48:16,919:INFO:DOOR:two_car:opened
+2023-08-09 11:48:21,922:INFO:DOOR:one_car:closed
+2023-08-09 11:48:21,931:INFO:DOOR:two_car:opened
+2023-08-09 11:48:26,933:INFO:DOOR:one_car:closed
+2023-08-09 11:48:26,937:INFO:DOOR:two_car:opened
+2023-08-09 11:48:31,938:INFO:DOOR:one_car:closed
+2023-08-09 11:48:31,947:INFO:DOOR:two_car:opened
+2023-08-09 11:48:36,949:INFO:DOOR:one_car:closed
+2023-08-09 11:48:36,957:INFO:DOOR:two_car:Unknown
+2023-08-09 11:48:41,959:INFO:DOOR:one_car:closed
+2023-08-09 11:48:41,966:INFO:DOOR:two_car:Unknown
+2023-08-09 11:48:46,968:INFO:DOOR:one_car:closed
+2023-08-09 11:48:46,975:INFO:DOOR:two_car:Unknown
+2023-08-09 11:48:48,387:INFO:DOOR:two_car:closed
+2023-08-09 11:48:48,795:INFO:DOOR:two_car:un_open
+2023-08-09 11:48:51,977:INFO:DOOR:one_car:closed
+2023-08-09 11:48:51,982:INFO:DOOR:two_car:closed
+2023-08-09 11:48:56,984:INFO:DOOR:one_car:closed
+2023-08-09 11:48:56,993:INFO:DOOR:two_car:closed
+2023-08-09 11:49:01,995:INFO:DOOR:one_car:closed
+2023-08-09 11:49:02,000:INFO:DOOR:two_car:closed
+2023-08-09 11:49:07,002:INFO:DOOR:one_car:closed
+2023-08-09 11:49:07,016:INFO:DOOR:two_car:closed
+2023-08-09 11:49:12,018:INFO:DOOR:one_car:closed
+2023-08-09 11:49:12,022:INFO:DOOR:two_car:closed
+2023-08-09 11:49:14,382:INFO:Stopping Garage Door Monitor
+2023-08-09 15:00:56,756:INFO:Starting Garage Door Monitor
+2023-08-09 15:00:56,757:INFO:DOOR:two_car:created
+2023-08-09 15:00:56,758:INFO:DOOR:one_car:created
+2023-08-09 15:03:02,934:INFO:Starting Garage Door Monitor
+2023-08-09 15:03:02,936:INFO:DOOR:two_car:created
+2023-08-09 15:03:02,937:INFO:DOOR:one_car:created
+2023-08-09 15:03:03,116:INFO:DOOR:one_car:closed
+2023-08-09 15:03:03,116:INFO:DOOR:two_car:closed
+2023-08-09 15:06:10,602:INFO:Stopping Garage Door Monitor
+2023-08-09 15:13:16,356:INFO:Starting Garage Door Monitor
+2023-08-09 15:13:16,358:INFO:DOOR:two_car:created
+2023-08-09 15:13:16,359:INFO:DOOR:one_car:created
+2023-08-09 15:13:40,677:INFO:Stopping Garage Door Monitor
+2023-08-09 15:14:33,643:INFO:Starting Garage Door Monitor
+2023-08-09 15:14:33,645:INFO:DOOR:two_car:created
+2023-08-09 15:14:33,645:INFO:DOOR:one_car:created
+2023-08-09 15:14:33,826:INFO:DOOR:one_car:closed
+2023-08-09 15:14:33,827:INFO:DOOR:two_car:closed
+2023-08-09 15:19:29,662:INFO:Stopping Garage Door Monitor
