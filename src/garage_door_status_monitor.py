@@ -6,7 +6,6 @@ from time import sleep
 from typing import Callable
 
 from gpiozero import DigitalInputDevice
-from signal import pause
 
 from src.config.config_main import cfg
 from src.config.config_logging import history_logger, logger
@@ -23,6 +22,7 @@ from src.garage_door import (
 class GarageDoorName(Enum):
     two_car = 1
     one_car = 2
+
 
 @dataclass
 class GarageStatusHistoryDatum:
@@ -48,12 +48,12 @@ def main() -> None:
     two_car_garage = GarageDoor(
         name=GarageDoorName.two_car.name,
         status=GarageStatus.unknown,
-        logger=history_logger
+        logger=history_logger,
     )
     one_car_garage = GarageDoor(
         name=GarageDoorName.one_car.name,
         status=GarageStatus.unknown,
-        logger=history_logger
+        logger=history_logger,
     )
 
     door_sensor_2_car_closed = DigitalInputDevice(
@@ -84,14 +84,17 @@ def main() -> None:
     )
     logger.debug(f"{door_sensor_1_car_opened.value=}")
 
-    one_car_garage.update_status(door_sensor_1_car_opened.value, door_sensor_1_car_closed.value)
-    two_car_garage.update_status(door_sensor_2_car_opened.value, door_sensor_2_car_closed.value)
+    one_car_garage.update_status(
+        open_sensor_state=door_sensor_1_car_opened.value,
+        closed_sensor_state=door_sensor_1_car_closed.value,
+    )
+    two_car_garage.update_status(
+        open_sensor_state=door_sensor_2_car_opened.value,
+        closed_sensor_state=door_sensor_2_car_closed.value,
+    )
 
     door_sensor_2_car_closed.when_activated = partial(
-        door_op,
-        two_car_garage,
-        lambda: close_door(two_car_garage),
-        GarageStatus.closed
+        door_op, two_car_garage, lambda: close_door(two_car_garage), GarageStatus.closed
     )
 
     door_sensor_2_car_closed.when_deactivated = partial(
@@ -101,22 +104,16 @@ def main() -> None:
         GarageStatus.un_closed,
     )
     door_sensor_2_car_opened.when_activated = partial(
-        door_op,
-        two_car_garage,
-        lambda: open_door(two_car_garage),
-        GarageStatus.open
+        door_op, two_car_garage, lambda: open_door(two_car_garage), GarageStatus.open
     )
     door_sensor_2_car_opened.when_deactivated = partial(
         door_op,
         two_car_garage,
         lambda: un_open_door(two_car_garage),
-        GarageStatus.un_open
+        GarageStatus.un_open,
     )
     door_sensor_1_car_closed.when_activated = partial(
-        door_op,
-        one_car_garage,
-        lambda: close_door(one_car_garage),
-        GarageStatus.closed
+        door_op, one_car_garage, lambda: close_door(one_car_garage), GarageStatus.closed
     )
 
     door_sensor_1_car_closed.when_deactivated = partial(
@@ -127,17 +124,14 @@ def main() -> None:
     )
 
     door_sensor_1_car_opened.when_activated = partial(
-        door_op,
-        one_car_garage,
-        lambda: open_door(one_car_garage),
-        GarageStatus.open
+        door_op, one_car_garage, lambda: open_door(one_car_garage), GarageStatus.open
     )
 
     door_sensor_1_car_opened.when_deactivated = partial(
         door_op,
         one_car_garage,
         lambda: un_open_door(one_car_garage),
-        GarageStatus.un_open
+        GarageStatus.un_open,
     )
 
     while True:

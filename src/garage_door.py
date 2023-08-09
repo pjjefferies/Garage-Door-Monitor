@@ -14,8 +14,10 @@ TIME_ZONE = pytz.timezone(zone="America/Detroit")
 class LoggerProto(Protocol):
     def debug(self, msg: str) -> None:
         ...
+
     def info(self, msg: str) -> None:
         ...
+
 
 class GarageStatus(Enum):
     open = 1
@@ -35,23 +37,22 @@ class GarageDoor:
         self.status_change_time: dt.datetime = dt.datetime.now(tz=TIME_ZONE)
         self.logger.info(msg=f"DOOR:{self.name}:created")
 
-    def update_status(self, open_sensor, closed_sensor):
-        if open_sensor and not closed_sensor:
+    def update_status(self, open_sensor_state: bool, closed_sensor_state: bool):
+        if open_sensor_state and not closed_sensor_state:
             open_door(self)
             return
-        if not open_sensor and closed_sensor:
+        if not open_sensor_state and closed_sensor_state:
             close_door(self)
             return
-        if not open_sensor and not closed_sensor:
+        if not open_sensor_state and not closed_sensor_state:
             self.status = GarageStatus.unknown
             self.logger.debug(msg=f"{self} is neither Open nor Closed")
             return
-        if open_sensor and closed_sensor:
-            msg=f"For door {self}, both Open and Closed Sensors are Active"
+        if open_sensor_state and closed_sensor_state:
+            msg = f"For door {self}, both Open and Closed Sensors are Active"
             self.logger.debug(msg=msg)
             raise ValueError(msg)
         raise SyntaxError(f"Should never get here")
-
 
     def time_as_status(self) -> dt.timedelta:
         now_time = dt.datetime.now(tz=TIME_ZONE)
