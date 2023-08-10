@@ -4,25 +4,25 @@ from enum import Enum
 from functools import partial
 import signal
 from time import sleep
-from typing import Any, Callable
+from typing import Any, Protocol
 
+from box import Box
 from gpiozero import DigitalInputDevice
 
-from src.config.config_main import cfg
+from src.config.config_main import load_config, cfg
 from src.config.config_logging import history_logger, logger
 from src.garage_door import (
     GarageDoor,
     GarageStatus,
-    close_door,
-    un_close_door,
-    open_door,
-    un_open_door,
 )
 
 
-class GarageDoorName(Enum):
-    two_car = 1
-    one_car = 2
+class LoggerProto(Protocol):
+    def debug(self, msg: str) -> None:
+        ...
+
+    def info(self, msg: str) -> None:
+        ...
 
 
 @dataclass
@@ -32,6 +32,13 @@ class GarageStatusHistoryDatum:
     timestamp: dt.datetime
 
 
+def notify_garage_open(
+    door: GarageDoor, logger: LoggerProto, history_logger: LoggerProto
+):
+    msg: str = f"Door {door.name} has been open for {(door.time_at_state):,d} seconds."
+    logger.debug(msg=msg)
+
+
 def exit_handler(signum: signal.Signals, frame: signal.Handlers) -> Any:
     msg = "Stopping Garage Door Monitor"
     logger.info(msg=msg)
@@ -39,143 +46,66 @@ def exit_handler(signum: signal.Signals, frame: signal.Handlers) -> Any:
     exit(0)
 
 
-def door_op(
-    door: GarageDoor, operation: Callable[[], None], action: GarageStatus
-) -> None:
-    # Change status of door
-    operation()
-
-    # Log status change of door
-    print(f"DOOR:{door.name}:{action.name}")
-    history_logger.info(msg=f"DOOR:{door.name}:{action.name}")
-    # logger.debug(msg=f"DOOR:{door.name}:{action.name}")
-
-
 def main() -> None:
-    history_logger.info(msg=f"Starting Garage Door Monitor")
-    logger.debug(msg=f"Starting Garage Door Monitor")
+    msg: str = f"Starting Garage Door Monitor"
+    history_logger.info(msg=msg)
+    logger.debug(msg=msg)
+    cfg: Box = load_config()
+    garage_door_config: Box = cfg.DOORS
+    garage_doors: Box = Box({})
+    for a_door_name in garage_door_config.keys():
+        garage_doors[a_door_name] = Box({})
 
-    two_car_garage = GarageDoor(
-        name=GarageDoorName.two_car.name,
-        status=GarageStatus.unknown,
-        debug_logger=logger,
-        data_logger=history_logger,
-    )
-    one_car_garage = GarageDoor(
-        name=GarageDoorName.one_car.name,
-        status=GarageStatus.unknown,
-        debug_logger=logger,
-        data_logger=history_logger,
-    )
+    # Create DigitalInputDevice Door Open/Closed Sensors
+    for garage_door in garage_door_config.keys():
+        garage_doors[garage_door]["open_sensor"] = DigitalInputDevice(
+            pin=int(garage_door_config[garage_door].OPEN.NUMBER),
+            pull_up=garage_door_config[garage_door].OPEN.PULL_UP,
+            bounce_time=garage_door_config[garage_door].OPEN.BOUNCE_TIME,
+        )
+        logger.debug(f"{garage_doors[garage_door]['open_sensor'].value=}")
 
-    door_sensor_2_car_closed = DigitalInputDevice(
-        pin=int(cfg.SENSOR_GPIO_PINS.TWO_CAR.CLOSED.NUMBER),
-        pull_up=cfg.SENSOR_GPIO_PINS.TWO_CAR.CLOSED.PULL_UP,
-        bounce_time=cfg.SENSOR_GPIO_PINS.TWO_CAR.CLOSED.BOUNCE_TIME,
-    )
-    logger.debug(f"{door_sensor_2_car_closed.value=}")
+        garage_doors[garage_door]["closed_sensor"] = DigitalInputDevice(
+            pin=int(garage_door_config[garage_door].CLOSED.NUMBER),
+            pull_up=garage_door_config[garage_door].CLOSED.PULL_UP,
+            bounce_time=garage_door_config[garage_door].CLOSED.BOUNCE_TIME,
+        )
+        logger.debug(f"{garage_doors[garage_door]['closed_sensor'].value=}")
 
-    door_sensor_2_car_opened = DigitalInputDevice(
-        pin=int(cfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.NUMBER),
-        pull_up=cfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.PULL_UP,
-        bounce_time=cfg.SENSOR_GPIO_PINS.TWO_CAR.OPEN.BOUNCE_TIME,
-    )
-    logger.debug(f"{door_sensor_2_car_opened.value=}")
-
-    door_sensor_1_car_closed = DigitalInputDevice(
-        pin=cfg.SENSOR_GPIO_PINS.ONE_CAR.CLOSED.NUMBER,
-        pull_up=cfg.SENSOR_GPIO_PINS.ONE_CAR.CLOSED.PULL_UP,
-        bounce_time=cfg.SENSOR_GPIO_PINS.ONE_CAR.CLOSED.BOUNCE_TIME,
-    )
-    logger.debug(f"{door_sensor_1_car_closed.value=}")
-
-    door_sensor_1_car_opened = DigitalInputDevice(
-        pin=cfg.SENSOR_GPIO_PINS.ONE_CAR.OPEN.NUMBER,
-        pull_up=cfg.SENSOR_GPIO_PINS.ONE_CAR.OPEN.PULL_UP,
-        bounce_time=cfg.SENSOR_GPIO_PINS.ONE_CAR.OPEN.BOUNCE_TIME,
-    )
-    logger.debug(f"{door_sensor_1_car_opened.value=}")
-
-    one_car_garage.update_status(
-        open_sensor_state=door_sensor_1_car_opened.value,
-        closed_sensor_state=door_sensor_1_car_closed.value,
-    )
-    one_car_garage.report_status()
-
-    two_car_garage.update_status(
-        open_sensor_state=door_sensor_2_car_opened.value,
-        closed_sensor_state=door_sensor_2_car_closed.value,
-    )
-    two_car_garage.report_status()
-
-    """
-    door_sensor_2_car_closed.when_activated = partial(
-        door_op, two_car_garage, lambda: close_door(two_car_garage), GarageStatus.closed
-    )
-
-    door_sensor_2_car_closed.when_deactivated = partial(
-        door_op,
-        two_car_garage,
-        lambda: un_close_door(two_car_garage),
-        GarageStatus.un_closed,
-    )
-    door_sensor_2_car_opened.when_activated = partial(
-        door_op, two_car_garage, lambda: open_door(two_car_garage), GarageStatus.open
-    )
-    door_sensor_2_car_opened.when_deactivated = partial(
-        door_op,
-        two_car_garage,
-        lambda: un_open_door(two_car_garage),
-        GarageStatus.un_open,
-    )
-    door_sensor_1_car_closed.when_activated = partial(
-        door_op, one_car_garage, lambda: close_door(one_car_garage), GarageStatus.closed
-    )
-
-    door_sensor_1_car_closed.when_deactivated = partial(
-        door_op,
-        one_car_garage,
-        lambda: un_close_door(one_car_garage),
-        GarageStatus.un_closed,
-    )
-
-    door_sensor_1_car_opened.when_activated = partial(
-        door_op, one_car_garage, lambda: open_door(one_car_garage), GarageStatus.open
-    )
-
-    door_sensor_1_car_opened.when_deactivated = partial(
-        door_op,
-        one_car_garage,
-        lambda: un_open_door(one_car_garage),
-        GarageStatus.un_open,
-    )
-    """
+    # Create GarageDoor Objects
+    for garage_door in garage_door_config.keys():
+        garage_doors[garage_door]["DoorObject"] = GarageDoor(
+            name=garage_door,
+            open_sensor=garage_doors[garage_door]["open_sensor"],
+            closed_sensor=garage_doors[garage_door]["closed_sensor"],
+            debug_logger=logger,
+            history_logger=history_logger,
+        )
+        history_logger = (history_logger,)
 
     # Register the exit handler with `SIGINT`(CTRL + C)
     signal.signal(signalnum=signal.SIGINT, handler=exit_handler)
     # Register the exit handler with `SIGTSTP` (Ctrl + Z)
     signal.signal(signalnum=signal.SIGTSTP, handler=exit_handler)
 
-    one_car_garage_last_status: GarageStatus = one_car_garage.status
-    two_car_garage_last_status: GarageStatus = two_car_garage.status
-
     while True:
-        one_car_garage.update_status(
-            open_sensor_state=door_sensor_1_car_opened.value,
-            closed_sensor_state=door_sensor_1_car_closed.value,
-        )
-        if one_car_garage.status != one_car_garage_last_status:
-            one_car_garage.report_status()
-            one_car_garage_last_status = one_car_garage.status
+        # Check if garages have been open for more than X minutes (from config)
+        for garage_door in garage_door_config.keys():
+            if (
+                garage_doors[garage_door]["DoorObject"].state == GarageStatus.open
+                and (garage_doors[garage_door]["DoorObject"].time_at_state * 60)
+                > garage_door_config[garage_door].OPEN.TIME_LIMIT
+            ):
+                notify_garage_open(
+                    door=garage_doors[garage_door]["DoorObject"],
+                    logger=logger,
+                    history_logger=history_logger,
+                )
 
-        two_car_garage.update_status(
-            open_sensor_state=door_sensor_2_car_opened.value,
-            closed_sensor_state=door_sensor_2_car_closed.value,
-        )
-        if one_car_garage.status != one_car_garage_last_status:
-            two_car_garage.report_status()
-            two_car_garage_last_status = two_car_garage.status
+            # Other checks TBD?
+
         sleep(cfg.APP.LOOP_DELAY)
+        cfg = load_config()  # reload so that loop delay can be changed for dev.
 
 
 if __name__ == "__main__":
