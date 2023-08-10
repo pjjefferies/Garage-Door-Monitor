@@ -10,7 +10,8 @@ from box import Box
 from gpiozero import DigitalInputDevice
 
 from src.config.config_main import load_config, cfg
-from src.config.config_logging import history_logger, logger
+from src.config.config_logging import history_logger
+from src.config.config_logging import logger
 from src.garage_door import (
     GarageDoor,
     GarageStatus,
@@ -47,6 +48,7 @@ def exit_handler(signum: signal.Signals, frame: signal.Handlers) -> Any:
 
 
 def main() -> None:
+    global logger, history_logger
     msg: str = f"Starting Garage Door Monitor"
     history_logger.info(msg=msg)
     logger.debug(msg=msg)
@@ -63,14 +65,11 @@ def main() -> None:
             pull_up=garage_door_config[garage_door].OPEN.PULL_UP,
             bounce_time=garage_door_config[garage_door].OPEN.BOUNCE_TIME,
         )
-        logger.debug(f"{garage_doors[garage_door]['open_sensor'].value=}")
-
         garage_doors[garage_door]["closed_sensor"] = DigitalInputDevice(
             pin=int(garage_door_config[garage_door].CLOSED.NUMBER),
             pull_up=garage_door_config[garage_door].CLOSED.PULL_UP,
             bounce_time=garage_door_config[garage_door].CLOSED.BOUNCE_TIME,
         )
-        logger.debug(f"{garage_doors[garage_door]['closed_sensor'].value=}")
 
     # Create GarageDoor Objects
     for garage_door in garage_door_config.keys():
@@ -81,7 +80,6 @@ def main() -> None:
             debug_logger=logger,
             history_logger=history_logger,
         )
-        history_logger = (history_logger,)
 
     # Register the exit handler with `SIGINT`(CTRL + C)
     signal.signal(signalnum=signal.SIGINT, handler=exit_handler)
