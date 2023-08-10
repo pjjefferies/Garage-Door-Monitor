@@ -7,7 +7,7 @@ base:
     LOGGING:
         CONFIG_PATH: "configs/logging_config.yaml"
 
-    SENSOR_GPIO_PINS:
+    DOORS:
         TWO_CAR:
             CLOSED:
                 NUMBER: 5
@@ -17,6 +17,7 @@ base:
                 NUMBER: 6
                 PULL_UP: True
                 BOUNCE_TIME: 1.0
+                TIME_LIMIT: 5  # minutes
         ONE_CAR:
             CLOSED:
                 NUMBER: 13
@@ -26,6 +27,7 @@ base:
                 NUMBER: 0
                 PULL_UP: True
                 BOUNCE_TIME: 1.0
+                TIME_LIMIT: 10  # minutes
 
 dev:
     BLANK: 0
