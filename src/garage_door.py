@@ -67,12 +67,12 @@ class GarageDoor:
             return GarageStatus.closed
         if not self.open_sensor.value and not self.closed_sensor.value:
             self.debug_logger.debug(
-                msg=f"Door neither open nor closed, pausing and rechecking"
+                msg=f"Door, {self.name}, neither open nor closed, pausing and rechecking"
             )
-            sleep(30)  # Give door a chance to finish opening or closing
+            sleep(45)  # Give door a chance to finish opening or closing
             if self.open_sensor.value or self.closed_sensor.value:
                 self.debug_logger.debug(
-                    msg=f"Door is not open and or closed, rechecking"
+                    msg=f"Door, {self.name}, is now open and/or closed"
                 )
                 return self.state  # if open or closed, recursively run state
             if self.old_state != GarageStatus.unknown:
