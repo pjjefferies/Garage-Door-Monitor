@@ -4,3 +4,5 @@
 src/__pycache__
 configs/__pycache__
 src/config/__pycache__
+security/keys.py
+security/__pycache__

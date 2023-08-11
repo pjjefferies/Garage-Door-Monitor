@@ -18,6 +18,7 @@ base:
                 PULL_UP: True
                 BOUNCE_TIME: 1.0
                 TIME_LIMIT: 5  # minutes
+                ALARM_SPACING: 5  # minutes
         ONE_CAR:
             CLOSED:
                 NUMBER: 13
@@ -28,6 +29,7 @@ base:
                 PULL_UP: True
                 BOUNCE_TIME: 1.0
                 TIME_LIMIT: 10  # minutes
+                ALARM_SPACING: 5  # minutes
 
 dev:
     BLANK: 0
