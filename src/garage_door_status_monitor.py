@@ -1,7 +1,5 @@
 from dataclasses import dataclass
 import datetime as dt
-from enum import Enum
-from functools import partial
 import signal
 from time import sleep
 from typing import Any, Protocol
@@ -10,7 +8,7 @@ from box import Box
 from gpiozero import DigitalInputDevice
 
 from src.send_notification import send_notification
-from src.config.config_main import load_config, cfg
+from src.config.config_main import load_config
 from src.config.config_logging import history_logger
 from src.config.config_logging import logger
 from src.garage_door import (

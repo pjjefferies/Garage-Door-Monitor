@@ -1,12 +1,11 @@
 from dataclasses import dataclass
 import datetime as dt
 from enum import Enum
+from time import sleep
 
 from typing import Protocol  # Optional
 
 import pytz
-
-from src.config.config_logging import logger
 
 TIME_ZONE = pytz.timezone(zone="America/Detroit")
 
@@ -40,10 +39,10 @@ class GarageDoor:
     debug_logger: LoggerProto
     history_logger: LoggerProto
 
-    def __post_init__(self):
+    def __post_init__(self) -> None:
         self.status_change_time: dt.datetime = dt.datetime.now(tz=TIME_ZONE)
         self.old_state: GarageStatus = GarageStatus.undefined  # prime
-        self.old_state: GarageStatus = self.state
+        self.old_state = self.state
         msg = f"DOOR:{self.name}:created"
         self.debug_logger.debug(msg=msg)
         self.history_logger.info(msg=msg)
@@ -67,10 +66,14 @@ class GarageDoor:
                 self.history_logger.info(msg=msg)
             return GarageStatus.closed
         if not self.open_sensor.value and not self.closed_sensor.value:
-            self.debug_logger.debug(msg=f"Door neither open nor closed, pausing and rechecking")
+            self.debug_logger.debug(
+                msg=f"Door neither open nor closed, pausing and rechecking"
+            )
             sleep(30)  # Give door a chance to finish opening or closing
             if self.open_sensor.value or self.closed_sensor.value:
-                self.debug_logger.debug(msg=f"Door is not open and or closed, rechecking")
+                self.debug_logger.debug(
+                    msg=f"Door is not open and or closed, rechecking"
+                )
                 return self.state  # if open or closed, recursively run state
             if self.old_state != GarageStatus.unknown:
                 self.status_change_time = dt.datetime.now(tz=TIME_ZONE)
@@ -92,15 +95,4 @@ class GarageDoor:
         return int((now_time - self.status_change_time).total_seconds())
 
     def __str__(self) -> str:
-        return f"DOOR:{self.name}:{self.status.name}"
-
-
-if __name__ == "__main__":
-    import time
-
-    a_door = GarageDoor(name="2-Car")
-    print(a_door)
-    a_door.close()
-    print(a_door)
-    time.sleep(3.5)
-    print(a_door)
+        return f"DOOR:{self.name}:{self.state.name}"
