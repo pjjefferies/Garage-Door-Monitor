@@ -6,3 +6,5 @@ configs/__pycache__
 src/config/__pycache__
 security/keys.py
 security/__pycache__
+data/garage_door_status_history.lob
+logs/logfile.log
