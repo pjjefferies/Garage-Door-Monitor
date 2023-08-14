@@ -69,6 +69,7 @@ def main() -> None:
             name=garage_door,
             open_sensor=garage_doors[garage_door]["open_sensor"],
             closed_sensor=garage_doors[garage_door]["closed_sensor"],
+            door_cfg=garage_door_config[garage_door],
             debug_logger=logger,
             history_logger=history_logger,
         )
@@ -78,27 +79,25 @@ def main() -> None:
     # Register the exit handler with `SIGTSTP` (Ctrl + Z)
     signal.signal(signalnum=signal.SIGTSTP, handler=exit_handler)
 
-    open_alarm_time_since_notify: int
+    # Initialize some stuff
     for garage_door in garage_doors.keys():
         garage_doors[garage_door]["open_alarm_last_time"] = dt.datetime(1970, 1, 1, 8)
+        garage_doors[garage_door]["open_alarm_time_since_notify"] = 0
+        garage_doors[garage_door]["door_time_time_open"] = 0
+        garage_doors[garage_door]["next_alarm_time_increment"] = garage_door_config[
+            garage_door
+        ]["next_alarm_time_increment"]
 
     while True:
         # Check if garages have been open for more than X minutes (from config)
         for garage_door in garage_door_config.keys():
-            open_alarm_time_since_notify = (
-                dt.datetime.now() - garage_doors[garage_door]["open_alarm_last_time"]
-            ).total_seconds() // 60  # minutes
-            if (
-                garage_doors[garage_door]["DoorObject"].state == GarageStatus.open
-                and (garage_doors[garage_door]["DoorObject"].time_at_state * 60)
-                > garage_door_config[garage_door].OPEN.TIME_LIMIT
-                and open_alarm_time_since_notify
-                > garage_door_config[garage_door].OPEN.ALARM_SPACING
-            ):
+            if garage_doors[garage_door]["DoorObject"].door_open_longer_than_time_limit:
                 send_notification(
-                    msg=f"{garage_doors[garage_door]['DoorObject'].name} open for {open_alarm_time_since_notify} minutes"
+                    msg=(
+                        f"{garage_doors[garage_door]['DoorObject'].name} open for "
+                        f"{garage_doors[garage_door]['DoorObject'].time_at_state // 60} minutes"
+                    )
                 )
-                garage_doors[garage_door]["open_alarm_last_time"] = dt.datetime.now()
 
             # Other checks TBD?
 
