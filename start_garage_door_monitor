@@ -1,4 +1,17 @@
-#! /bin/bash
+#!/bin/bash
 cd /home/garage_monitor/Garage-Door-Monitor
 source /home/garage_monitor/Garage-Door-Monitor/.env/bin/activate
-/home/garage_monitor/python/bin/python -m src.garage_door_status_monitor &
+
+while [ $(pidof "/home/garage_monitor/python/bin/python" | wc -w) -gt 0 ]
+do
+  kill "$(pidof "/home/garage_monitor/python/bin/python" | awk '{print $1}')"
+done
+
+# Sometimes start fails due to DigitalInputDevide initiation failue.
+# It usually works the second time. This mentod gives it 5 seconds to start
+# then tries again if it didn't start
+while [ $(pidof "/home/garage_monitor/python/bin/python" | wc -w) -ne 1 ]
+do
+  /home/garage_monitor/python/bin/python -m src.garage_door_status_monitor &
+  sleep 5
+done
