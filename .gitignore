@@ -7,8 +7,4 @@ src/config/__pycache__
 security/keys.py
 security/__pycache__
 data/garage_door_status_history.log
-<<<<<<< HEAD
 logs/logfile.log
-=======
-logs/logfile.log
->>>>>>> 303a74a1f5848c94f728ce3378b93773ef0af76c
