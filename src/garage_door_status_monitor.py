@@ -69,6 +69,7 @@ def main() -> None:
             name=garage_door,
             open_sensor=garage_doors[garage_door]["open_sensor"],
             closed_sensor=garage_doors[garage_door]["closed_sensor"],
+            app_cfg=cfg.APP,
             door_cfg=garage_door_config[garage_door],
             debug_logger=logger,
             history_logger=history_logger,
@@ -95,6 +96,7 @@ def main() -> None:
                 send_notification(
                     msg=(
                         f"{garage_doors[garage_door]['DoorObject'].name} open for "
+                        f"{garage_doors[garage_door]['DoorObject'].seconds_at_state // 60} minutes"
                     ),
                     logger=logger,
                 )
