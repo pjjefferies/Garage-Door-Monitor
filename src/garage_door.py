@@ -124,14 +124,14 @@ class GarageDoor:
             self.debug_logger.debug(
                 msg=(
                     f"door_open_longer_than_time_limit=True. "
-                    f"Increasing open_time_limit to {self.open_time_limit}"
+                    f"Increasing open_time_limit to {self.open_time_limit} minutes."
                 )
             )
             return True
         # Reset open_time_limit,
         self.open_time_limit = self.door_cfg.OPEN.ALARM_SPACING
         self.debug_logger.debug(
-            msg=f"Resetting open_time_limit to {self.open_time_limit}"
+            msg=f"Resetting open_time_limit to {self.open_time_limit} minutes."
         )
         return False
 
