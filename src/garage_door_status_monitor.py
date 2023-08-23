@@ -95,8 +95,8 @@ def main() -> None:
                 send_notification(
                     msg=(
                         f"{garage_doors[garage_door]['DoorObject'].name} open for "
-                        f"{garage_doors[garage_door]['DoorObject'].time_at_state // 60} minutes"
-                    )
+                    ),
+                    logger=logger,
                 )
 
             # Other checks TBD?

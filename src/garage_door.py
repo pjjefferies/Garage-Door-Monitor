@@ -37,6 +37,7 @@ class GarageDoor:
     name: str
     open_sensor: DigitalSensorProto
     closed_sensor: DigitalSensorProto
+    app_cfg: Box
     door_cfg: Box
     debug_logger: LoggerProto
     history_logger: LoggerProto
