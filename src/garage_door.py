@@ -128,11 +128,6 @@ class GarageDoor:
                 )
             )
             return True
-        # Reset open_time_limit,
-        self.open_time_limit = self.door_cfg.OPEN.ALARM_SPACING
-        self.debug_logger.debug(
-            msg=f"Resetting open_time_limit to {self.open_time_limit} minutes."
-        )
         return False
 
     def __str__(self) -> str:
