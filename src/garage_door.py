@@ -4,7 +4,7 @@ from enum import Enum
 from time import sleep
 
 from box import Box
-from typing import Protocol  # Optional
+from typing import Protocol
 
 import pytz
 
@@ -76,7 +76,8 @@ class GarageDoor:
             self.debug_logger.debug(
                 msg=f"Door, {self.name}, neither open nor closed, pausing and rechecking"
             )
-            sleep(45)  # Give door a chance to finish opening or closing
+            # Give door a chance to finish opening or closing
+            sleep(self.app_cfg.DOOR_MIDSTATE_RE_EVAL_TIME)
             if self.open_sensor.value or self.closed_sensor.value:
                 self.debug_logger.debug(
                     msg=f"Door, {self.name}, is now open and/or closed"
