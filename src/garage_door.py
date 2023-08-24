@@ -104,7 +104,9 @@ class GarageDoor:
     @property
     def seconds_at_state(self) -> int:
         now_time = dt.datetime.now(tz=TIME_ZONE)
-        return int((now_time - self.status_change_time).total_seconds())
+        time_delta: int = int((now_time - self.status_change_time).total_seconds())
+        self.debug_logger.debug(f"seconds_at_state: {time_delta} seconds")
+        return time_delta
 
     @property
     def door_open_longer_than_time_limit(self) -> bool:
@@ -112,7 +114,7 @@ class GarageDoor:
             # Is door open?
             self.state == GarageStatus.open
             # comparing minutes - Has door been open long enough?
-            and self.seconds_at_state * 60 > self.door_cfg.OPEN.TIME_LIMIT
+            and self.seconds_at_state / 60 > self.door_cfg.OPEN.TIME_LIMIT
             # comparing minutes - Has it been long enough since last alarm?
             and self.time_since_last_open_alarm > self.open_time_limit
         ):
