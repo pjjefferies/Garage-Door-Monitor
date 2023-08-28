@@ -2,13 +2,20 @@
 
 case "$(pidof "/home/garage_monitor/python/bin/python" | wc -w)" in
 
-0)  echo "$(date):DEBUG:Restarting Garage Door Monitor" >> /home/garage_monitor/Garage-Door-Monitor/logs/logfile.log
-    /home/garage_monitor/Garage-Door-Monitor/scr/scripts/stop_garage_door_monitor
-    /home/garage_monitor/Garage-Door-Monitor/scr/scripts/start_garage_door_monitor
+
+0)  date_str=$(date +%Y-%m-%d)" "$(date +%H:%M:%S,%03N)
+    msg=$date_str":DEBUG:Restarting Garage Door Monitor"
+    echo $msg >> /home/garage_monitor/Garage-Door-Monitor/logs/logfile.log
+    echo $msg >> /home/garage_monitor/Garage-Door-Monitor/data/garage_door_status_history.log
+    /home/garage_monitor/Garage-Door-Monitor/src/scripts/stop_garage_door_monitor
+    /home/garage_monitor/Garage-Door-Monitor/src/scripts/start_garage_door_monitor
     ;;
 1)  # all ok
     ;;
-*)  echo "$(date):DEBUG:Removed second Garage Door Monitor" >> /home/garage_monitor/Garage-Door-Monitor/logs/logfile.log
+*)  date_str=$(date +%Y-%m-%d)" "$(date +%H:%M:%S,%03N)
+    msg=$date_str":DEBUG:Removed second Garage Door Monitor"
+    echo $msg >> /home/garage_monitor/Garage-Door-Monitor/logs/logfile.log
+    echo $msg >> /home/garage_monitor/Garage-Door-Monitor/data/garage_door_status_history.log
     kill $(pidof "/home/garage_monitor/python/bin/python" | awk '{print $1}')
     ;;
 esac

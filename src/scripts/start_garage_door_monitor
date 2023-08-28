@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/home/garage_monitor/Garage-Door-Monitor/scr/scripts/stop_garage_door_monitor
+/home/garage_monitor/Garage-Door-Monitor/src/scripts/stop_garage_door_monitor
 
 # Sometimes start fails due to DigitalInputDevide initiation failue.
 # It usually works the second time. This mentod gives it 5 seconds to start
