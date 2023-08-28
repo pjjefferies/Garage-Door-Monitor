@@ -7,7 +7,7 @@ previous_month=$(date -d "$(date) - 1 months" +%Y-%m)
 hist_file="/home/garage_monitor/Garage-Door-Monitor/data/garage_door_status_history.log"
 hist_file_base=${hist_file%.*}
 
-archive_file=$hist_file"_"$previous_month".log"
+archive_file=$hist_file_base"_"$previous_month".log"
 
 # Rename current file to archive file if archive file doesn't exist
 if [ -f "$archive_file" ]; then
