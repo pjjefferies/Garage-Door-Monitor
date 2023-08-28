@@ -2,7 +2,8 @@
 
 while [ $(pidof "/home/garage_monitor/python/bin/python" | wc -w) -gt 0 ]
 do
-  echo "$(date):DEBUG:Stoping Garage Door Monitor" >> /home/garage_monitor/Garage-Door-Monitor/logs/logfile.log
-  echo "$(date):DEBUG:Stoping Garage Door Monitor" >> /home/garage_monitor/Garage-Door-Monitor/data/garage_door_status_history.log
+  date_str=$(date +%Y-%m-%d) $(date +%H:%M:%S,%03N)
+  echo "$(date_str):DEBUG:Stoping Garage Door Monitor" >> /home/garage_monitor/Garage-Door-Monitor/logs/logfile.log
+  echo "$(date_str):INFO:Stoping Garage Door Monitor" >> /home/garage_monitor/Garage-Door-Monitor/data/garage_door_status_history.log
   kill "$(pidof "/home/garage_monitor/python/bin/python" | awk '{print $1}')"
 done
