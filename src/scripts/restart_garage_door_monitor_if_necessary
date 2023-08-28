@@ -3,8 +3,8 @@
 case "$(pidof "/home/garage_monitor/python/bin/python" | wc -w)" in
 
 0)  echo "$(date):DEBUG:Restarting Garage Door Monitor" >> /home/garage_monitor/Garage-Door-Monitor/logs/logfile.log
-    /home/garage_monitor/Garage-Door-Monitor/stop_garage_door_monitor
-    /home/garage_monitor/Garage-Door-Monitor/start_garage_door_monitor
+    /home/garage_monitor/Garage-Door-Monitor/scr/scripts/stop_garage_door_monitor
+    /home/garage_monitor/Garage-Door-Monitor/scr/scripts/start_garage_door_monitor
     ;;
 1)  # all ok
     ;;
