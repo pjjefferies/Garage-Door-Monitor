@@ -1,5 +1,3 @@
-
-
 base:
     APP:  # Window Start-up
         LOOP_DELAY: 15
@@ -7,6 +5,9 @@ base:
 
     LOGGING:
         CONFIG_PATH: "configs/logging_config.yaml"
+
+    GRAPHING:
+        MAX_TRANSITION_TIME: 60  # seconds
 
     DOORS:
         TWO_CAR:
