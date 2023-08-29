@@ -47,7 +47,8 @@ class GarageDoor:
         self.old_state: GarageStatus = GarageStatus.undefined  # prime
         self.old_state = self.state
         self.open_time_limit = self.door_cfg.OPEN.TIME_LIMIT  # reset to baseline
-        self.time_since_last_open_alarm: int = 1_000  # minutes (a really big no.)
+        self.last_alarm_time: dt.datetime = dt.datetime.now() - dt.timedelta(weeks=52)
+        # self.time_since_last_open_alarm: int = 1_000  # minutes (a really big no.)
         msg = f"DOOR:{self.name}:created"
         self.debug_logger.debug(msg=msg)
         self.history_logger.info(msg=msg)
@@ -110,14 +111,19 @@ class GarageDoor:
 
     @property
     def door_open_longer_than_time_limit(self) -> bool:
+        time_since_last_open_alarm = (
+            dt.datetime.now() - self.last_alarm_time
+        ).total_seconds()
         if (
             # Is door open?
             self.state == GarageStatus.open
             # comparing minutes - Has door been open long enough?
             and self.seconds_at_state / 60 > self.door_cfg.OPEN.TIME_LIMIT
             # comparing minutes - Has it been long enough since last alarm?
-            and self.time_since_last_open_alarm > self.open_time_limit
+            and time_since_last_open_alarm > self.open_time_limit
         ):
+            # Reset last alarm time
+            self.last_alarm_time = dt.datetime.now()
             # Increase open_time_limit for next alarm
             self.open_time_limit = (
                 self.open_time_limit * self.door_cfg.OPEN.ALARM_INC_MULT
