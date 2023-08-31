@@ -1,7 +1,7 @@
 base:
     APP:  # Window Start-up
-        LOOP_DELAY: 15
-        DOOR_MIDSTATE_RE_EVAL_TIME: 30
+        LOOP_DELAY: 15  # seconds
+        DOOR_MIDSTATE_RE_EVAL_TIME: 30  # seconds
 
     LOGGING:
         CONFIG_PATH: "configs/logging_config.yaml"
@@ -19,9 +19,9 @@ base:
                 NUMBER: 6
                 PULL_UP: True
                 BOUNCE_TIME: 1.0
-                TIME_LIMIT: 5  # minutes
-                ALARM_SPACING: 5  # minutes
-                ALARM_INC_ADD: 0  # minutes
+                TIME_LIMIT: 300  # seconds
+                ALARM_SPACING: 300  # seconds
+                ALARM_INC_ADD: 0  # seconds
                 ALARM_INC_MULT: 2
         ONE_CAR:
             CLOSED:
@@ -32,9 +32,9 @@ base:
                 NUMBER: 0
                 PULL_UP: True
                 BOUNCE_TIME: 1.0
-                TIME_LIMIT: 10  # minutes
-                ALARM_SPACING: 5  # minutes
-                ALARM_INC_ADD: 0  # minutes
+                TIME_LIMIT: 600  # seconds
+                ALARM_SPACING: 5  # seconds
+                ALARM_INC_ADD: 0  # seconds
                 ALARM_INC_MULT: 2
 
 dev:

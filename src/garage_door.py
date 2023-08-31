@@ -4,7 +4,7 @@ from enum import Enum
 from time import sleep
 
 from box import Box
-from typing import Protocol
+from typing import Callable, Protocol
 
 import pytz
 
@@ -37,6 +37,7 @@ class GarageDoor:
     name: str
     open_sensor: DigitalSensorProto
     closed_sensor: DigitalSensorProto
+    load_config: Callable[None]
     app_cfg: Box
     door_cfg: Box
     debug_logger: LoggerProto
@@ -115,12 +116,14 @@ class GarageDoor:
         time_since_last_open_alarm = (
             dt.datetime.now() - self.last_alarm_time
         ).total_seconds()
-        self.debug_logger.debug(f"gd_119:{self.name=}:{time_since_last_open_alarm=}")
+        self.debug_logger.debug(
+            f"gd_119:{self.name=}:{time_since_last_open_alarm=:.0f}"
+        )
         if (
             # Is door open?
             self.state == GarageStatus.open
             # comparing minutes - Has door been open long enough?
-            and self.seconds_at_state / 60 > self.door_cfg.OPEN.TIME_LIMIT
+            and self.seconds_at_state > self.door_cfg.OPEN.TIME_LIMIT
             # comparing minutes - Has it been long enough since last alarm?
             and time_since_last_open_alarm > self.open_time_limit
         ):
