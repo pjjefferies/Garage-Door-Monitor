@@ -50,7 +50,6 @@ class GarageDoor:
         self.last_alarm_time: dt.datetime = dt.datetime.now() - dt.timedelta(
             weeks=52
         )  # a long time ago
-        # self.time_since_last_open_alarm: int = 1_000  # minutes (a really big no.)
         msg = f"DOOR:{self.name}:created"
         self.debug_logger.debug(msg=msg)
         self.history_logger.info(msg=msg)
@@ -116,7 +115,7 @@ class GarageDoor:
         time_since_last_open_alarm = (
             dt.datetime.now() - self.last_alarm_time
         ).total_seconds()
-        self.debug_logger.debug(f"gd_119:{time_since_last_open_alarm=}")
+        self.debug_logger.debug(f"gd_119:{self.name=}:{time_since_last_open_alarm=}")
         if (
             # Is door open?
             self.state == GarageStatus.open
