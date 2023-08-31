@@ -116,7 +116,7 @@ class GarageDoor:
         time_since_last_open_alarm = (
             dt.datetime.now() - self.last_alarm_time
         ).total_seconds()
-        self.debug_logger.debug(f"{time_since_last_open_alarm=}")
+        self.debug_logger.debug(f"gd_119:{time_since_last_open_alarm=}")
         if (
             # Is door open?
             self.state == GarageStatus.open
