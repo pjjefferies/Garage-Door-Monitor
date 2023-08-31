@@ -37,9 +37,9 @@ class GarageDoor:
     name: str
     open_sensor: DigitalSensorProto
     closed_sensor: DigitalSensorProto
-    load_config: Callable[None]
-    app_cfg: Box
-    door_cfg: Box
+    load_config: Callable[[None], Box]
+    # app_cfg: Box
+    # door_cfg: Box
     debug_logger: LoggerProto
     history_logger: LoggerProto
 
@@ -47,6 +47,8 @@ class GarageDoor:
         self.status_change_time: dt.datetime = dt.datetime.now(tz=TIME_ZONE)
         self.old_state: GarageStatus = GarageStatus.undefined  # prime
         self.old_state = self.state
+        self.app_cfg: Box = load_cfg().APP
+        self.door_cfg: Box = load_cfg().DOOR
         self.open_time_limit = self.door_cfg.OPEN.TIME_LIMIT  # reset to baseline
         self.last_alarm_time: dt.datetime = dt.datetime.now() - dt.timedelta(
             weeks=52
