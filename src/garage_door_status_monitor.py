@@ -9,7 +9,7 @@ from gpiozero import DigitalInputDevice
 
 from src.send_notification import send_notification
 from src.config.config_main import load_config
-from src.config.config_logging import history_logger
+from src.exit_handler import exit_handler
 from src.config.config_logging import logger
 from src.garage_door import (
     GarageDoor,
@@ -75,9 +75,19 @@ def main() -> None:
         )
 
     # Register the exit handler with `SIGINT`(CTRL + C)
-    signal.signal(signalnum=signal.SIGINT, handler=exit_handler)
-    # Register the exit handler with `SIGTSTP` (Ctrl + Z)
-    signal.signal(signalnum=signal.SIGTSTP, handler=exit_handler)
+    signal.signal(
+        signalnum=signal.SIGINT,
+        handler=partial(exit_handler, logger=logger, history_logger=history_logger),
+    )
+
+    try:
+        # Register the exit handler with `SIGTSTP` (Ctrl + Z)
+        signal.signal(
+            signalnum=signal.SIGTSTP,
+            handler=partial(exit_handler, logger=logger, history_logger=history_logger),
+        )
+    except AttributeError:  # doesn't work in windows for testing
+        pass
 
     # Initialize some stuff
     for garage_door in garage_doors.keys():
