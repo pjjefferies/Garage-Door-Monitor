@@ -108,7 +108,7 @@ class GarageDoor:
 
     @property
     def seconds_at_state(self) -> int:
-        now_time = dt.datetime.now(tz=TIME_ZONE)
+        now_time = dt.datetime.now(self.TIME_ZONE)
         time_delta: int = int((now_time - self.status_change_time).total_seconds())
         self.debug_logger.debug(f"seconds_at_state: {time_delta} seconds")
         return time_delta

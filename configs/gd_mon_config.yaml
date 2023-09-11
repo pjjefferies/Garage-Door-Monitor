@@ -2,6 +2,7 @@ base:
     APP:  # Window Start-up
         LOOP_DELAY: 15  # seconds
         DOOR_MIDSTATE_RE_EVAL_TIME: 30  # seconds
+        TIME_ZONE: "America/Detroit"
 
     LOGGING:
         CONFIG_PATH: "configs/logging_config.yaml"
