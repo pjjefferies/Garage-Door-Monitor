@@ -1,20 +1,18 @@
-from dataclasses import dataclass
 import datetime as dt
+from functools import partial
 import signal
 from time import sleep
-from typing import Any, Protocol
+from typing import Callable, Optional, Protocol
 
 from box import Box
-from gpiozero import DigitalInputDevice
 
-from src.send_notification import send_notification
 from src.config.config_main import load_config
 from src.exit_handler import exit_handler
-from src.config.config_logging import logger
-from src.garage_door import (
-    GarageDoor,
-    GarageStatus,
-)
+from src.garage_door import GarageDoor
+
+
+class DoorSensorProto(Protocol):
+    value: bool
 
 
 class LoggerProto(Protocol):
@@ -25,43 +23,32 @@ class LoggerProto(Protocol):
         ...
 
 
-@dataclass
-class GarageStatusHistoryDatum:
-    name: str
-    position: GarageStatus
-    timestamp: dt.datetime
-
-
-def exit_handler(signum: signal.Signals, frame: signal.Handlers) -> Any:
-    msg = "Stopping Garage Door Monitor"
-    logger.info(msg=msg)
-    history_logger.info(msg=msg)
-    exit(0)
-
-
-def main() -> None:
-    global logger, history_logger
+def garage_door_status_monitor(
+    DoorSensor: DoorSensorProto,
+    send_notification: Callable[[str], None],
+    logger: LoggerProto,
+    history_logger: LoggerProto,
+    max_run_time: Optional[int] = None,
+) -> None:
     msg: str = f"Starting Garage Door Monitor"
     history_logger.info(msg=msg)
     logger.debug(msg=msg)
     cfg: Box = load_config()
     garage_door_config: Box = cfg.DOORS
     garage_doors: Box = Box({})
-    for a_door_name in garage_door_config.keys():
-        garage_doors[a_door_name] = Box({})
+    start_time: dt.datetime = dt.datetime.now()
 
     # Create DigitalInputDevice Door Open/Closed Sensors
     for garage_door in garage_door_config.keys():
-        garage_doors[garage_door]["open_sensor"] = DigitalInputDevice(
-            pin=int(garage_door_config[garage_door].OPEN.NUMBER),
-            pull_up=garage_door_config[garage_door].OPEN.PULL_UP,
-            bounce_time=garage_door_config[garage_door].OPEN.BOUNCE_TIME,
-        )
-        garage_doors[garage_door]["closed_sensor"] = DigitalInputDevice(
-            pin=int(garage_door_config[garage_door].CLOSED.NUMBER),
-            pull_up=garage_door_config[garage_door].CLOSED.PULL_UP,
-            bounce_time=garage_door_config[garage_door].CLOSED.BOUNCE_TIME,
-        )
+        garage_doors[garage_door] = Box({})
+        for sensor in garage_door_config[garage_door].keys():
+            garage_doors[garage_door][
+                garage_door_config[garage_door][sensor].NAME
+            ] = DoorSensor(
+                pin=int(garage_door_config[garage_door][sensor].NUMBER),
+                pull_up=garage_door_config[garage_door][sensor].PULL_UP,
+                bounce_time=garage_door_config[garage_door][sensor].BOUNCE_TIME,
+            )
 
     # Create GarageDoor Objects
     for garage_door in garage_door_config.keys():
@@ -89,16 +76,16 @@ def main() -> None:
     except AttributeError:  # doesn't work in windows for testing
         pass
 
-    # Initialize some stuff
-    for garage_door in garage_doors.keys():
-        garage_doors[garage_door]["open_alarm_last_time"] = dt.datetime(1970, 1, 1, 8)
-        garage_doors[garage_door]["open_alarm_time_since_notify"] = 0
-        garage_doors[garage_door]["door_time_time_open"] = 0
-        garage_doors[garage_door]["next_alarm_time_increment"] = garage_door_config[
-            garage_door
-        ]["next_alarm_time_increment"]
-
+    # Main Loop
     while True:
+        if max_run_time and (
+            (dt.datetime.now() - start_time).total_seconds() > max_run_time
+        ):
+            msg = f"Max. run time of {max_run_time} exceeded. Closing Monitor"
+            logger.debug(msg=msg)
+            history_logger.info(msg=msg)
+            exit_handler(logger=logger, history_logger=history_logger)
+
         # Check if garages have been open for more than X minutes (from config)
         for garage_door in garage_door_config.keys():
             if garage_doors[garage_door]["DoorObject"].door_open_longer_than_time_limit:
@@ -117,4 +104,15 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    from gpiozero import DigitalInputDevice as DoorSensor
+
+    from src.config.config_logging import history_logger
+    from src.config.config_logging import logger
+    from src.send_notification import send_notification
+
+    garage_door_status_monitor(
+        DoorSensor=DoorSensor,
+        send_notification=send_notification,
+        logger=logger,
+        history_logger=history_logger,
+    )

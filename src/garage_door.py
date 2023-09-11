@@ -8,10 +8,8 @@ from typing import Callable, Protocol
 
 import pytz
 
-TIME_ZONE = pytz.timezone(zone="America/Detroit")
 
-
-class DigitalSensorProto(Protocol):
+class DoorSensorProto(Protocol):
     value: bool
 
 
@@ -35,20 +33,18 @@ class GarageStatus(Enum):
 @dataclass
 class GarageDoor:
     name: str
-    open_sensor: DigitalSensorProto
-    closed_sensor: DigitalSensorProto
-    load_config: Callable[[None], Box]
-    # app_cfg: Box
-    # door_cfg: Box
+    open_sensor: DoorSensorProto
+    closed_sensor: DoorSensorProto
+    load_config: Callable[[], Box]
     debug_logger: LoggerProto
     history_logger: LoggerProto
 
     def __post_init__(self) -> None:
-        self.status_change_time: dt.datetime = dt.datetime.now(tz=TIME_ZONE)
         self.old_state: GarageStatus = GarageStatus.undefined  # prime
-        self.old_state = self.state
-        self.app_cfg: Box = load_cfg().APP
-        self.door_cfg: Box = load_cfg().DOOR
+        self.app_cfg: Box = self.load_config().APP
+        self.TIME_ZONE = pytz.timezone(zone=self.app_cfg.TIME_ZONE)
+        self.status_change_time: dt.datetime = dt.datetime.now(self.TIME_ZONE)
+        self.door_cfg: Box = self.load_config().DOORS[self.name]
         self.open_time_limit = self.door_cfg.OPEN.TIME_LIMIT  # reset to baseline
         self.last_alarm_time: dt.datetime = dt.datetime.now() - dt.timedelta(
             weeks=52
@@ -59,68 +55,68 @@ class GarageDoor:
 
     @property
     def state(self) -> GarageStatus:
-        if self.open_sensor.value and not self.closed_sensor.value:
-            # DOOR IS OPEN!
-            if self.old_state != GarageStatus.open:
-                self.status_change_time = dt.datetime.now(tz=TIME_ZONE)
-                self.old_state = GarageStatus.open
-                msg = f"DOOR:{self.name}:opened"
-                self.debug_logger.debug(msg=msg)
-                self.history_logger.info(msg=msg)
-            return GarageStatus.open
-        if not self.open_sensor.value and self.closed_sensor.value:
-            # DOOR IS CLOSED!
-            if self.old_state != GarageStatus.closed:
-                self.status_change_time = dt.datetime.now(tz=TIME_ZONE)
-                self.old_state = GarageStatus.closed
-                msg = f"DOOR:{self.name}:closed"
-                self.debug_logger.debug(msg=msg)
-                self.history_logger.info(msg=msg)
-            # Reset open_time_limit to baseline
-            self.open_time_limit = self.door_cfg.OPEN.TIME_LIMIT
-            return GarageStatus.closed
-        if not self.open_sensor.value and not self.closed_sensor.value:
-            # DOOR IS NEITHER OPEN NOR CLOSED!
-            self.debug_logger.debug(
-                msg=f"Door, {self.name}, neither open nor closed, pausing and rechecking"
-            )
-            # Give door a chance to finish opening or closing
-            sleep(self.app_cfg.DOOR_MIDSTATE_RE_EVAL_TIME)
-            if self.open_sensor.value or self.closed_sensor.value:
+        sensor_open_value: bool = bool(self.open_sensor.value)
+        sensor_closed_value: bool = bool(self.closed_sensor.value)
+        match (sensor_open_value, sensor_closed_value):
+            case (True, False):  # DOOR IS OPEN!
+                if self.old_state != GarageStatus.open:
+                    self.status_change_time = dt.datetime.now(self.TIME_ZONE)
+                    self.old_state = GarageStatus.open  # for the next time
+                    msg = f"DOOR:{self.name}:opened"
+                    self.debug_logger.debug(msg=msg)
+                    self.history_logger.info(msg=msg)
+                return GarageStatus.open
+            case (False, True):  # DOOR IS CLOSED!
+                if self.old_state != GarageStatus.closed:
+                    self.status_change_time = dt.datetime.now(self.TIME_ZONE)
+                    self.old_state = GarageStatus.closed  # for the next time
+                    msg = f"DOOR:{self.name}:closed"
+                    self.debug_logger.debug(msg=msg)
+                    self.history_logger.info(msg=msg)
+                # Reset open_time_limit to baseline
+                self.open_time_limit = self.door_cfg.OPEN.TIME_LIMIT
+                return GarageStatus.closed
+            case (False, False):  # DOOR IS NEITHER OPEN NOR CLOSED!
                 self.debug_logger.debug(
-                    msg=f"Door, {self.name}, is now open and/or closed"
+                    msg=f"Door, {self.name}, neither open nor closed, pausing and rechecking"
                 )
-                return self.state  # if open or closed, recursively run state
-            if self.old_state != GarageStatus.unknown:
-                self.status_change_time = dt.datetime.now(tz=TIME_ZONE)
-                self.old_state = GarageStatus.unknown
-                msg = f"DOOR:{self.name}:unknown"
+                # Give door a chance to finish opening or closing
+                sleep(self.app_cfg.DOOR_MIDSTATE_RE_EVAL_TIME)
+                if self.open_sensor.value or self.closed_sensor.value:
+                    self.debug_logger.debug(
+                        msg=f"Door, {self.name}, is now open and/or closed"
+                    )
+                    return self.state  # if open or closed, recursively run state
+                if self.old_state != GarageStatus.unknown:
+                    self.status_change_time = dt.datetime.now(self.TIME_ZONE)
+                    self.old_state = GarageStatus.unknown  # for the next time
+                    msg = f"DOOR:{self.name}:unknown"
+                    self.debug_logger.debug(msg=msg)
+                    self.history_logger.info(msg=msg)
+                return GarageStatus.unknown
+            case (True, True):  # DOOR IS BOTH OPEN AND CLOSED, PLEASE DRIVE THROUGH!
+                msg = f"For door {self}, both Open and Closed Sensors are Active"
                 self.debug_logger.debug(msg=msg)
                 self.history_logger.info(msg=msg)
-            return GarageStatus.unknown
-        if self.open_sensor.value and self.closed_sensor.value:
-            # DOOR IS BOTH OPEN AND CLOSED, PLEASE DRIVE THROUGH!
-            msg = f"For door {self}, both Open and Closed Sensors are Active"
-            self.debug_logger.debug(msg=msg)
-            self.history_logger.info(msg=msg)
-            return GarageStatus.unknown
-        raise SyntaxError(f"Should never get here")
+                return GarageStatus.unknown
+            case _:
+                raise SyntaxError(
+                    f"Should never get here. {sensor_open_value=}, {sensor_closed_value=}"
+                )
 
     @property
     def seconds_at_state(self) -> int:
         now_time = dt.datetime.now(self.TIME_ZONE)
         time_delta: int = int((now_time - self.status_change_time).total_seconds())
-        self.debug_logger.debug(f"seconds_at_state: {time_delta} seconds")
+        self.debug_logger.debug(f"{self.name}:seconds_at_state: {time_delta} seconds")
         return time_delta
 
     @property
     def door_open_longer_than_time_limit(self) -> bool:
+        self.door_cfg = self.load_config().DOORS[self.name]
         time_since_last_open_alarm = (
             dt.datetime.now() - self.last_alarm_time
         ).total_seconds()
-        self.debug_logger.debug(
-            f"gd_119:{self.name=}:{time_since_last_open_alarm=:.0f}"
-        )
         if (
             # Is door open?
             self.state == GarageStatus.open
@@ -139,7 +135,7 @@ class GarageDoor:
             self.debug_logger.debug(
                 msg=(
                     f"door_open_longer_than_time_limit=True. "
-                    f"Increasing open_time_limit to {self.open_time_limit} minutes."
+                    f"Increasing open_time_limit to {self.open_time_limit} seconds."
                 )
             )
             return True

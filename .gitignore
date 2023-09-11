@@ -8,3 +8,10 @@ security/keys.py
 security/__pycache__
 data/garage_door_status_history.log
 logs/logfile.log
+test/__pycache__/__init__.cpython-311.pyc
+test/__pycache__/digital_input_dev_sim.cpython-311.pyc
+test/__pycache__/send_notification_sim.cpython-311.pyc
+test/__pycache__/test_garage_door.cpython-311.pyc
+test/config/__pycache__/__init__.cpython-311.pyc
+test/config/__pycache__/config_test_logging.cpython-311.pyc
+test/config/__pycache__/config_test_main.cpython-311.pyc

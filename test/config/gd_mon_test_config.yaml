@@ -1,0 +1,9 @@
+base:
+    TEST:
+        DIGITAL_INPUT_DATE_PATH: "test/config/digital_input_1.csv"
+
+    LOGGING:
+        CONFIG_PATH: "test/config/logging_test_config.yaml"
+
+dev:
+    BLANK: 0

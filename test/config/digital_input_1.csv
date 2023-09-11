@@ -1,0 +1,10 @@
+seconds_from_start,ONE_CAR_CLOSED,ONE_CAR_OPEN,TWO_CAR_CLOSED,TWO_CAR_OPEN
+0, 1, 0, 1, 0
+120, 1, 0, 0, 0
+130, 1, 0, 0, 1
+300, 0, 0, 0, 1
+312, 0, 1, 0, 1
+1260, 0, 1, 0, 0
+1275, 0, 1, 1, 0
+2113, 0, 0, 1, 0
+2130, 1, 0, 1, 0

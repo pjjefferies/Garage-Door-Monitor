@@ -13,10 +13,12 @@ base:
     DOORS:
         TWO_CAR:
             CLOSED:
+                NAME: closed_sensor
                 NUMBER: 5
                 PULL_UP: True
                 BOUNCE_TIME: 1.0
             OPEN:
+                NAME: open_sensor
                 NUMBER: 6
                 PULL_UP: True
                 BOUNCE_TIME: 1.0
@@ -26,10 +28,12 @@ base:
                 ALARM_INC_MULT: 2
         ONE_CAR:
             CLOSED:
+                NAME: closed_sensor
                 NUMBER: 13
                 PULL_UP: True
                 BOUNCE_TIME: 1.0
             OPEN:
+                NAME: open_sensor
                 NUMBER: 0
                 PULL_UP: True
                 BOUNCE_TIME: 1.0
