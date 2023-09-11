@@ -8,12 +8,13 @@ hist_file="/home/garage_monitor/Garage-Door-Monitor/data/garage_door_status_hist
 hist_file_base=${hist_file%.*}
 
 archive_file=$hist_file_base"_"$previous_month".log"
+date_str="$(date +%Y-%m-%d) $(date +%H:%M:%S,%03N)"
+logfile="/home/garage_monitor/Garage-Door-Monitor/logs/logfile.log"
 
 # Rename current file to archive file if archive file doesn't exist
 if [ -f "$archive_file" ]; then
-  date_str=$(date +%Y-%m-%d) $(date +%H:%M:%S,%03N)
-  logfile="/home/garage_monitor/Garage-Door-Monitor/logs/logfile.log"
   echo $date_str":INFO:The file '$archive_file' exists. Don't archive" >> $logfile
 else
   mv $hist_file $archive_file
+  echo $date_str"INFO:File '$hist_file' for previous month archived to '$archive_file'"
 fi
