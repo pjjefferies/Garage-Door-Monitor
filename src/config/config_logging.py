@@ -77,20 +77,3 @@ if log_cfg.handler.history.enabled:
     h_fh.setLevel(level=log_cfg.handler.history.level)
     h_fh.setFormatter(fmt=log_fmt)
     history_logger.addHandler(hdlr=h_fh)
-
-history_test_logger: logging.Logger = logging.getLogger(
-    "Garage Door Monitor History Logger"
-)
-history_test_logger.setLevel(level=log_cfg.level)
-history_test_logger.propagate = False
-
-if log_cfg.handler.history.enabled:
-    # Set-up history test logging
-    h_fh = logging.FileHandler(
-        filename=path.join(
-            log_cfg.handler.history.folder, log_cfg.handler.history.filename
-        )
-    )
-    h_fh.setLevel(level=log_cfg.handler.history.level)
-    h_fh.setFormatter(fmt=log_fmt)
-    history_test_logger.addHandler(hdlr=h_fh)
