@@ -7,6 +7,7 @@ src/config/__pycache__
 security/keys.py
 security/__pycache__
 data/garage_door_status_history.log
+data/garage_door_status_history_2*
 logs/logfile.log
 test/__pycache__/__init__.cpython-311.pyc
 test/__pycache__/digital_input_dev_sim.cpython-311.pyc
