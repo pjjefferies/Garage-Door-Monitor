@@ -1,0 +1,9 @@
+#!/bin/bash
+
+date_str=$(date +%Y-%m-%d) $(date +%H:%M:%S,%03N)
+
+if [ $(pidof "/home/garage_monitor/python/bin/python" | wc -w) -eq 1 ]; then
+  echo $date_str":INFO:Garage Door Monitor is Running"
+else
+  echo $date_str":INFO:Garage Door Monitor is NOT Running"
+fi
