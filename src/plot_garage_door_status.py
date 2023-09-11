@@ -1,11 +1,29 @@
 import datetime as dt
 from os import listdir
+from typing import Protocol
 
 from box import Box
+from matplotlib.figure import Figure
+import matplotlib.pyplot as plt
 import pandas as pd
+import tkinter as tk
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
-from src.config.config_logging import log_cfg
+from src.config.config_logging import log_cfg, logger
 from src.config.config_main import load_config
+from src.tk_plot import tk_xy_plot
+
+
+class LoggerProto(Protocol):
+    def debug(self, msg: str) -> None:
+        ...
+
+    def warning(self, msg: str) -> None:
+        ...
+
+    def error(self, msg: str) -> None:
+        ...
+
 
 DOORS: list[str] = ["one_car", "two_car"]
 EXCLUDED_ACTIONS: list[str] = ["created"]
@@ -60,6 +78,7 @@ def load_garage_door_history() -> dict[str, pd.DataFrame]:
                 door_status_history[door_name] = pd.concat(
                     [door_status_history[door_name], new_status], ignore_index=True
                 )
+    return door_status_history
 
 
 def clean_garage_door_history(
@@ -111,8 +130,53 @@ def clean_garage_door_history(
     return clean_gdh
 
 
-def plot_garage_door_status(door_status_hisotry: dict[str, pd.DataFrame]) -> None:
-    pass
+def create_garage_door_status_plot(
+    door_status_hisotry: dict[str, pd.DataFrame]
+) -> None:
+    # Create a Tkinter window
+    root = tk.Tk()
+
+    # Create a Matplotlib figure
+    fig = plt.figure()
+
+    for door, door_history_data in door_status_hisotry.items():
+        a_plot: Figure = tk_xy_plot(
+            x1_data=door_history_data["datetime"],
+            y1_data=door_history_data["position_value"],
+            # data1_style='b.-',
+            # x2_data=None,
+            # y2_data=None,
+            # data2_style='g.-',
+            # xlim=,
+            # y1lim=,
+            # y2lim=y2lim,
+            x_label="Date",
+            y1_label="Door Position (0=Closed, 1=Open)",
+            # y2_label="",
+            title=f"Door, {door}, Position History",
+            show_x_grid=False,
+            show_y1_grid=False,
+            # show_y2_grid=False,
+            bg_color="w",
+            fig_width=500,
+            fig_height=300,
+            logger=logger,
+        )
+
+        # Display the figure in the Tkinter window
+        canvas = FigureCanvasTkAgg(a_plot, fig)
+        canvas.get_tk_widget().pack(side="top", fill="both", expand=1)
+
+        # canvas = tk.Canvas(
+        #     root, width=fig.get_width_inches(), height=fig.get_height_inches()
+        # )
+        # canvas.pack()
+
+        # Draw the figure on the canvas
+        canvas.create_image(0, 0, anchor="nw", image=fig.canvas.tostring_rgb())
+
+        # Start the mainloop
+        root.mainloop()
 
 
 def plot_garage_door_status() -> None:
@@ -120,4 +184,8 @@ def plot_garage_door_status() -> None:
 
     door_status_history = clean_garage_door_history(door_status_history)
 
-    plot_garage_door_status(door_status_history)
+    create_garage_door_status_plot(door_status_history)
+
+
+if __name__ == "__main__":
+    plot_garage_door_status()
