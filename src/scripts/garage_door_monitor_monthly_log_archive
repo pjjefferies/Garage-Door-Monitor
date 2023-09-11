@@ -16,5 +16,5 @@ if [ -f "$archive_file" ]; then
   echo $date_str":INFO:The file '$archive_file' exists. Don't archive" >> $logfile
 else
   mv $hist_file $archive_file
-  echo $date_str"INFO:File '$hist_file' for previous month archived to '$archive_file'"
+  echo $date_str"INFO:File '$hist_file' for previous month archived to '$archive_file'" >> $logfile
 fi
