@@ -1,4 +1,4 @@
-from src.controller.color_constants import colors
+from src.color_constants import colors
 
 
 def color_as_hex_string(color: str | int | tuple[int, int, int]) -> str:
